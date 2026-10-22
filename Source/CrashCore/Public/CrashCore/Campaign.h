@@ -3,6 +3,7 @@
 // Campaign rules: objectives and stars, unlock chain, rewards, collectibles, hub secrets and exploration %.
 #pragma once
 
+#include "CrashCore/Export.h"
 #include "CrashCore/Profile.h"
 
 #include <array>
@@ -28,7 +29,7 @@ struct LevelRunResult
 	std::vector<int> collectiblesFound; // indices picked up during this run
 };
 
-bool EvaluateObjective(const ObjectiveDef& objective, const LevelRunResult& run);
+CRASHCORE_EXPORT bool EvaluateObjective(const ObjectiveDef& objective, const LevelRunResult& run);
 
 struct LevelCompletion
 {
@@ -43,16 +44,17 @@ struct LevelCompletion
 };
 
 // Updates progress (stars, best score/time, collectibles), grants rewards. Collectibles are kept even on failure.
-LevelCompletion ApplyLevelResult(const GameDatabase& db, Profile& profile, const LevelDef& level, const LevelRunResult& run);
+CRASHCORE_EXPORT LevelCompletion ApplyLevelResult(const GameDatabase& db, Profile& profile, const LevelDef& level,
+                                                  const LevelRunResult& run);
 
-bool IsChapterUnlocked(const GameDatabase& db, const Profile& profile, const ChapterDef& chapter);
-bool IsLevelUnlocked(const GameDatabase& db, const Profile& profile, const LevelDef& level);
-int TotalStars(const Profile& profile);
-int MaxStars(const GameDatabase& db);
+CRASHCORE_EXPORT bool IsChapterUnlocked(const GameDatabase& db, const Profile& profile, const ChapterDef& chapter);
+CRASHCORE_EXPORT bool IsLevelUnlocked(const GameDatabase& db, const Profile& profile, const LevelDef& level);
+CRASHCORE_EXPORT int TotalStars(const Profile& profile);
+CRASHCORE_EXPORT int MaxStars(const GameDatabase& db);
 
 // Hub exploration.
-bool MarkHubSecret(Profile& profile, const std::string& chapterId, const std::string& secretId);
-bool MarkHubCollectible(Profile& profile, const std::string& chapterId, int index);
+CRASHCORE_EXPORT bool MarkHubSecret(Profile& profile, const std::string& chapterId, const std::string& secretId);
+CRASHCORE_EXPORT bool MarkHubCollectible(Profile& profile, const std::string& chapterId, int index);
 
 struct ExplorationStats
 {
@@ -67,9 +69,10 @@ struct ExplorationStats
 	float percent = 0.0f; // 0..100
 };
 // Weighted: 40% collectibles, 30% stars, 20% completion, 10% secrets. chapterId empty = whole campaign.
-ExplorationStats ComputeExploration(const GameDatabase& db, const Profile& profile, const std::string& chapterId = std::string());
+CRASHCORE_EXPORT ExplorationStats ComputeExploration(const GameDatabase& db, const Profile& profile,
+                                                     const std::string& chapterId = std::string());
 
 // Builds the effective build for an AI car of a campaign level.
-VehicleBuild MakeCampaignBuild(const CampaignCarDef& car);
+CRASHCORE_EXPORT VehicleBuild MakeCampaignBuild(const CampaignCarDef& car);
 
 } // namespace crash

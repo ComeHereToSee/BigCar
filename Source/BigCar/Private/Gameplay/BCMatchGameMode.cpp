@@ -365,6 +365,10 @@ void ABCMatchGameMode::Logout(AController* Exiting)
 FTransform ABCMatchGameMode::PickSpawn(int32 Team, const FBCVehicleBuild& Build)
 {
 	TArray<FTransform> Spawns = Arena ? Arena->SpawnTransforms(Mode && Mode->teams >= 2 ? Team : -1) : TArray<FTransform>{FTransform::Identity};
+	if (Spawns.IsEmpty())
+	{
+		Spawns.Add(FTransform(FVector(0.0, 0.0, 300.0)));
+	}
 	// Furthest from every other car.
 	FTransform Best = Spawns[0];
 	float BestScore = -1.0f;
@@ -557,8 +561,10 @@ void ABCMatchGameMode::SpawnBots()
 	const float Skill = Profile ? Profile->skill : 0.5f;
 	const int32 Humans = Participants.Num();
 	const int32 Count = FMath::Clamp(BotCount, 0, FMath::Max(0, Mode->maxPlayers - Humans));
-	static const TCHAR* BotNames[] = {TEXT("铁头"), TEXT("Rusty"), TEXT("火花"), TEXT("Bulldozer"), TEXT("夜枭"), TEXT("Nitro"), TEXT("狂牛"),
-									  TEXT("Wrecker"), TEXT("碎骨"), TEXT("Crash Kid"), TEXT("钢拳"), TEXT("Mad Max")};
+	// 铁头, 火花, 夜枭, 狂牛, 碎骨, 钢拳 as universal character names so the literals do not depend on the compiler's source charset.
+	static const TCHAR* BotNames[] = {TEXT("铁头"), TEXT("Rusty"), TEXT("火花"), TEXT("Bulldozer"), TEXT("夜枭"),
+									  TEXT("Nitro"), TEXT("狂牛"), TEXT("Wrecker"), TEXT("碎骨"), TEXT("Crash Kid"),
+									  TEXT("钢拳"), TEXT("Mad Max")};
 	for (int32 i = 0; i < Count; ++i)
 	{
 		const int32 Team = Mode->teams >= 2 ? TeamForNewPlayer() : NextParticipantId;
@@ -1264,9 +1270,9 @@ void ABCMatchGameMode::SendPersonalResults(const TMap<FString, crash::JsonValue>
 		else if (const UBCDataSubsystem* Data = UBCDataSubsystem::Get(this))
 		{
 			// Offline / LAN: the client grants these to its local profile when the results arrive.
-			const crash::MatchReward Reward = crash::ComputeMatchReward(Data->Db().Progression(), PS->MatchScore, R.bWon, false);
-			R.Credits = Reward.credits;
-			R.Xp = Reward.xp;
+			const crash::MatchReward LocalReward = crash::ComputeMatchReward(Data->Db().Progression(), PS->MatchScore, R.bWon, false);
+			R.Credits = LocalReward.credits;
+			R.Xp = LocalReward.xp;
 		}
 		R.Stars = TArray<bool>();
 		PC->ClientShowResults(R);

@@ -10,6 +10,7 @@
 // All units are SI: meters, kilograms, seconds, Newtons.
 #pragma once
 
+#include "CrashCore/Export.h"
 #include "CrashCore/Math.h"
 #include "CrashCore/Stats.h"
 
@@ -81,7 +82,7 @@ struct VehicleSimSetup
 	std::array<WheelGeometry, kWheelCount> wheels;
 };
 
-VehicleSimSetup MakeSimSetup(const EffectiveStats& stats);
+CRASHCORE_EXPORT VehicleSimSetup MakeSimSetup(const EffectiveStats& stats);
 
 struct WheelContact
 {
@@ -155,17 +156,17 @@ struct DrivingAssists
 class VehicleSimulator
 {
 public:
-	void Setup(const VehicleSimSetup& setup);
+	CRASHCORE_EXPORT void Setup(const VehicleSimSetup& setup);
 	const VehicleSimSetup& GetSetup() const { return setup_; }
-	void Reset();
+	CRASHCORE_EXPORT void Reset();
 
-	void Step(float dt, const VehicleControls& controls, const SimBodyState& body, const std::array<WheelContact, kWheelCount>& contacts,
-	          SimOutput& out);
+	CRASHCORE_EXPORT void Step(float dt, const VehicleControls& controls, const SimBodyState& body,
+	                           const std::array<WheelContact, kWheelCount>& contacts, SimOutput& out);
 
-	Vec3 MountWorld(int wheel, const SimBodyState& body) const;
+	CRASHCORE_EXPORT Vec3 MountWorld(int wheel, const SimBodyState& body) const;
 	float RayLength() const { return setup_.restLength + setup_.wheelRadius; }
 	// Distance from the mount point down to the wheel center (for visuals).
-	float WheelCenterDrop(int wheel) const;
+	CRASHCORE_EXPORT float WheelCenterDrop(int wheel) const;
 	const WheelState& GetWheel(int wheel) const { return wheels_[static_cast<size_t>(wheel)]; }
 
 	void SetDamage(const DrivingDamage& damage) { damage_ = damage; }
@@ -176,11 +177,11 @@ public:
 
 	float Boost() const { return boost_; }
 	float BoostFraction() const { return setup_.boostCapacity > 0.0f ? boost_ / setup_.boostCapacity : 0.0f; }
-	void AddBoost(float amount);
+	CRASHCORE_EXPORT void AddBoost(float amount);
 	int Gear() const { return gear_; }
 	float EngineRpm() const { return rpm_; }
 
-	static float TorqueCurve(float rpmFraction, bool electric);
+	static CRASHCORE_EXPORT float TorqueCurve(float rpmFraction, bool electric);
 	static bool IsUpsideDown(const Frame& frame) { return Dot(frame.up, Vec3::Up()) < 0.1f; }
 
 private:

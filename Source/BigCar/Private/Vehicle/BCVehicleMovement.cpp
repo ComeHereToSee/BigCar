@@ -71,7 +71,8 @@ void UBCVehicleMovement::StepVehicle(float DeltaSeconds, bool bApplyForces)
 			C.normal = BC::DirToCrash(Hit.ImpactNormal);
 			C.pointVelocity = BC::ToCrash(Body->GetPhysicsLinearVelocityAtPoint(Hit.ImpactPoint));
 			// Driving on top of another moving car: use relative velocity so tires grip the roof.
-			if (const UPrimitiveComponent* Other = Hit.GetComponent())
+			// Non-const: UPrimitiveComponent::GetPhysicsLinearVelocityAtPoint is not a const member.
+			if (UPrimitiveComponent* Other = Hit.GetComponent())
 			{
 				if (Other->IsSimulatingPhysics())
 				{

@@ -101,7 +101,7 @@ void ABCAIController::Tick(float DeltaSeconds)
 	{
 		FeelerTimer = 0.2f;
 		const FVector Start = Xf.GetLocation() + FVector(0, 0, 40.0f);
-		const float Range = FMath::Clamp(Me->GetVelocity().Size() * 1.2f, 800.0f, 3000.0f);
+		const float Range = FMath::Clamp(static_cast<float>(Me->GetVelocity().Size()) * 1.2f, 800.0f, 3000.0f);
 		FCollisionQueryParams Params(SCENE_QUERY_STAT(BCAIFeeler), false, Me);
 		auto Probe = [&](float YawOffset) {
 			const FVector Dir = Xf.GetRotation().RotateVector(FRotator(0.0f, YawOffset, 0.0f).Vector());

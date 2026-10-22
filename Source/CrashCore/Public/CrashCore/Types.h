@@ -3,6 +3,8 @@
 // Shared enums and their stable string ids (the ids are part of the data/save/network contract).
 #pragma once
 
+#include "CrashCore/Export.h"
+
 #include <array>
 #include <cstdint>
 #include <string>
@@ -284,7 +286,7 @@ struct EngineZoneWeights
 {
 	std::array<float, kZoneCount> weights{};
 };
-EngineZoneWeights GetEngineZoneWeights(EngineLayout layout);
+CRASHCORE_EXPORT EngineZoneWeights GetEngineZoneWeights(EngineLayout layout);
 
 // Score/stat key for an impact kind (same as ToString).
 inline std::string ImpactKindId(ImpactKind kind)

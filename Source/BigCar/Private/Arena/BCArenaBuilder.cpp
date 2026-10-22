@@ -14,6 +14,7 @@
 #include "Core/BCSettingsSubsystem.h"
 #include "Core/BigCarTypes.h"
 #include "Engine/World.h"
+#include "Materials/MaterialInstanceDynamic.h"
 #include "PhysicalMaterials/PhysicalMaterial.h"
 #include "ProceduralMeshComponent.h"
 

@@ -4,6 +4,8 @@
 // Objects keep insertion order so saved files diff nicely.
 #pragma once
 
+#include "CrashCore/Export.h"
+
 #include <cstdint>
 #include <string>
 #include <string_view>
@@ -52,7 +54,7 @@ public:
 		v.type_ = Type::Object;
 		return v;
 	}
-	static const JsonValue& Null();
+	static CRASHCORE_EXPORT const JsonValue& Null();
 
 	Type GetType() const { return type_; }
 	bool IsNull() const { return type_ == Type::Null; }
@@ -65,33 +67,33 @@ public:
 	bool AsBool(bool fallback = false) const { return type_ == Type::Bool ? bool_ : fallback; }
 	double AsDouble(double fallback = 0.0) const { return type_ == Type::Number ? number_ : fallback; }
 	float AsFloat(float fallback = 0.0f) const { return type_ == Type::Number ? static_cast<float>(number_) : fallback; }
-	int AsInt(int fallback = 0) const;
-	int64_t AsInt64(int64_t fallback = 0) const;
-	const std::string& AsString() const;
+	CRASHCORE_EXPORT int AsInt(int fallback = 0) const;
+	CRASHCORE_EXPORT int64_t AsInt64(int64_t fallback = 0) const;
+	CRASHCORE_EXPORT const std::string& AsString() const;
 	std::string AsString(std::string_view fallback) const { return type_ == Type::String ? string_ : std::string(fallback); }
 
 	// Arrays
-	size_t Size() const;
-	const JsonValue& operator[](size_t index) const;
+	CRASHCORE_EXPORT size_t Size() const;
+	CRASHCORE_EXPORT const JsonValue& operator[](size_t index) const;
 	// Disambiguates literal indices like v[0] (0 is also a null pointer constant).
 	const JsonValue& operator[](int index) const { return index < 0 ? Null() : (*this)[static_cast<size_t>(index)]; }
-	const std::vector<JsonValue>& Items() const;
-	JsonValue& Push(JsonValue value);
+	CRASHCORE_EXPORT const std::vector<JsonValue>& Items() const;
+	CRASHCORE_EXPORT JsonValue& Push(JsonValue value);
 
 	// Objects
-	bool Has(std::string_view key) const;
-	const JsonValue& operator[](std::string_view key) const;
+	CRASHCORE_EXPORT bool Has(std::string_view key) const;
+	CRASHCORE_EXPORT const JsonValue& operator[](std::string_view key) const;
 	const JsonValue& operator[](const char* key) const { return (*this)[std::string_view(key)]; }
-	const std::vector<Member>& Members() const;
+	CRASHCORE_EXPORT const std::vector<Member>& Members() const;
 	// Inserts or replaces a member. Converts a null value into an object.
-	JsonValue& Set(std::string_view key, JsonValue value);
-	JsonValue* Find(std::string_view key);
-	bool Remove(std::string_view key);
+	CRASHCORE_EXPORT JsonValue& Set(std::string_view key, JsonValue value);
+	CRASHCORE_EXPORT JsonValue* Find(std::string_view key);
+	CRASHCORE_EXPORT bool Remove(std::string_view key);
 
-	std::string Dump(bool pretty = false) const;
+	CRASHCORE_EXPORT std::string Dump(bool pretty = false) const;
 
 private:
-	void DumpTo(std::string& out, bool pretty, int indent) const;
+	CRASHCORE_EXPORT void DumpTo(std::string& out, bool pretty, int indent) const;
 
 	Type type_ = Type::Null;
 	bool bool_ = false;
@@ -107,13 +109,13 @@ struct JsonError
 	int line = 0;
 	int column = 0;
 
-	std::string ToString() const;
+	CRASHCORE_EXPORT std::string ToString() const;
 };
 
 // Parses UTF-8 JSON text. Returns false and fills error on failure.
-bool ParseJson(std::string_view text, JsonValue& out, JsonError* error = nullptr);
+CRASHCORE_EXPORT bool ParseJson(std::string_view text, JsonValue& out, JsonError* error = nullptr);
 
 // Escapes a string as a JSON string literal (with quotes).
-std::string JsonQuote(std::string_view text);
+CRASHCORE_EXPORT std::string JsonQuote(std::string_view text);
 
 } // namespace crash

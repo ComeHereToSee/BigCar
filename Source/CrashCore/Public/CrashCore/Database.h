@@ -3,6 +3,7 @@
 // Typed game content loaded from Content/BigCar/Data/*.json (see docs/DATA_SCHEMA.md).
 #pragma once
 
+#include "CrashCore/Export.h"
 #include "CrashCore/Json.h"
 #include "CrashCore/Math.h"
 #include "CrashCore/Types.h"
@@ -66,10 +67,10 @@ struct StatMods
 	float knockback = 0.0f;
 	std::array<float, kZoneCount> armor{};
 
-	void Combine(const StatMods& other);
+	CRASHCORE_EXPORT void Combine(const StatMods& other);
 	// Applies a single "key": value pair. Returns false for unknown keys.
-	bool ApplyKey(std::string_view key, float value);
-	static bool IsKnownKey(std::string_view key);
+	CRASHCORE_EXPORT bool ApplyKey(std::string_view key, float value);
+	static CRASHCORE_EXPORT bool IsKnownKey(std::string_view key);
 };
 
 struct BrandDef
@@ -139,7 +140,7 @@ struct VehicleDef
 	std::vector<Color> colors;
 	std::vector<std::string> tags;
 
-	bool HasTag(std::string_view tag) const;
+	CRASHCORE_EXPORT bool HasTag(std::string_view tag) const;
 	bool IsElectric() const { return gears.size() <= 2 || HasTag("ev"); }
 };
 
@@ -188,7 +189,7 @@ struct EquipmentDef
 	int unlockLevel = 1;
 	std::vector<VehicleClass> allowedClasses;
 
-	bool AllowsClass(VehicleClass c) const;
+	CRASHCORE_EXPORT bool AllowsClass(VehicleClass c) const;
 };
 
 enum class PaintFinish : uint8_t
@@ -280,8 +281,8 @@ struct ArenaDef
 	// Half extent of the playable floor along X/Y (radius for circle/octagon).
 	float HalfX() const { return sizeX * 0.5f; }
 	float HalfY() const { return shape == ArenaShape::Rect ? sizeY * 0.5f : sizeX * 0.5f; }
-	bool IsInside(const Vec3& p, float margin = 0.0f) const;
-	const PropDef* FindHill() const;
+	CRASHCORE_EXPORT bool IsInside(const Vec3& p, float margin = 0.0f) const;
+	CRASHCORE_EXPORT const PropDef* FindHill() const;
 };
 
 struct ModeDef
@@ -475,7 +476,7 @@ struct GraphicsOptionDef
 	bool restart = false;
 	std::vector<GraphicsValueDef> values;
 
-	const GraphicsValueDef* FindValue(std::string_view valueId) const;
+	CRASHCORE_EXPORT const GraphicsValueDef* FindValue(std::string_view valueId) const;
 };
 
 struct UpscalerModeDef
@@ -499,7 +500,7 @@ struct UpscalerDef
 	CvarList frameGenOn;
 	CvarList frameGenOff;
 
-	const UpscalerModeDef* FindMode(std::string_view modeId) const;
+	CRASHCORE_EXPORT const UpscalerModeDef* FindMode(std::string_view modeId) const;
 };
 
 struct GraphicsPresetDef
@@ -520,9 +521,9 @@ struct GraphicsDef
 	CvarList lowLatencyOn;
 	CvarList lowLatencyOff;
 
-	const GraphicsOptionDef* FindOption(std::string_view id) const;
-	const UpscalerDef* FindUpscaler(std::string_view id) const;
-	const GraphicsPresetDef* FindPreset(std::string_view id) const;
+	CRASHCORE_EXPORT const GraphicsOptionDef* FindOption(std::string_view id) const;
+	CRASHCORE_EXPORT const UpscalerDef* FindUpscaler(std::string_view id) const;
+	CRASHCORE_EXPORT const GraphicsPresetDef* FindPreset(std::string_view id) const;
 };
 
 // ---------------------------------------------------------------------------------------------
@@ -546,15 +547,15 @@ public:
 	using FileReader = std::function<bool(const std::string& relativePath, std::string& outText)>;
 
 	// Loads every data file (except Localization). Returns false if any error was found.
-	bool LoadAll(const FileReader& reader);
+	CRASHCORE_EXPORT bool LoadAll(const FileReader& reader);
 	// Loads a single file from text (used by tests).
-	bool LoadFile(const std::string& fileName, std::string_view text);
+	CRASHCORE_EXPORT bool LoadFile(const std::string& fileName, std::string_view text);
 	// Cross-file reference checks. Call after loading everything.
-	bool Validate();
+	CRASHCORE_EXPORT bool Validate();
 
 	const std::vector<LoadMessage>& Messages() const { return messages_; }
-	bool HasErrors() const;
-	std::string FormatMessages() const;
+	CRASHCORE_EXPORT bool HasErrors() const;
+	CRASHCORE_EXPORT std::string FormatMessages() const;
 
 	const std::vector<BrandDef>& Brands() const { return brands_; }
 	const std::vector<VehicleDef>& Vehicles() const { return vehicles_; }
@@ -568,44 +569,44 @@ public:
 	const ProgressionDef& Progression() const { return progression_; }
 	const GraphicsDef& Graphics() const { return graphics_; }
 
-	const BrandDef* FindBrand(std::string_view id) const;
-	const VehicleDef* FindVehicle(std::string_view id) const;
-	const EquipmentDef* FindEquipment(std::string_view id) const;
-	const CosmeticDef* FindCosmetic(std::string_view id) const;
-	const ArenaDef* FindArena(std::string_view id) const;
-	const ModeDef* FindMode(std::string_view id) const;
-	const AIProfileDef* FindAIProfile(std::string_view id) const;
-	const ChapterDef* FindChapter(std::string_view id) const;
-	const LevelDef* FindLevel(std::string_view id) const;
-	const RivalDef* FindRival(std::string_view id) const;
+	CRASHCORE_EXPORT const BrandDef* FindBrand(std::string_view id) const;
+	CRASHCORE_EXPORT const VehicleDef* FindVehicle(std::string_view id) const;
+	CRASHCORE_EXPORT const EquipmentDef* FindEquipment(std::string_view id) const;
+	CRASHCORE_EXPORT const CosmeticDef* FindCosmetic(std::string_view id) const;
+	CRASHCORE_EXPORT const ArenaDef* FindArena(std::string_view id) const;
+	CRASHCORE_EXPORT const ModeDef* FindMode(std::string_view id) const;
+	CRASHCORE_EXPORT const AIProfileDef* FindAIProfile(std::string_view id) const;
+	CRASHCORE_EXPORT const ChapterDef* FindChapter(std::string_view id) const;
+	CRASHCORE_EXPORT const LevelDef* FindLevel(std::string_view id) const;
+	CRASHCORE_EXPORT const RivalDef* FindRival(std::string_view id) const;
 	const UpgradeCategoryDef& Upgrade(UpgradeCategory c) const { return upgrades_.categories[static_cast<size_t>(c)]; }
 
 	// Price of buying upgrade `level` (1..5) of `category` for `vehicle`.
-	int64_t UpgradeCost(const VehicleDef& vehicle, UpgradeCategory category, int level) const;
+	CRASHCORE_EXPORT int64_t UpgradeCost(const VehicleDef& vehicle, UpgradeCategory category, int level) const;
 	// Base price of an item reference (vehicle/equipment/cosmetic). Returns nullopt if unknown.
-	std::optional<Price> ItemPrice(const ItemRef& item) const;
-	bool ItemExists(const ItemRef& item) const;
-	std::vector<const VehicleDef*> StarterVehicles() const;
+	CRASHCORE_EXPORT std::optional<Price> ItemPrice(const ItemRef& item) const;
+	CRASHCORE_EXPORT bool ItemExists(const ItemRef& item) const;
+	CRASHCORE_EXPORT std::vector<const VehicleDef*> StarterVehicles() const;
 
 	// Every localization key referenced by content (for completeness checks).
-	std::vector<std::string> ReferencedLocKeys() const;
+	CRASHCORE_EXPORT std::vector<std::string> ReferencedLocKeys() const;
 
 private:
-	void Error(const std::string& file, const std::string& message);
-	void Warn(const std::string& file, const std::string& message);
-	void RebuildIndices();
+	CRASHCORE_EXPORT void Error(const std::string& file, const std::string& message);
+	CRASHCORE_EXPORT void Warn(const std::string& file, const std::string& message);
+	CRASHCORE_EXPORT void RebuildIndices();
 
-	bool ParseBrands(const std::string& file, const JsonValue& root);
-	bool ParseVehicles(const std::string& file, const JsonValue& root);
-	bool ParseUpgrades(const std::string& file, const JsonValue& root);
-	bool ParseEquipment(const std::string& file, const JsonValue& root);
-	bool ParseCosmetics(const std::string& file, const JsonValue& root);
-	bool ParseArenas(const std::string& file, const JsonValue& root);
-	bool ParseModes(const std::string& file, const JsonValue& root);
-	bool ParseAI(const std::string& file, const JsonValue& root);
-	bool ParseCampaign(const std::string& file, const JsonValue& root);
-	bool ParseProgression(const std::string& file, const JsonValue& root);
-	bool ParseGraphics(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseBrands(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseVehicles(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseUpgrades(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseEquipment(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseCosmetics(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseArenas(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseModes(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseAI(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseCampaign(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseProgression(const std::string& file, const JsonValue& root);
+	CRASHCORE_EXPORT bool ParseGraphics(const std::string& file, const JsonValue& root);
 
 	std::vector<LoadMessage> messages_;
 	std::vector<BrandDef> brands_;
@@ -631,16 +632,16 @@ private:
 };
 
 // Shared helpers.
-bool ParseColor(std::string_view text, Color& out);
-std::string ColorToHex(const Color& color);
-bool ParsePrice(const JsonValue& value, Price& out);
-JsonValue PriceToJson(const Price& price);
-bool ParseItemRef(const JsonValue& value, ItemRef& out);
-JsonValue ItemRefToJson(const ItemRef& item);
-int64_t RoundTo100(double value);
-bool IsValidId(std::string_view id);
+CRASHCORE_EXPORT bool ParseColor(std::string_view text, Color& out);
+CRASHCORE_EXPORT std::string ColorToHex(const Color& color);
+CRASHCORE_EXPORT bool ParsePrice(const JsonValue& value, Price& out);
+CRASHCORE_EXPORT JsonValue PriceToJson(const Price& price);
+CRASHCORE_EXPORT bool ParseItemRef(const JsonValue& value, ItemRef& out);
+CRASHCORE_EXPORT JsonValue ItemRefToJson(const ItemRef& item);
+CRASHCORE_EXPORT int64_t RoundTo100(double value);
+CRASHCORE_EXPORT bool IsValidId(std::string_view id);
 
 // The list of data files, in load order.
-const std::vector<std::string>& DataFileNames();
+CRASHCORE_EXPORT const std::vector<std::string>& DataFileNames();
 
 } // namespace crash

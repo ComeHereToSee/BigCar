@@ -4,6 +4,7 @@
 #pragma once
 
 #include "CrashCore/Database.h"
+#include "CrashCore/Export.h"
 
 #include <array>
 #include <string>
@@ -21,11 +22,11 @@ struct VehicleBuild
 
 	int UpgradeLevel(UpgradeCategory c) const { return upgrades[static_cast<size_t>(c)]; }
 	const std::string& Equipped(EquipSlot s) const { return equipment[static_cast<size_t>(s)]; }
-	int TotalUpgradeLevels() const;
+	CRASHCORE_EXPORT int TotalUpgradeLevels() const;
 
-	JsonValue ToJson() const;
-	static bool FromJson(const JsonValue& json, VehicleBuild& out);
-	bool operator==(const VehicleBuild& o) const;
+	CRASHCORE_EXPORT JsonValue ToJson() const;
+	static CRASHCORE_EXPORT bool FromJson(const JsonValue& json, VehicleBuild& out);
+	CRASHCORE_EXPORT bool operator==(const VehicleBuild& o) const;
 };
 
 // A physical add-on that the game spawns on the car (real collision geometry).
@@ -84,8 +85,8 @@ struct EffectiveStats
 	std::vector<Attachment> attachments;
 	int combatRating = 100;
 
-	float TotalHp() const;
-	bool HasShape(GeometryShape shape) const;
+	CRASHCORE_EXPORT float TotalHp() const;
+	CRASHCORE_EXPORT bool HasShape(GeometryShape shape) const;
 };
 
 // Values 0..10 shown as bars in the garage.
@@ -99,16 +100,16 @@ struct DisplayRatings
 	float ramming = 0.0f;
 };
 
-EffectiveStats ComputeEffectiveStats(const GameDatabase& db, const VehicleBuild& build);
-int ComputeCombatRating(const GameDatabase& db, const VehicleBuild& build);
-DisplayRatings ComputeDisplayRatings(const EffectiveStats& stats);
+CRASHCORE_EXPORT EffectiveStats ComputeEffectiveStats(const GameDatabase& db, const VehicleBuild& build);
+CRASHCORE_EXPORT int ComputeCombatRating(const GameDatabase& db, const VehicleBuild& build);
+CRASHCORE_EXPORT DisplayRatings ComputeDisplayRatings(const EffectiveStats& stats);
 // Zone hit points before upgrades/equipment (docs/DATA_SCHEMA.md formula).
-float BaseZoneHp(const VehicleDef& def, Zone zone);
+CRASHCORE_EXPORT float BaseZoneHp(const VehicleDef& def, Zone zone);
 
 // Returns an empty string if the build is legal, otherwise an error code
 // (unknown_vehicle, invalid_level, unknown_item, invalid_slot, class_not_allowed).
-std::string ValidateBuild(const GameDatabase& db, const VehicleBuild& build);
+CRASHCORE_EXPORT std::string ValidateBuild(const GameDatabase& db, const VehicleBuild& build);
 // Default build for a vehicle (no upgrades, factory paint).
-VehicleBuild MakeDefaultBuild(const GameDatabase& db, const std::string& vehicleId);
+CRASHCORE_EXPORT VehicleBuild MakeDefaultBuild(const GameDatabase& db, const std::string& vehicleId);
 
 } // namespace crash

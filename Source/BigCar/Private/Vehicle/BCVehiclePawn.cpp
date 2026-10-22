@@ -696,7 +696,7 @@ void ABCVehiclePawn::UpdateWheels(float DeltaSeconds)
 		FVector Mount = VehicleMovement->WheelMountLocal(i);
 		const float Drop = bDisplayOnly ? VehicleMovement->GetSim().GetSetup().travel * 100.0f : VehicleMovement->WheelDropCm(i);
 		// Visual wheel sits flush with the body side, inside the wheel well.
-		Mount.Y = FMath::Sign(Mount.Y) * FMath::Max(FMath::Abs(Mount.Y), HalfW - WheelW * 0.5f - 1.0f);
+		Mount.Y = FMath::Sign(Mount.Y) * FMath::Max(FMath::Abs(Mount.Y), static_cast<double>(HalfW - WheelW * 0.5f - 1.0f));
 		const FVector Center = Mount - FVector(0.0f, 0.0f, Drop);
 		const FQuat Base(FVector::ForwardVector, FMath::DegreesToRadians(90.0f));
 		const FQuat Spin(FVector::RightVector, VehicleMovement->WheelSpin(i));
@@ -717,7 +717,7 @@ void ABCVehiclePawn::UpdateCamera(float DeltaSeconds)
 	const bool bLookBack = bLocalLookBack;
 	const float TargetYaw = bLookBack ? 180.0f : 0.0f;
 	FRotator ArmRot = CameraArm->GetRelativeRotation();
-	ArmRot.Yaw = FMath::FInterpTo(ArmRot.Yaw, TargetYaw, DeltaSeconds, 12.0f);
+	ArmRot.Yaw = FMath::FInterpTo(static_cast<float>(ArmRot.Yaw), TargetYaw, DeltaSeconds, 12.0f);
 	CameraArm->SetRelativeRotation(ArmRot);
 
 	ShakeAmount = FMath::Max(0.0f, ShakeAmount - DeltaSeconds * 2.5f);

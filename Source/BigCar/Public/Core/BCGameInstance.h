@@ -6,6 +6,8 @@
 
 #include "BCGameInstance.generated.h"
 
+class UNetDriver;
+
 UCLASS()
 class BIGCAR_API UBCGameInstance : public UGameInstance
 {

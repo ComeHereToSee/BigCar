@@ -4,6 +4,7 @@
 #pragma once
 
 #include "CrashCore/Database.h"
+#include "CrashCore/Export.h"
 #include "CrashCore/Impact.h"
 
 #include <array>
@@ -86,36 +87,36 @@ struct ParticipantStats
 class ScoreKeeper
 {
 public:
-	explicit ScoreKeeper(const ScoreTable& table = ScoreTable());
+	explicit CRASHCORE_EXPORT ScoreKeeper(const ScoreTable& table = ScoreTable());
 
-	void Reset();
-	void AddParticipant(int id, int team);
-	bool HasParticipant(int id) const;
-	void SetTeam(int id, int team);
+	CRASHCORE_EXPORT void Reset();
+	CRASHCORE_EXPORT void AddParticipant(int id, int team);
+	CRASHCORE_EXPORT bool HasParticipant(int id) const;
+	CRASHCORE_EXPORT void SetTeam(int id, int team);
 	void SetBountyTarget(int id) { bountyTarget_ = id; }
 	int BountyTarget() const { return bountyTarget_; }
 
 	// Physical contact without damage still counts as "last touched" (ring-out credit).
-	void OnTouched(int attacker, int victim, float now);
+	CRASHCORE_EXPORT void OnTouched(int attacker, int victim, float now);
 	// Valid vehicle-vehicle impacts. Returns the points awarded to the attacker (0 if none).
-	int OnImpact(const ImpactResult& impact, float now);
+	CRASHCORE_EXPORT int OnImpact(const ImpactResult& impact, float now);
 	// Self-inflicted / world damage (counts for damage taken only).
-	void OnDamageTaken(int id, float amount);
-	TakedownInfo OnWrecked(int victim, float now, bool ringOut);
-	void OnAirtime(int id, float seconds);
-	void OnHillTime(int id, float dt);
-	void OnSurvival(int id, float dt);
-	void OnPropDestroyed(int id, float now);
-	void OnCollectible(int id, float now);
-	void AddBonus(int id, int points, float now);
+	CRASHCORE_EXPORT void OnDamageTaken(int id, float amount);
+	CRASHCORE_EXPORT TakedownInfo OnWrecked(int victim, float now, bool ringOut);
+	CRASHCORE_EXPORT void OnAirtime(int id, float seconds);
+	CRASHCORE_EXPORT void OnHillTime(int id, float dt);
+	CRASHCORE_EXPORT void OnSurvival(int id, float dt);
+	CRASHCORE_EXPORT void OnPropDestroyed(int id, float now);
+	CRASHCORE_EXPORT void OnCollectible(int id, float now);
+	CRASHCORE_EXPORT void AddBonus(int id, int points, float now);
 
-	std::vector<ScoreEvent> TakeEvents();
-	const ParticipantStats* Get(int id) const;
+	CRASHCORE_EXPORT std::vector<ScoreEvent> TakeEvents();
+	CRASHCORE_EXPORT const ParticipantStats* Get(int id) const;
 	const std::vector<ParticipantStats>& All() const { return participants_; }
-	int TeamScore(int team) const;
-	int TeamTakedowns(int team) const;
-	float TeamHillTime(int team) const;
-	float ComboMultiplier(int id, float now) const;
+	CRASHCORE_EXPORT int TeamScore(int team) const;
+	CRASHCORE_EXPORT int TeamTakedowns(int team) const;
+	CRASHCORE_EXPORT float TeamHillTime(int team) const;
+	CRASHCORE_EXPORT float ComboMultiplier(int id, float now) const;
 
 	static constexpr float kCreditWindow = 8.0f; // seconds a hit counts toward the takedown
 	static constexpr float kAssistWindow = 10.0f;
@@ -132,9 +133,10 @@ private:
 		ImpactKind kind;
 	};
 
-	ParticipantStats* Find(int id);
-	bool SameTeam(int a, int b) const;
-	float Award(ParticipantStats& p, ScoreEventType type, ImpactKind kind, int basePoints, float multiplier, int other, float now);
+	CRASHCORE_EXPORT ParticipantStats* Find(int id);
+	CRASHCORE_EXPORT bool SameTeam(int a, int b) const;
+	CRASHCORE_EXPORT float Award(ParticipantStats& p, ScoreEventType type, ImpactKind kind, int basePoints, float multiplier, int other,
+	                             float now);
 
 	ScoreTable table_;
 	std::vector<ParticipantStats> participants_;

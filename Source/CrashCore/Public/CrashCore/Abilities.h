@@ -3,6 +3,7 @@
 // Active abilities granted by ability-slot equipment. All are melee / self buffs (no ranged effects by design).
 #pragma once
 
+#include "CrashCore/Export.h"
 #include "CrashCore/Types.h"
 
 namespace crash
@@ -13,7 +14,7 @@ struct AbilityTuning
 	float duration = 0.0f;
 };
 
-AbilityTuning GetAbilityTuning(AbilityType type);
+CRASHCORE_EXPORT AbilityTuning GetAbilityTuning(AbilityType type);
 
 // Continuous effects while an ability is active.
 struct AbilityEffects
@@ -37,18 +38,18 @@ struct AbilityTrigger
 class AbilityState
 {
 public:
-	void Setup(AbilityType type);
-	AbilityTrigger TryActivate();
-	void Tick(float dt);
-	void ConsumeShock(); // the armed shock bumper fired on contact
-	void Reset();
+	CRASHCORE_EXPORT void Setup(AbilityType type);
+	CRASHCORE_EXPORT AbilityTrigger TryActivate();
+	CRASHCORE_EXPORT void Tick(float dt);
+	CRASHCORE_EXPORT void ConsumeShock(); // the armed shock bumper fired on contact
+	CRASHCORE_EXPORT void Reset();
 
-	AbilityEffects Effects() const;
+	CRASHCORE_EXPORT AbilityEffects Effects() const;
 	AbilityType Type() const { return type_; }
 	bool Ready() const { return type_ != AbilityType::None && cooldown_ <= 0.0f; }
 	bool Active() const { return active_ > 0.0f; }
 	float CooldownRemaining() const { return cooldown_; }
-	float CooldownFraction() const; // 1 = just used, 0 = ready
+	CRASHCORE_EXPORT float CooldownFraction() const; // 1 = just used, 0 = ready
 
 private:
 	AbilityType type_ = AbilityType::None;

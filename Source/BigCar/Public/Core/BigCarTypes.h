@@ -51,7 +51,8 @@ inline FString ToFString(const std::string& s)
 inline std::string ToStd(const FString& s)
 {
 	const FTCHARToUTF8 Conv(*s);
-	return std::string(Conv.Get(), static_cast<size_t>(Conv.Length()));
+	// Get() is ANSICHAR or UTF8CHAR depending on the engine version; both are byte-sized UTF-8 code units.
+	return std::string(reinterpret_cast<const char*>(Conv.Get()), static_cast<size_t>(Conv.Length()));
 }
 inline FName ToFName(const std::string& s) { return FName(*ToFString(s)); }
 } // namespace BC

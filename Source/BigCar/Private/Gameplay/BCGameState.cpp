@@ -37,6 +37,11 @@ void ABCGameState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLife
 	DOREPLIFETIME(ABCGameState, CollectiblesTotal);
 }
 
+void ABCGameState::SetArena(ABCArenaBuilder* InArena)
+{
+	Arena = InArena;
+}
+
 void ABCGameState::MulticastFeed_Implementation(const FBCFeedEntry& Entry)
 {
 	RecentFeed.Add(Entry);

@@ -16,5 +16,13 @@ public class CrashCore : ModuleRules
 
 		PublicIncludePaths.Add(System.IO.Path.Combine(ModuleDirectory, "Public"));
 		PublicDependencyModuleNames.Add("Core");
+
+		// Modular targets (the editor) build CrashCore as its own shared library, which hides every symbol that is not
+		// explicitly exported. CRASHCORE_EXPORT (Public/CrashCore/Export.h) exports the API that BigCar calls.
+		if (Target.LinkType == TargetLinkType.Modular)
+		{
+			PublicDefinitions.Add("CRASHCORE_SHARED=1");
+			PrivateDefinitions.Add("CRASHCORE_BUILD=1");
+		}
 	}
 }

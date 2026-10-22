@@ -5,6 +5,7 @@
 // samples can replace them later per vehicle.
 #pragma once
 
+#include "CrashCore/Export.h"
 #include "CrashCore/Random.h"
 
 #include <array>
@@ -16,7 +17,7 @@ namespace crash
 class OnePole
 {
 public:
-	void SetCutoff(float hz, float sampleRate);
+	CRASHCORE_EXPORT void SetCutoff(float hz, float sampleRate);
 	float Process(float x)
 	{
 		z_ += a_ * (x - z_);
@@ -31,11 +32,11 @@ private:
 class EngineSynth
 {
 public:
-	void Configure(int cylinders, float idleRpm, float redlineRpm, bool electric, uint64_t seed);
-	void SetState(float rpm, float throttle);
+	CRASHCORE_EXPORT void Configure(int cylinders, float idleRpm, float redlineRpm, bool electric, uint64_t seed);
+	CRASHCORE_EXPORT void SetState(float rpm, float throttle);
 	void SetVolume(float volume) { volume_ = volume; }
 	// Renders mono samples in [-1, 1] (overwrites `out`).
-	void Render(float* out, int frames, int sampleRate);
+	CRASHCORE_EXPORT void Render(float* out, int frames, int sampleRate);
 
 private:
 	int cylinders_ = 4;
@@ -60,7 +61,7 @@ class SkidSynth
 public:
 	void SetSlip(float slip) { targetSlip_ = slip; }
 	void SetVolume(float volume) { volume_ = volume; }
-	void Render(float* out, int frames, int sampleRate);
+	CRASHCORE_EXPORT void Render(float* out, int frames, int sampleRate);
 
 private:
 	float targetSlip_ = 0.0f;
@@ -75,10 +76,10 @@ class ImpactSynth
 {
 public:
 	// intensity 0..1, metallic 0..1 (car vs car = 1, car vs wall = 0.4).
-	void Trigger(float intensity, float metallic, uint32_t seed);
+	CRASHCORE_EXPORT void Trigger(float intensity, float metallic, uint32_t seed);
 	void SetVolume(float volume) { volume_ = volume; }
 	// Adds into `out`.
-	void Render(float* out, int frames, int sampleRate);
+	CRASHCORE_EXPORT void Render(float* out, int frames, int sampleRate);
 	bool IsActive() const { return !voices_.empty(); }
 
 private:

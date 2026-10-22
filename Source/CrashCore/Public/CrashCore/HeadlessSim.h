@@ -9,6 +9,7 @@
 #include "CrashCore/AIBrain.h"
 #include "CrashCore/Abilities.h"
 #include "CrashCore/Damage.h"
+#include "CrashCore/Export.h"
 #include "CrashCore/Impact.h"
 #include "CrashCore/Match.h"
 #include "CrashCore/VehicleSim.h"
@@ -34,10 +35,10 @@ struct RigidBody
 	Frame GetFrame() const { return Frame::FromQuat(rotation); }
 	Vec3 ComWorld() const { return position + rotation.Rotate(comLocal); }
 	Vec3 PointVelocity(const Vec3& worldPoint) const { return velocity + Cross(angularVelocity, worldPoint - ComWorld()); }
-	Vec3 InvInertiaWorld(const Vec3& v) const;
-	void AddForceAtPoint(const Vec3& f, const Vec3& worldPoint);
-	void ApplyImpulseAtPoint(const Vec3& impulse, const Vec3& worldPoint);
-	void Integrate(float dt);
+	CRASHCORE_EXPORT Vec3 InvInertiaWorld(const Vec3& v) const;
+	CRASHCORE_EXPORT void AddForceAtPoint(const Vec3& f, const Vec3& worldPoint);
+	CRASHCORE_EXPORT void ApplyImpulseAtPoint(const Vec3& impulse, const Vec3& worldPoint);
+	CRASHCORE_EXPORT void Integrate(float dt);
 };
 
 struct SimCar
@@ -78,15 +79,15 @@ struct HeadlessConfig
 class HeadlessWorld
 {
 public:
-	HeadlessWorld(const GameDatabase& db, const HeadlessConfig& config);
+	CRASHCORE_EXPORT HeadlessWorld(const GameDatabase& db, const HeadlessConfig& config);
 
 	// Configures arena bounds from data.
-	void UseArena(const ArenaDef& arena);
-	int AddCar(const VehicleBuild& build, const Vec3& position, float yawDeg, int team, const AIProfileDef* ai);
-	SimCar* Car(int id);
+	CRASHCORE_EXPORT void UseArena(const ArenaDef& arena);
+	CRASHCORE_EXPORT int AddCar(const VehicleBuild& build, const Vec3& position, float yawDeg, int team, const AIProfileDef* ai);
+	CRASHCORE_EXPORT SimCar* Car(int id);
 	const std::vector<std::unique_ptr<SimCar>>& Cars() const { return cars_; }
 
-	void Step();
+	CRASHCORE_EXPORT void Step();
 	float Time() const { return time_; }
 	const HeadlessConfig& Config() const { return config_; }
 
@@ -99,16 +100,16 @@ public:
 	int ImpactCount() const { return impactCount_; }
 
 private:
-	void StepCar(SimCar& car, float dt);
-	void Collide(SimCar& a, SimCar& b);
-	void CollideArena(SimCar& car);
-	void GroundBody(SimCar& car);
-	void ApplyAbility(SimCar& car);
-	void ResetCar(SimCar& car, const Vec3& position, float yawDeg);
-	void Wreck(SimCar& car, bool ringOut);
-	ImpactBody MakeImpactBody(const SimCar& car, const Vec3& velocity) const;
-	AIPerception Perceive(const SimCar& car) const;
-	bool HasGround(const Vec3& p) const;
+	CRASHCORE_EXPORT void StepCar(SimCar& car, float dt);
+	CRASHCORE_EXPORT void Collide(SimCar& a, SimCar& b);
+	CRASHCORE_EXPORT void CollideArena(SimCar& car);
+	CRASHCORE_EXPORT void GroundBody(SimCar& car);
+	CRASHCORE_EXPORT void ApplyAbility(SimCar& car);
+	CRASHCORE_EXPORT void ResetCar(SimCar& car, const Vec3& position, float yawDeg);
+	CRASHCORE_EXPORT void Wreck(SimCar& car, bool ringOut);
+	CRASHCORE_EXPORT ImpactBody MakeImpactBody(const SimCar& car, const Vec3& velocity) const;
+	CRASHCORE_EXPORT AIPerception Perceive(const SimCar& car) const;
+	CRASHCORE_EXPORT bool HasGround(const Vec3& p) const;
 
 	const GameDatabase& db_;
 	HeadlessConfig config_;

@@ -5,6 +5,7 @@
 #pragma once
 
 #include "CrashCore/Database.h"
+#include "CrashCore/Export.h"
 #include "CrashCore/Scoring.h"
 
 #include <vector>
@@ -46,30 +47,30 @@ struct MatchOutcome
 class MatchRules
 {
 public:
-	MatchRules(const ModeDef& mode, const ScoreTable& scoreTable, float timeLimitOverride = 0.0f);
+	CRASHCORE_EXPORT MatchRules(const ModeDef& mode, const ScoreTable& scoreTable, float timeLimitOverride = 0.0f);
 
-	void AddParticipant(int id, int team, bool bot);
-	void SetConnected(int id, bool connected);
-	void Start(float now, float countdownSeconds = 3.0f);
+	CRASHCORE_EXPORT void AddParticipant(int id, int team, bool bot);
+	CRASHCORE_EXPORT void SetConnected(int id, bool connected);
+	CRASHCORE_EXPORT void Start(float now, float countdownSeconds = 3.0f);
 	// Advances timers and phases. Call every tick.
-	void Update(float now);
+	CRASHCORE_EXPORT void Update(float now);
 
 	// The host reports wrecks (any cause). killer is resolved by the ScoreKeeper.
-	TakedownInfo OnWrecked(int victim, float now, bool ringOut);
+	CRASHCORE_EXPORT TakedownInfo OnWrecked(int victim, float now, bool ringOut);
 	// Ids standing inside the hill this tick.
-	void OnHillOccupants(const std::vector<int>& ids, float dt);
+	CRASHCORE_EXPORT void OnHillOccupants(const std::vector<int>& ids, float dt);
 
 	// Participants whose respawn timer elapsed (host spawns them, then calls OnRespawned).
-	std::vector<int> TakeRespawns(float now);
-	void OnRespawned(int id);
+	CRASHCORE_EXPORT std::vector<int> TakeRespawns(float now);
+	CRASHCORE_EXPORT void OnRespawned(int id);
 	// True once after a round ends and the next round starts (host resets every car).
-	bool TakeRoundReset();
+	CRASHCORE_EXPORT bool TakeRoundReset();
 
 	MatchPhase Phase() const { return phase_; }
-	float TimeRemaining(float now) const;
-	float CountdownRemaining(float now) const;
+	CRASHCORE_EXPORT float TimeRemaining(float now) const;
+	CRASHCORE_EXPORT float CountdownRemaining(float now) const;
 	int Round() const { return round_; }
-	int RoundWins(int team) const;
+	CRASHCORE_EXPORT int RoundWins(int team) const;
 	bool IsTeamMode() const { return mode_.teams >= 2; }
 	int HillOwnerTeam() const { return hillOwnerTeam_; }
 	bool HillContested() const { return hillContested_; }
@@ -80,25 +81,25 @@ public:
 	ScoreKeeper& Scores() { return scores_; }
 	const ScoreKeeper& Scores() const { return scores_; }
 	const std::vector<MatchParticipant>& Participants() const { return participants_; }
-	const MatchParticipant* Find(int id) const;
-	int AliveCount() const;
-	int AliveInTeam(int team) const;
-	std::vector<int> AliveTeams() const;
+	CRASHCORE_EXPORT const MatchParticipant* Find(int id) const;
+	CRASHCORE_EXPORT int AliveCount() const;
+	CRASHCORE_EXPORT int AliveInTeam(int team) const;
+	CRASHCORE_EXPORT std::vector<int> AliveTeams() const;
 
 	const MatchOutcome& Outcome() const { return outcome_; }
 	// Ends the match immediately (objective modes, aborts). winnerTeam -1 = no winner.
-	void ForceFinish(float now, int winnerTeam);
+	CRASHCORE_EXPORT void ForceFinish(float now, int winnerTeam);
 
 	static constexpr float kRoundEndDelay = 4.0f;
 
 private:
-	MatchParticipant* FindMutable(int id);
-	void CheckEnd(float now);
-	void EndRound(float now, int winnerTeam);
-	void Finish(float now, int winnerTeam);
-	void ComputePlacements(int winnerTeam);
-	int LeadingTeamByScore(bool* tie) const;
-	std::vector<int> Teams() const;
+	CRASHCORE_EXPORT MatchParticipant* FindMutable(int id);
+	CRASHCORE_EXPORT void CheckEnd(float now);
+	CRASHCORE_EXPORT void EndRound(float now, int winnerTeam);
+	CRASHCORE_EXPORT void Finish(float now, int winnerTeam);
+	CRASHCORE_EXPORT void ComputePlacements(int winnerTeam);
+	CRASHCORE_EXPORT int LeadingTeamByScore(bool* tie) const;
+	CRASHCORE_EXPORT std::vector<int> Teams() const;
 
 	ModeDef mode_;
 	ScoreKeeper scores_;

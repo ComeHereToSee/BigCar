@@ -96,7 +96,8 @@ public:
 
 	// Clients build their own copy of the (static) arena geometry; the server's builder is not replicated.
 	ABCArenaBuilder* GetArena() const { return Arena; }
-	void SetArena(ABCArenaBuilder* InArena) { Arena = InArena; }
+	// Defined in the .cpp: assigning a raw pointer to TObjectPtr needs the complete ABCArenaBuilder type.
+	void SetArena(ABCArenaBuilder* InArena);
 
 private:
 	UFUNCTION()

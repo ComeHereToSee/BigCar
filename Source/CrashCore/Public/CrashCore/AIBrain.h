@@ -6,6 +6,7 @@
 #pragma once
 
 #include "CrashCore/Database.h"
+#include "CrashCore/Export.h"
 #include "CrashCore/Random.h"
 #include "CrashCore/VehicleSim.h"
 
@@ -83,16 +84,16 @@ class AIBrain
 {
 public:
 	AIBrain() = default;
-	AIBrain(const AIProfileDef& profile, uint64_t seed);
+	CRASHCORE_EXPORT AIBrain(const AIProfileDef& profile, uint64_t seed);
 
-	AIOutput Think(const AIPerception& perception, float dt);
+	CRASHCORE_EXPORT AIOutput Think(const AIPerception& perception, float dt);
 	const AIProfileDef& Profile() const { return profile_; }
 
 private:
-	int SelectTarget(const AIPerception& p);
-	Vec3 PlanAimPoint(const AIPerception& p, const AICarInfo& target) const;
-	VehicleControls SteerTowards(const AIPerception& p, const Vec3& point, float desiredSpeed) const;
-	bool NearEdge(const AIPerception& p, float margin, Vec3* inward) const;
+	CRASHCORE_EXPORT int SelectTarget(const AIPerception& p);
+	CRASHCORE_EXPORT Vec3 PlanAimPoint(const AIPerception& p, const AICarInfo& target) const;
+	CRASHCORE_EXPORT VehicleControls SteerTowards(const AIPerception& p, const Vec3& point, float desiredSpeed) const;
+	CRASHCORE_EXPORT bool NearEdge(const AIPerception& p, float margin, Vec3* inward) const;
 
 	AIProfileDef profile_;
 	Pcg32 rng_{1u};

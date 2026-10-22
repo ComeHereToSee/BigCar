@@ -6,6 +6,7 @@
 #pragma once
 
 #include "CrashCore/Database.h"
+#include "CrashCore/Export.h"
 
 #include <functional>
 #include <map>
@@ -31,8 +32,8 @@ struct GraphicsSettings
 	bool hdr = false;
 	float brightness = 1.0f;
 
-	JsonValue ToJson() const;
-	static GraphicsSettings FromJson(const JsonValue& json);
+	CRASHCORE_EXPORT JsonValue ToJson() const;
+	static CRASHCORE_EXPORT GraphicsSettings FromJson(const JsonValue& json);
 };
 
 struct GameplaySettings
@@ -49,8 +50,8 @@ struct GameplaySettings
 	float hudScale = 1.0f;
 	bool vibration = true;
 
-	JsonValue ToJson() const;
-	static GameplaySettings FromJson(const JsonValue& json);
+	CRASHCORE_EXPORT JsonValue ToJson() const;
+	static CRASHCORE_EXPORT GameplaySettings FromJson(const JsonValue& json);
 };
 
 struct AudioSettings
@@ -61,8 +62,8 @@ struct AudioSettings
 	float engine = 0.9f;
 	float ui = 0.8f;
 
-	JsonValue ToJson() const;
-	static AudioSettings FromJson(const JsonValue& json);
+	CRASHCORE_EXPORT JsonValue ToJson() const;
+	static CRASHCORE_EXPORT AudioSettings FromJson(const JsonValue& json);
 };
 
 struct UserSettings
@@ -71,8 +72,8 @@ struct UserSettings
 	GameplaySettings gameplay;
 	AudioSettings audio;
 
-	JsonValue ToJson() const;
-	static UserSettings FromJson(const JsonValue& json);
+	CRASHCORE_EXPORT JsonValue ToJson() const;
+	static CRASHCORE_EXPORT UserSettings FromJson(const JsonValue& json);
 };
 
 using CvarExists = std::function<bool(const std::string& name)>;
@@ -90,10 +91,10 @@ struct ResolvedGraphics
 };
 
 // Value of an option after preset + overrides (falls back to the option default).
-std::string EffectiveGraphicsValue(const GraphicsDef& def, const GraphicsSettings& settings, const std::string& optionId);
+CRASHCORE_EXPORT std::string EffectiveGraphicsValue(const GraphicsDef& def, const GraphicsSettings& settings, const std::string& optionId);
 // Switches to a preset and clears overrides.
-void ApplyGraphicsPreset(const GraphicsDef& def, GraphicsSettings& settings, const std::string& presetId);
-std::vector<const UpscalerDef*> AvailableUpscalers(const GraphicsDef& def, const CvarExists& hasCvar);
-ResolvedGraphics ResolveGraphics(const GraphicsDef& def, const GraphicsSettings& settings, const CvarExists& hasCvar);
+CRASHCORE_EXPORT void ApplyGraphicsPreset(const GraphicsDef& def, GraphicsSettings& settings, const std::string& presetId);
+CRASHCORE_EXPORT std::vector<const UpscalerDef*> AvailableUpscalers(const GraphicsDef& def, const CvarExists& hasCvar);
+CRASHCORE_EXPORT ResolvedGraphics ResolveGraphics(const GraphicsDef& def, const GraphicsSettings& settings, const CvarExists& hasCvar);
 
 } // namespace crash

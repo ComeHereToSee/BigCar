@@ -3,6 +3,7 @@
 // Per-vehicle damage model: six body zones, the engine and four wheels.
 #pragma once
 
+#include "CrashCore/Export.h"
 #include "CrashCore/Stats.h"
 #include "CrashCore/VehicleSim.h"
 
@@ -16,10 +17,10 @@ struct ZoneDamage
 	float engine = 0.0f;
 	std::array<float, kWheelCount> wheels{};
 
-	float Total() const;
-	float BodyTotal() const;
-	ZoneDamage& operator*=(float scale);
-	ZoneDamage& operator+=(const ZoneDamage& other);
+	CRASHCORE_EXPORT float Total() const;
+	CRASHCORE_EXPORT float BodyTotal() const;
+	CRASHCORE_EXPORT ZoneDamage& operator*=(float scale);
+	CRASHCORE_EXPORT ZoneDamage& operator+=(const ZoneDamage& other);
 };
 
 struct DamageEvent
@@ -44,35 +45,35 @@ struct DamageSnapshot
 class DamageState
 {
 public:
-	void Init(const EffectiveStats& stats);
+	CRASHCORE_EXPORT void Init(const EffectiveStats& stats);
 
-	DamageEvent Apply(const ZoneDamage& damage);
+	CRASHCORE_EXPORT DamageEvent Apply(const ZoneDamage& damage);
 	// Fire damage over time and passive repair. Returns an event (fire can wreck the car).
-	DamageEvent Tick(float dt, float repairPerSec);
+	CRASHCORE_EXPORT DamageEvent Tick(float dt, float repairPerSec);
 	// Restores `fraction` of max hp everywhere (detached wheels come back when fraction >= 1).
-	void Repair(float fraction);
+	CRASHCORE_EXPORT void Repair(float fraction);
 	void RepairFull() { Repair(1.0f); }
 
-	float ZoneFraction(Zone z) const;
-	float EngineFraction() const;
-	float WheelFraction(int wheel) const;
-	float Integrity() const; // weighted 0..1, shown as the main health bar
+	CRASHCORE_EXPORT float ZoneFraction(Zone z) const;
+	CRASHCORE_EXPORT float EngineFraction() const;
+	CRASHCORE_EXPORT float WheelFraction(int wheel) const;
+	CRASHCORE_EXPORT float Integrity() const; // weighted 0..1, shown as the main health bar
 	bool IsWrecked() const { return wrecked_; }
 	bool IsOnFire() const { return onFire_; }
 	bool IsWheelDetached(int wheel) const { return wheelDetached_[static_cast<size_t>(wheel)]; }
-	float TotalLost() const; // hp lost since Init (for stats / damage_under objectives)
-	float TotalMax() const;
+	CRASHCORE_EXPORT float TotalLost() const; // hp lost since Init (for stats / damage_under objectives)
+	CRASHCORE_EXPORT float TotalMax() const;
 
-	DrivingDamage DrivingEffects() const;
-	DamageSnapshot Snapshot() const;
-	void ApplySnapshot(const DamageSnapshot& snapshot); // clients mirror the server state
+	CRASHCORE_EXPORT DrivingDamage DrivingEffects() const;
+	CRASHCORE_EXPORT DamageSnapshot Snapshot() const;
+	CRASHCORE_EXPORT void ApplySnapshot(const DamageSnapshot& snapshot); // clients mirror the server state
 
 	static constexpr float kWreckIntegrity = 0.12f;
 	static constexpr float kFireThreshold = 0.25f;
 	static constexpr float kFireDamagePerSec = 0.02f; // fraction of engine max per second
 
 private:
-	void UpdateFlags(DamageEvent& event);
+	CRASHCORE_EXPORT void UpdateFlags(DamageEvent& event);
 
 	std::array<float, kZoneCount> zoneHp_{};
 	std::array<float, kZoneCount> zoneMax_{};

@@ -6,6 +6,7 @@
 #pragma once
 
 #include "CrashCore/Damage.h"
+#include "CrashCore/Export.h"
 #include "CrashCore/Stats.h"
 
 namespace crash
@@ -69,13 +70,13 @@ struct ImpactResult
 	const ImpactSide& Victim() const { return aIsAttacker ? b : a; }
 };
 
-ImpactResult ResolveImpact(const ImpactInput& input, const ImpactTuning& tuning = ImpactTuning());
+CRASHCORE_EXPORT ImpactResult ResolveImpact(const ImpactInput& input, const ImpactTuning& tuning = ImpactTuning());
 
 // Which zone of `body` contains `worldPoint`.
-Zone ClassifyZone(const ImpactBody& body, const Vec3& worldPoint);
+CRASHCORE_EXPORT Zone ClassifyZone(const ImpactBody& body, const Vec3& worldPoint);
 
 // Victim / attacker damage multipliers per impact kind (exposed for tests and the design doc).
-float VictimMultiplier(ImpactKind kind);
-float AttackerMultiplier(ImpactKind kind);
+CRASHCORE_EXPORT float VictimMultiplier(ImpactKind kind);
+CRASHCORE_EXPORT float AttackerMultiplier(ImpactKind kind);
 
 } // namespace crash
