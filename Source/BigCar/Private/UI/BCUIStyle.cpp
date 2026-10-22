@@ -1260,11 +1260,18 @@ TSharedRef<SWidget> ItemCard(const TAttribute<FText>& Title, const TAttribute<FT
 							 TFunction<void()> OnClick)
 {
 	TAttribute<FText> SubAttr = Subtitle;
+	TAttribute<FText> TitleAttr = Title;
 	TSharedRef<SWidget> Content = SNew(SVerticalBox)
 		+ SVerticalBox::Slot()
 		.AutoHeight()
 		[
-			SNew(STextBlock).Text(Title).Font(Font(17, true)).ColorAndOpacity(TextPrimary())
+			SNew(STextBlock)
+			.Text(Title)
+			.Font(Font(17, true))
+			.ColorAndOpacity(TextPrimary())
+			.Visibility_Lambda([TitleAttr]() -> EVisibility {
+				return TitleAttr.Get(FText::GetEmpty()).IsEmpty() ? EVisibility::Collapsed : EVisibility::Visible;
+			})
 		]
 		+ SVerticalBox::Slot()
 		.AutoHeight()
@@ -1280,7 +1287,7 @@ TSharedRef<SWidget> ItemCard(const TAttribute<FText>& Title, const TAttribute<FT
 		]
 		+ SVerticalBox::Slot()
 		.AutoHeight()
-		.Padding(0.0f, 6.0f, 0.0f, 0.0f)
+		.Padding(0.0f, 4.0f, 0.0f, 0.0f)
 		[
 			Body
 		]
@@ -1339,7 +1346,7 @@ TSharedRef<SWidget> Stars(TFunction<bool(int32)> IsFilled, int32 Count, int32 Si
 			.Padding(0.0f, 0.0f, 2.0f, 0.0f)
 			[
 				SNew(STextBlock)
-				.Text(FText::FromString(TEXT("★")))
+				.Text(FText::FromString(TEXT("\u2605")))
 				.Font(Font(Size, true))
 				.ColorAndOpacity_Lambda([IsFilled, i]() -> FSlateColor {
 					return (IsFilled && IsFilled(i)) ? FSlateColor(GoldColor()) : FSlateColor(Hex(0x3A, 0x3F, 0x47));

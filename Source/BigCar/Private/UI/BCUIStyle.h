@@ -25,7 +25,7 @@ struct FSlateBrush;
 namespace BCStyle
 {
 // ---------------------------------------------------------------------------------------------
-// Palette (sRGB hex → linear).
+// Palette (sRGB hex -> linear).
 
 FLinearColor Hex(uint8 R, uint8 G, uint8 B, float A = 1.0f);
 FLinearColor WithAlpha(const FLinearColor& Color, float Alpha);
@@ -49,7 +49,7 @@ FLinearColor PanelLightColor();
 FLinearColor LineColor();
 FLinearColor TeamColor(int32 Team);
 FLinearColor RarityColor(crash::Rarity Rarity);
-// Green (1) → yellow (0.5) → red (0).
+// Green (1) -> yellow (0.5) -> red (0).
 FLinearColor HealthColor(float Fraction);
 
 // ---------------------------------------------------------------------------------------------
@@ -88,11 +88,11 @@ FText Txt(const UObject* Ctx, const char* Key);
 // Content string (veh./mode./arena./camp./equip./cos./rank./store./ai. keys from data).
 FText TxtStd(const UObject* Ctx, const std::string& Key);
 FText TxtF(const UObject* Ctx, const FString& Key);
-// "{0} … {1}" formatting of a ui.* key.
+// "{0} ... {1}" formatting of a ui.* key.
 FText Fmt(const UObject* Ctx, const char* Key, const TArray<FString>& Args);
-// 1234567 → "1,234,567".
+// 1234567 -> "1,234,567".
 FString Num(int64 Value);
-// 185 → "3:05".
+// 185 -> "3:05".
 FString Clock(float Seconds);
 FText ErrorText(const UObject* Ctx, const FString& Code);
 FText CurrencyText(const UObject* Ctx, crash::Currency Currency, int64 Amount);
@@ -126,7 +126,7 @@ TFunction<void(bool, const FString&)> Feedback(ABCPlayerController* PC, const ch
 template <typename T>
 TAttribute<T> Bind(TFunction<T()> Getter)
 {
-	return TAttribute<T>::Create(typename TAttribute<T>::FGetter::CreateLambda([Getter]() -> T { return Getter(); }));
+	return TAttribute<T>::Create(TAttribute<T>::FGetter::CreateLambda([Getter]() -> T { return Getter(); }));
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -153,12 +153,12 @@ TSharedRef<SWidget> PrimaryButton(const TAttribute<FText>& Text, TFunction<void(
 								  float MinWidth = 0.0f, int32 FontSize = 18);
 TSharedRef<SWidget> SecondaryButton(const TAttribute<FText>& Text, TFunction<void()> OnClick, const TAttribute<bool>& Enabled = true,
 									float MinWidth = 0.0f, int32 FontSize = 16);
-// Two-step button: the first click arms it ("确认？"), the second within 3 s runs OnConfirm. For spending money.
+// Two-step button: the first click arms it (shows a confirm label), the second within 3 s runs OnConfirm. For spending money.
 TSharedRef<SWidget> ConfirmButton(const UObject* Ctx, EButtonKind Kind, const TAttribute<FText>& Text, TFunction<void()> OnConfirm,
 								  const TAttribute<bool>& Enabled = true, float MinWidth = 0.0f, int32 FontSize = 16);
 // Horizontal bar 0..1.
 TSharedRef<SWidget> Bar(const TAttribute<TOptional<float>>& Fraction, const TAttribute<FSlateColor>& Color, float Height = 8.0f);
-// "速度  ██████░░░░  6.4" (value 0..10).
+// Label, horizontal bar and the number (value 0..10).
 TSharedRef<SWidget> StatBar(const FText& Name, TFunction<float()> Value0To10, const FLinearColor& Color = FLinearColor(1.0f, 0.15f, 0.0f));
 TSharedRef<SWidget> PriceLabel(const UObject* Ctx, const crash::Price& Price, int32 Size = 16, bool bStrike = false);
 TSharedRef<SWidget> TabRow(const TArray<FText>& Labels, TFunction<int32()> GetActive, TFunction<void(int32)> OnSelect,
