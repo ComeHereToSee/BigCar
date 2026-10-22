@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "arenas": [
+    {
+      "id": "test_box",
+      "name": "arena.test_box",
+      "description": "arena.test_box.desc",
+      "theme": "junkyard",
+      "hub": false,
+      "shape": "rect",
+      "size": [
+        120,
+        120
+      ],
+      "wallHeight": 3,
+      "walls": true,
+      "elevation": 0,
+      "killZ": -30,
+      "floor": {
+        "surface": "dirt",
+        "color": "#6B5B45",
+        "friction": 0.95
+      },
+      "lighting": {
+        "preset": "sunset",
+        "fog": 0.02,
+        "tint": "#FFD9B0"
+      },
+      "props": [
+        {
+          "type": "ramp",
+          "pos": [
+            20,
+            0,
+            0
+          ],
+          "yaw": 90,
+          "size": [
+            8,
+            12,
+            2.5
+          ]
+        },
+        {
+          "type": "hill_zone",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "radius": 10
+        },
+        {
+          "type": "crate_stack",
+          "pos": [
+            -30,
+            30,
+            0
+          ],
+          "count": 6,
+          "size": 1.2
+        }
+      ],
+      "spawns": [
+        {
+          "pos": [
+            40.0,
+            0.0
+          ],
+          "yaw": 180.0,
+          "team": 1
+        },
+        {
+          "pos": [
+            34.64,
+            20.0
+          ],
+          "yaw": 210.0,
+          "team": 1
+        },
+        {
+          "pos": [
+            20.0,
+            34.64
+          ],
+          "yaw": 240.0,
+          "team": 1
+        },
+        {
+          "pos": [
+            0.0,
+            40.0
+          ],
+          "yaw": 270.0,
+          "team": 1
+        },
+        {
+          "pos": [
+            -20.0,
+            34.64
+          ],
+          "yaw": 300.0,
+          "team": 0
+        },
+        {
+          "pos": [
+            -34.64,
+            20.0
+          ],
+          "yaw": 330.0,
+          "team": 0
+        },
+        {
+          "pos": [
+            -40.0,
+            0.0
+          ],
+          "yaw": 360.0,
+          "team": 0
+        },
+        {
+          "pos": [
+            -34.64,
+            -20.0
+          ],
+          "yaw": 390.0,
+          "team": 0
+        },
+        {
+          "pos": [
+            -20.0,
+            -34.64
+          ],
+          "yaw": 420.0,
+          "team": 0
+        },
+        {
+          "pos": [
+            -0.0,
+            -40.0
+          ],
+          "yaw": 450.0,
+          "team": 0
+        },
+        {
+          "pos": [
+            20.0,
+            -34.64
+          ],
+          "yaw": 480.0,
+          "team": 1
+        },
+        {
+          "pos": [
+            34.64,
+            -20.0
+          ],
+          "yaw": 510.0,
+          "team": 1
+        }
+      ],
+      "collectibles": [
+        [
+          30,
+          30,
+          0.5
+        ],
+        [
+          -30,
+          -30,
+          0.5
+        ],
+        [
+          0,
+          45,
+          3
+        ]
+      ],
+      "secrets": [
+        {
+          "id": "box_s1",
+          "pos": [
+            50,
+            50,
+            0
+          ],
+          "radius": 5
+        }
+      ]
+    },
+    {
+      "id": "test_ring",
+      "name": "arena.test_ring",
+      "description": "arena.test_ring.desc",
+      "theme": "rooftop",
+      "hub": false,
+      "shape": "circle",
+      "size": [
+        90,
+        90
+      ],
+      "wallHeight": 0,
+      "walls": false,
+      "elevation": 20,
+      "killZ": -10,
+      "floor": {
+        "surface": "concrete",
+        "color": "#777777",
+        "friction": 1.0
+      },
+      "lighting": {
+        "preset": "night",
+        "fog": 0.03
+      },
+      "props": [],
+      "spawns": [
+        {
+          "pos": [
+            30.0,
+            0.0
+          ],
+          "yaw": 180.0
+        },
+        {
+          "pos": [
+            25.98,
+            15.0
+          ],
+          "yaw": 210.0
+        },
+        {
+          "pos": [
+            15.0,
+            25.98
+          ],
+          "yaw": 240.0
+        },
+        {
+          "pos": [
+            0.0,
+            30.0
+          ],
+          "yaw": 270.0
+        },
+        {
+          "pos": [
+            -15.0,
+            25.98
+          ],
+          "yaw": 300.0
+        },
+        {
+          "pos": [
+            -25.98,
+            15.0
+          ],
+          "yaw": 330.0
+        },
+        {
+          "pos": [
+            -30.0,
+            0.0
+          ],
+          "yaw": 360.0
+        },
+        {
+          "pos": [
+            -25.98,
+            -15.0
+          ],
+          "yaw": 390.0
+        },
+        {
+          "pos": [
+            -15.0,
+            -25.98
+          ],
+          "yaw": 420.0
+        },
+        {
+          "pos": [
+            -0.0,
+            -30.0
+          ],
+          "yaw": 450.0
+        },
+        {
+          "pos": [
+            15.0,
+            -25.98
+          ],
+          "yaw": 480.0
+        },
+        {
+          "pos": [
+            25.98,
+            -15.0
+          ],
+          "yaw": 510.0
+        }
+      ],
+      "collectibles": [],
+      "secrets": []
+    },
+    {
+      "id": "test_hub",
+      "name": "arena.test_hub",
+      "description": "arena.test_hub.desc",
+      "theme": "city",
+      "hub": true,
+      "shape": "rect",
+      "size": [
+        400,
+        400
+      ],
+      "wallHeight": 5,
+      "walls": true,
+      "elevation": 0,
+      "killZ": -30,
+      "floor": {
+        "surface": "asphalt",
+        "color": "#444444",
+        "friction": 1.0
+      },
+      "lighting": {
+        "preset": "day",
+        "fog": 0.01
+      },
+      "props": [],
+      "spawns": [
+        {
+          "pos": [
+            60.0,
+            0.0
+          ],
+          "yaw": 180.0
+        },
+        {
+          "pos": [
+            51.96,
+            30.0
+          ],
+          "yaw": 210.0
+        },
+        {
+          "pos": [
+            30.0,
+            51.96
+          ],
+          "yaw": 240.0
+        },
+        {
+          "pos": [
+            0.0,
+            60.0
+          ],
+          "yaw": 270.0
+        },
+        {
+          "pos": [
+            -30.0,
+            51.96
+          ],
+          "yaw": 300.0
+        },
+        {
+          "pos": [
+            -51.96,
+            30.0
+          ],
+          "yaw": 330.0
+        },
+        {
+          "pos": [
+            -60.0,
+            0.0
+          ],
+          "yaw": 360.0
+        },
+        {
+          "pos": [
+            -51.96,
+            -30.0
+          ],
+          "yaw": 390.0
+        },
+        {
+          "pos": [
+            -30.0,
+            -51.96
+          ],
+          "yaw": 420.0
+        },
+        {
+          "pos": [
+            -0.0,
+            -60.0
+          ],
+          "yaw": 450.0
+        },
+        {
+          "pos": [
+            30.0,
+            -51.96
+          ],
+          "yaw": 480.0
+        },
+        {
+          "pos": [
+            51.96,
+            -30.0
+          ],
+          "yaw": 510.0
+        }
+      ],
+      "collectibles": [
+        [
+          100,
+          100,
+          1
+        ],
+        [
+          -100,
+          120,
+          1
+        ]
+      ],
+      "secrets": [
+        {
+          "id": "hub_s1",
+          "pos": [
+            150,
+            -150,
+            0
+          ],
+          "radius": 8
+        },
+        {
+          "id": "hub_s2",
+          "pos": [
+            -150,
+            -150,
+            0
+          ],
+          "radius": 8
+        }
+      ]
+    }
+  ]
+}

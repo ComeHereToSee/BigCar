@@ -1,0 +1,1194 @@
+{
+  "version": 1,
+  "offers": [
+    {
+      "id": "offer_season1_launch",
+      "section": "featured",
+      "featured": true,
+      "items": [
+        { "type": "vehicle", "id": "xinghe_su7" },
+        { "type": "paint", "id": "paint_season1" },
+        { "type": "wheels", "id": "wheels_season1" }
+      ],
+      "price": { "gold": 900 },
+      "limit": 1,
+      "start": "2026-11-01T00:00:00Z",
+      "end": "2026-11-15T00:00:00Z",
+      "tag": "store.tag.season"
+    },
+    {
+      "id": "offer_featured_dragon",
+      "section": "featured",
+      "featured": true,
+      "items": [
+        { "type": "vehicle", "id": "cangqiong_u8" },
+        { "type": "paint", "id": "paint_dragon_king" },
+        { "type": "banner", "id": "banner_dragon" }
+      ],
+      "price": { "gold": 3200 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": "store.tag.hot"
+    },
+    {
+      "id": "offer_featured_founder",
+      "section": "featured",
+      "featured": true,
+      "items": [
+        { "type": "title", "id": "title_founder" },
+        { "type": "horn", "id": "horn_suona" },
+        { "type": "currency", "id": "credits", "amount": 100000 }
+      ],
+      "price": { "gold": 480 },
+      "limit": 1,
+      "start": "2026-11-01T00:00:00Z",
+      "end": "2027-01-31T00:00:00Z",
+      "tag": "store.tag.limited"
+    },
+    {
+      "id": "offer_xinghe_su7",
+      "section": "vehicles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "xinghe_su7" }
+      ],
+      "price": { "gold": 500 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_hoshino_supra",
+      "section": "vehicles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "hoshino_supra" }
+      ],
+      "price": { "gold": 550 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_ryujin_gtr",
+      "section": "vehicles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "ryujin_gtr" }
+      ],
+      "price": { "gold": 1000 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_kaiserling_g63",
+      "section": "vehicles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "kaiserling_g63" }
+      ],
+      "price": { "gold": 1600 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_fulmine_f8r",
+      "section": "vehicles",
+      "featured": true,
+      "items": [
+        { "type": "vehicle", "id": "fulmine_f8r" }
+      ],
+      "price": { "gold": 1800 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": "store.tag.new"
+    },
+    {
+      "id": "offer_eisvogel_gt3rs",
+      "section": "vehicles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "eisvogel_gt3rs" }
+      ],
+      "price": { "gold": 1900 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_toromonte_urus",
+      "section": "vehicles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "toromonte_urus" }
+      ],
+      "price": { "gold": 2200 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_aldermere_phantom",
+      "section": "vehicles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "aldermere_phantom" }
+      ],
+      "price": { "gold": 2600 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_seiran_lfa",
+      "section": "vehicles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "seiran_lfa" }
+      ],
+      "price": { "gold": 4200 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": "store.tag.hot"
+    },
+    {
+      "id": "offer_kestrel_p1",
+      "section": "vehicles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "kestrel_p1" }
+      ],
+      "price": { "gold": 5800 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_munja_nevera",
+      "section": "vehicles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "munja_nevera" }
+      ],
+      "price": { "gold": 6200 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_front_wedge_scorpion",
+      "section": "equipment",
+      "featured": false,
+      "items": [
+        { "type": "equipment", "id": "front_wedge_scorpion" }
+      ],
+      "price": { "gold": 900 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": "store.tag.hot"
+    },
+    {
+      "id": "offer_side_blades_scythe",
+      "section": "equipment",
+      "featured": false,
+      "items": [
+        { "type": "equipment", "id": "side_blades_scythe" }
+      ],
+      "price": { "gold": 800 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_core_ballast_tungsten",
+      "section": "equipment",
+      "featured": false,
+      "items": [
+        { "type": "equipment", "id": "core_ballast_tungsten" }
+      ],
+      "price": { "gold": 750 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_roof_rollbar_titanium",
+      "section": "equipment",
+      "featured": false,
+      "items": [
+        { "type": "equipment", "id": "roof_rollbar_titanium" }
+      ],
+      "price": { "gold": 800 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_core_autorepair",
+      "section": "equipment",
+      "featured": false,
+      "items": [
+        { "type": "equipment", "id": "core_autorepair" }
+      ],
+      "price": { "gold": 450 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_ability_ram_charge",
+      "section": "equipment",
+      "featured": false,
+      "items": [
+        { "type": "equipment", "id": "ability_ram_charge" }
+      ],
+      "price": { "gold": 250 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_paint_gold_chrome",
+      "section": "cosmetics",
+      "featured": false,
+      "items": [
+        { "type": "paint", "id": "paint_gold_chrome" }
+      ],
+      "price": { "gold": 300 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_paint_panda",
+      "section": "cosmetics",
+      "featured": false,
+      "items": [
+        { "type": "paint", "id": "paint_panda" }
+      ],
+      "price": { "gold": 100 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": "store.tag.hot"
+    },
+    {
+      "id": "offer_paint_porcelain_blue",
+      "section": "cosmetics",
+      "featured": false,
+      "items": [
+        { "type": "paint", "id": "paint_porcelain_blue" }
+      ],
+      "price": { "gold": 60 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_wheels_chrome_spinner",
+      "section": "cosmetics",
+      "featured": false,
+      "items": [
+        { "type": "wheels", "id": "wheels_chrome_spinner" }
+      ],
+      "price": { "gold": 250 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_sparks_firecracker",
+      "section": "cosmetics",
+      "featured": false,
+      "items": [
+        { "type": "sparks", "id": "sparks_firecracker" }
+      ],
+      "price": { "gold": 200 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_horn_suona",
+      "section": "cosmetics",
+      "featured": false,
+      "items": [
+        { "type": "horn", "id": "horn_suona" }
+      ],
+      "price": { "gold": 120 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_banner_dragon",
+      "section": "cosmetics",
+      "featured": false,
+      "items": [
+        { "type": "banner", "id": "banner_dragon" }
+      ],
+      "price": { "gold": 150 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_title_pandamonium",
+      "section": "cosmetics",
+      "featured": false,
+      "items": [
+        { "type": "title", "id": "title_pandamonium" }
+      ],
+      "price": { "gold": 120 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_starter_pack",
+      "section": "bundles",
+      "featured": true,
+      "items": [
+        { "type": "vehicle", "id": "hoshino_ae86" },
+        { "type": "equipment", "id": "front_wedge_steel" },
+        { "type": "paint", "id": "paint_panda" },
+        { "type": "currency", "id": "credits", "amount": 50000 }
+      ],
+      "price": { "gold": 300 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": "store.tag.starter"
+    },
+    {
+      "id": "offer_bundle_jdm",
+      "section": "bundles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "ryujin_r34" },
+        { "type": "vehicle", "id": "akatsuki_rx7" },
+        { "type": "vehicle", "id": "kazeyama_nsx" },
+        { "type": "paint", "id": "paint_midnight_purple" }
+      ],
+      "price": { "gold": 1800 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": "store.tag.best_value"
+    },
+    {
+      "id": "offer_bundle_china",
+      "section": "bundles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "longteng_han" },
+        { "type": "vehicle", "id": "xinghe_su7" },
+        { "type": "vehicle", "id": "huabiao_h9" },
+        { "type": "paint", "id": "paint_china_red" },
+        { "type": "wheels", "id": "wheels_cloud" }
+      ],
+      "price": { "gold": 1500 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": "store.tag.best_value"
+    },
+    {
+      "id": "offer_bundle_muscle",
+      "section": "bundles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "rattler_hellcat" },
+        { "type": "vehicle", "id": "lonestar_camaro" },
+        { "type": "vehicle", "id": "ironhorse_mustang" },
+        { "type": "horn", "id": "horn_victory" }
+      ],
+      "price": { "gold": 1800 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_bundle_tank",
+      "section": "bundles",
+      "featured": false,
+      "items": [
+        { "type": "vehicle", "id": "anvil_trx" },
+        { "type": "vehicle", "id": "titanus_hummerev" },
+        { "type": "equipment", "id": "front_battering_ram" },
+        { "type": "equipment", "id": "roof_armor_heavy" }
+      ],
+      "price": { "gold": 2000 },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_bundle_credits",
+      "section": "bundles",
+      "featured": false,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 200000 }
+      ],
+      "price": { "gold": 600 },
+      "limit": 0,
+      "start": null,
+      "end": null,
+      "tag": null
+    }
+  ],
+  "goldPacks": [
+    {
+      "id": "gold_s",
+      "gold": 100,
+      "bonus": 0,
+      "prices": { "USD": 0.99, "CNY": 6 }
+    },
+    {
+      "id": "gold_m",
+      "gold": 500,
+      "bonus": 25,
+      "prices": { "USD": 4.99, "CNY": 30 }
+    },
+    {
+      "id": "gold_l",
+      "gold": 1000,
+      "bonus": 100,
+      "prices": { "USD": 9.99, "CNY": 68 }
+    },
+    {
+      "id": "gold_xl",
+      "gold": 2000,
+      "bonus": 300,
+      "prices": { "USD": 19.99, "CNY": 128 }
+    },
+    {
+      "id": "gold_xxl",
+      "gold": 5000,
+      "bonus": 1000,
+      "prices": { "USD": 49.99, "CNY": 328 }
+    },
+    {
+      "id": "gold_max",
+      "gold": 10000,
+      "bonus": 2500,
+      "prices": { "USD": 99.99, "CNY": 648 }
+    }
+  ],
+  "daily": {
+    "slots": 6,
+    "discounts": [0.1, 0.2, 0.3, 0.5],
+    "pool": [
+      { "type": "equipment", "id": "front_bar_heavy" },
+      { "type": "equipment", "id": "front_wedge_steel" },
+      { "type": "equipment", "id": "front_cowcatcher" },
+      { "type": "equipment", "id": "front_plow_snow" },
+      { "type": "equipment", "id": "front_ram_spiked" },
+      { "type": "equipment", "id": "front_wedge_titanium" },
+      { "type": "equipment", "id": "rear_bumper_tow" },
+      { "type": "equipment", "id": "rear_bumper_crumple" },
+      { "type": "equipment", "id": "rear_spikes_basic" },
+      { "type": "equipment", "id": "rear_spikes_barbed" },
+      { "type": "equipment", "id": "side_skirt_rubber" },
+      { "type": "equipment", "id": "side_blades_basic" },
+      { "type": "equipment", "id": "side_plates_composite" },
+      { "type": "equipment", "id": "side_hubs_shredder" },
+      { "type": "equipment", "id": "roof_cage_racing" },
+      { "type": "equipment", "id": "roof_armor_plate" },
+      { "type": "equipment", "id": "roof_armor_heavy" },
+      { "type": "equipment", "id": "tire_runflat" },
+      { "type": "equipment", "id": "tire_spikes_basic" },
+      { "type": "equipment", "id": "tire_slicks" },
+      { "type": "equipment", "id": "tire_spikes_drill" },
+      { "type": "equipment", "id": "core_engine_shield" },
+      { "type": "equipment", "id": "core_frame_reinforced" },
+      { "type": "equipment", "id": "core_lightweight_kit" },
+      { "type": "equipment", "id": "core_shock_absorbers" },
+      { "type": "equipment", "id": "core_autorepair_basic" },
+      { "type": "equipment", "id": "core_gyro_stabilizer" },
+      { "type": "equipment", "id": "core_frame_titanium" },
+      { "type": "equipment", "id": "core_autorepair" },
+      { "type": "equipment", "id": "ability_nitro_burst" },
+      { "type": "equipment", "id": "ability_hydraulic_jump" },
+      { "type": "equipment", "id": "ability_brace" },
+      { "type": "equipment", "id": "ability_ram_charge" },
+      { "type": "equipment", "id": "ability_shock_bumper" },
+      { "type": "equipment", "id": "ability_field_repair" },
+      { "type": "paint", "id": "paint_china_red" },
+      { "type": "paint", "id": "paint_lantern" },
+      { "type": "paint", "id": "paint_matte_black" },
+      { "type": "paint", "id": "paint_cinnabar" },
+      { "type": "paint", "id": "paint_ink_wash" },
+      { "type": "paint", "id": "paint_bronze" },
+      { "type": "paint", "id": "paint_arctic" },
+      { "type": "paint", "id": "paint_dunhuang" },
+      { "type": "paint", "id": "paint_moon_white" },
+      { "type": "paint", "id": "paint_neon_pink" },
+      { "type": "paint", "id": "paint_neon_cyan" },
+      { "type": "paint", "id": "paint_peony" },
+      { "type": "paint", "id": "paint_porcelain_blue" },
+      { "type": "paint", "id": "paint_celadon" },
+      { "type": "paint", "id": "paint_midnight_purple" },
+      { "type": "paint", "id": "paint_panda" },
+      { "type": "paint", "id": "paint_toxic" },
+      { "type": "paint", "id": "paint_lava" },
+      { "type": "paint", "id": "paint_jade" },
+      { "type": "paint", "id": "paint_phoenix" },
+      { "type": "paint", "id": "paint_dragon_scale" },
+      { "type": "paint", "id": "paint_imperial_gold" },
+      { "type": "paint", "id": "paint_carbon" },
+      { "type": "paint", "id": "paint_carbon_red" },
+      { "type": "paint", "id": "paint_chrome" },
+      { "type": "paint", "id": "paint_gold_chrome" },
+      { "type": "wheels", "id": "wheels_bronze_six" },
+      { "type": "wheels", "id": "wheels_mesh" },
+      { "type": "wheels", "id": "wheels_twin_spoke" },
+      { "type": "wheels", "id": "wheels_deep_dish" },
+      { "type": "wheels", "id": "wheels_turbofan" },
+      { "type": "wheels", "id": "wheels_gold_mesh" },
+      { "type": "wheels", "id": "wheels_cloud" },
+      { "type": "wheels", "id": "wheels_chrome_spinner" },
+      { "type": "sparks", "id": "sparks_red" },
+      { "type": "sparks", "id": "sparks_green" },
+      { "type": "sparks", "id": "sparks_purple" },
+      { "type": "sparks", "id": "sparks_white_hot" },
+      { "type": "sparks", "id": "sparks_gold" },
+      { "type": "sparks", "id": "sparks_firecracker" },
+      { "type": "horn", "id": "horn_train" },
+      { "type": "horn", "id": "horn_foghorn" },
+      { "type": "horn", "id": "horn_suona" },
+      { "type": "horn", "id": "horn_opera_gong" },
+      { "type": "horn", "id": "horn_victory" },
+      { "type": "banner", "id": "banner_flame" },
+      { "type": "banner", "id": "banner_ink" },
+      { "type": "banner", "id": "banner_lantern" },
+      { "type": "banner", "id": "banner_panda" },
+      { "type": "banner", "id": "banner_dragon" },
+      { "type": "banner", "id": "banner_great_wall" },
+      { "type": "vehicle", "id": "mesa_wrangler" },
+      { "type": "vehicle", "id": "rattler_charger" },
+      { "type": "vehicle", "id": "akatsuki_rx7" },
+      { "type": "vehicle", "id": "kazeyama_nsx" },
+      { "type": "vehicle", "id": "ryujin_r34" }
+    ]
+  },
+  "seasonPass": {
+    "id": "season_1",
+    "name": "store.season_1",
+    "start": "2026-11-01T00:00:00Z",
+    "end": "2027-01-31T00:00:00Z",
+    "premiumPrice": { "gold": 950 },
+    "xpPerTier": 1000,
+    "tiers": [
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 2050 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 4100 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_neon_cyan" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 2150 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 4300 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 4400 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 2250 }
+        ],
+        "premium": [
+          { "type": "paint", "id": "paint_season1" }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_cinnabar" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 2350 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 4700 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 4800 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 2450 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 4900 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "equipment", "id": "core_frame_reinforced" }
+        ],
+        "premium": [
+          { "type": "currency", "id": "gold", "amount": 100 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 2550 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 5100 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 5200 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 2650 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 5300 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_celadon" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 2750 }
+        ],
+        "premium": [
+          { "type": "sparks", "id": "sparks_season1" }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 5600 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 2850 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 5700 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_peony" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 2950 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 5900 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "vehicle", "id": "bramble_cooper" }
+        ],
+        "premium": [
+          { "type": "currency", "id": "gold", "amount": 100 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 3050 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 6100 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "wheels", "id": "wheels_deep_dish" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 3150 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 6300 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 6400 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 3250 }
+        ],
+        "premium": [
+          { "type": "vehicle", "id": "coulomb_cybertruck" }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "sparks", "id": "sparks_red" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 3350 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 6700 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 6800 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 3450 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 6900 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "paint", "id": "paint_toxic" }
+        ],
+        "premium": [
+          { "type": "currency", "id": "gold", "amount": 100 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 3550 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 7100 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 7200 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 3650 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 7300 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_carbon" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 3750 }
+        ],
+        "premium": [
+          { "type": "horn", "id": "horn_season1" }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 7600 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 3850 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 7700 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_dragon_scale" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 3950 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 7900 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "gold", "amount": 50 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "gold", "amount": 100 },
+          { "type": "equipment", "id": "side_blades_scythe" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 4050 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 8100 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_neon_cyan" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 4150 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 8300 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 8400 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 4250 }
+        ],
+        "premium": [
+          { "type": "wheels", "id": "wheels_season1" }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_cinnabar" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 4350 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 8700 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 8800 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 4450 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 8900 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "equipment", "id": "ability_shock_bumper" }
+        ],
+        "premium": [
+          { "type": "vehicle", "id": "toromonte_urus" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 4550 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 9100 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 9200 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 4650 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 9300 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_celadon" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 4750 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "gold", "amount": 100 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 9600 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 4850 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 9700 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_peony" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 4950 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 9900 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "vehicle", "id": "rattler_charger" }
+        ],
+        "premium": [
+          { "type": "banner", "id": "banner_season1" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 5050 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 10100 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "wheels", "id": "wheels_deep_dish" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 5150 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 10300 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 10400 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 5250 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "gold", "amount": 100 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "sparks", "id": "sparks_red" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 5350 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 10700 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 10800 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 5450 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 10900 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "title", "id": "title_lucky_star" }
+        ],
+        "premium": [
+          { "type": "equipment", "id": "core_ballast_tungsten" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 5550 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 11100 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 11200 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 5650 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 11300 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_carbon" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 5750 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "gold", "amount": 150 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 11600 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 5850 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 11700 }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          { "type": "paint", "id": "paint_dragon_scale" }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "credits", "amount": 5950 }
+        ],
+        "premium": [
+          { "type": "currency", "id": "credits", "amount": 11900 }
+        ]
+      },
+      {
+        "free": [
+          { "type": "currency", "id": "gold", "amount": 100 },
+          { "type": "banner", "id": "banner_panda" }
+        ],
+        "premium": [
+          { "type": "vehicle", "id": "fulmine_sf90" },
+          { "type": "title", "id": "title_season1" },
+          { "type": "currency", "id": "gold", "amount": 150 }
+        ]
+      }
+    ]
+  }
+}

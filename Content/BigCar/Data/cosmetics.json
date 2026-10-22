@@ -1,0 +1,943 @@
+{
+  "version": 1,
+  "paints": [
+    {
+      "id": "paint_snow_white",
+      "name": "cos.paint_snow_white",
+      "color": "#F5F5F5",
+      "finish": "gloss",
+      "rarity": "common",
+      "price": { "credits": 0 }
+    },
+    {
+      "id": "paint_jet_black",
+      "name": "cos.paint_jet_black",
+      "color": "#0B0B0B",
+      "finish": "gloss",
+      "rarity": "common",
+      "price": { "credits": 0 }
+    },
+    {
+      "id": "paint_silver",
+      "name": "cos.paint_silver",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "rarity": "common",
+      "price": { "credits": 0 }
+    },
+    {
+      "id": "paint_primer",
+      "name": "cos.paint_primer",
+      "color": "#7D7D7D",
+      "finish": "matte",
+      "rarity": "common",
+      "price": { "credits": 0 }
+    },
+    {
+      "id": "paint_rosso",
+      "name": "cos.paint_rosso",
+      "color": "#C8102E",
+      "finish": "gloss",
+      "rarity": "common",
+      "price": { "credits": 2000 }
+    },
+    {
+      "id": "paint_sky_blue",
+      "name": "cos.paint_sky_blue",
+      "color": "#87CEEB",
+      "finish": "gloss",
+      "rarity": "common",
+      "price": { "credits": 2500 }
+    },
+    {
+      "id": "paint_taxi_yellow",
+      "name": "cos.paint_taxi_yellow",
+      "color": "#F7C600",
+      "finish": "gloss",
+      "rarity": "common",
+      "price": { "credits": 3000 }
+    },
+    {
+      "id": "paint_police_blue",
+      "name": "cos.paint_police_blue",
+      "color": "#003399",
+      "finish": "gloss",
+      "rarity": "common",
+      "price": { "credits": 3000 }
+    },
+    {
+      "id": "paint_lime",
+      "name": "cos.paint_lime",
+      "color": "#9ACD32",
+      "finish": "gloss",
+      "rarity": "common",
+      "price": { "credits": 3000 }
+    },
+    {
+      "id": "paint_bamboo",
+      "name": "cos.paint_bamboo",
+      "color": "#6B8E23",
+      "finish": "matte",
+      "rarity": "common",
+      "price": { "credits": 4000 }
+    },
+    {
+      "id": "paint_oolong",
+      "name": "cos.paint_oolong",
+      "color": "#8B5A2B",
+      "finish": "metallic",
+      "rarity": "common",
+      "price": { "credits": 4000 }
+    },
+    {
+      "id": "paint_army",
+      "name": "cos.paint_army",
+      "color": "#4B5320",
+      "finish": "matte",
+      "rarity": "common",
+      "price": { "credits": 4000 }
+    },
+    {
+      "id": "paint_desert_sand",
+      "name": "cos.paint_desert_sand",
+      "color": "#C2B280",
+      "finish": "matte",
+      "rarity": "common",
+      "price": { "credits": 4000 }
+    },
+    {
+      "id": "paint_graphite",
+      "name": "cos.paint_graphite",
+      "color": "#2A3439",
+      "finish": "metallic",
+      "rarity": "common",
+      "price": { "credits": 5000 }
+    },
+    {
+      "id": "paint_china_red",
+      "name": "cos.paint_china_red",
+      "color": "#DE2910",
+      "finish": "gloss",
+      "rarity": "rare",
+      "price": { "credits": 8000 }
+    },
+    {
+      "id": "paint_lantern",
+      "name": "cos.paint_lantern",
+      "color": "#FF4500",
+      "finish": "gloss",
+      "rarity": "rare",
+      "price": { "credits": 8000 }
+    },
+    {
+      "id": "paint_matte_black",
+      "name": "cos.paint_matte_black",
+      "color": "#151515",
+      "finish": "matte",
+      "rarity": "rare",
+      "price": { "credits": 8000 }
+    },
+    {
+      "id": "paint_cinnabar",
+      "name": "cos.paint_cinnabar",
+      "color": "#E34234",
+      "finish": "matte",
+      "rarity": "rare",
+      "price": { "credits": 9000 }
+    },
+    {
+      "id": "paint_ink_wash",
+      "name": "cos.paint_ink_wash",
+      "color": "#2F3437",
+      "finish": "matte",
+      "rarity": "rare",
+      "price": { "credits": 9000 }
+    },
+    {
+      "id": "paint_bronze",
+      "name": "cos.paint_bronze",
+      "color": "#8C6239",
+      "finish": "metallic",
+      "rarity": "rare",
+      "price": { "credits": 9000 }
+    },
+    {
+      "id": "paint_arctic",
+      "name": "cos.paint_arctic",
+      "color": "#DDEEFF",
+      "finish": "pearl",
+      "rarity": "rare",
+      "price": { "credits": 9000 }
+    },
+    {
+      "id": "paint_dunhuang",
+      "name": "cos.paint_dunhuang",
+      "color": "#C68E3F",
+      "finish": "matte",
+      "rarity": "rare",
+      "price": { "credits": 10000 }
+    },
+    {
+      "id": "paint_moon_white",
+      "name": "cos.paint_moon_white",
+      "color": "#E8F1F8",
+      "finish": "pearl",
+      "rarity": "rare",
+      "price": { "credits": 10000 }
+    },
+    {
+      "id": "paint_neon_pink",
+      "name": "cos.paint_neon_pink",
+      "color": "#FF1493",
+      "finish": "gloss",
+      "rarity": "rare",
+      "price": { "credits": 10000 }
+    },
+    {
+      "id": "paint_neon_cyan",
+      "name": "cos.paint_neon_cyan",
+      "color": "#00E5FF",
+      "finish": "gloss",
+      "rarity": "rare",
+      "price": { "credits": 10000 }
+    },
+    {
+      "id": "paint_peony",
+      "name": "cos.paint_peony",
+      "color": "#E05297",
+      "finish": "pearl",
+      "rarity": "rare",
+      "price": { "credits": 11000 }
+    },
+    {
+      "id": "paint_porcelain_blue",
+      "name": "cos.paint_porcelain_blue",
+      "color": "#1F4E9E",
+      "finish": "pearl",
+      "rarity": "rare",
+      "price": { "credits": 12000 }
+    },
+    {
+      "id": "paint_celadon",
+      "name": "cos.paint_celadon",
+      "color": "#ACE1AF",
+      "finish": "pearl",
+      "rarity": "rare",
+      "price": { "credits": 12000 }
+    },
+    {
+      "id": "paint_midnight_purple",
+      "name": "cos.paint_midnight_purple",
+      "color": "#2E1A47",
+      "finish": "pearl",
+      "rarity": "rare",
+      "price": { "credits": 12000 }
+    },
+    {
+      "id": "paint_panda",
+      "name": "cos.paint_panda",
+      "color": "#EDEDED",
+      "finish": "gloss",
+      "rarity": "epic",
+      "price": { "credits": 20000 }
+    },
+    {
+      "id": "paint_toxic",
+      "name": "cos.paint_toxic",
+      "color": "#39FF14",
+      "finish": "pearl",
+      "rarity": "epic",
+      "price": { "credits": 22000 }
+    },
+    {
+      "id": "paint_lava",
+      "name": "cos.paint_lava",
+      "color": "#CF1020",
+      "finish": "metallic",
+      "rarity": "epic",
+      "price": { "credits": 24000 }
+    },
+    {
+      "id": "paint_jade",
+      "name": "cos.paint_jade",
+      "color": "#00A86B",
+      "finish": "pearl",
+      "rarity": "epic",
+      "price": { "credits": 25000 }
+    },
+    {
+      "id": "paint_phoenix",
+      "name": "cos.paint_phoenix",
+      "color": "#E25822",
+      "finish": "metallic",
+      "rarity": "epic",
+      "price": { "credits": 26000 }
+    },
+    {
+      "id": "paint_dragon_scale",
+      "name": "cos.paint_dragon_scale",
+      "color": "#0F5132",
+      "finish": "metallic",
+      "rarity": "epic",
+      "price": { "credits": 28000 }
+    },
+    {
+      "id": "paint_imperial_gold",
+      "name": "cos.paint_imperial_gold",
+      "color": "#D4AF37",
+      "finish": "metallic",
+      "rarity": "epic",
+      "price": { "credits": 30000 }
+    },
+    {
+      "id": "paint_carbon",
+      "name": "cos.paint_carbon",
+      "color": "#1C1C1C",
+      "finish": "carbon",
+      "rarity": "epic",
+      "price": { "credits": 35000 }
+    },
+    {
+      "id": "paint_carbon_red",
+      "name": "cos.paint_carbon_red",
+      "color": "#3A0D0D",
+      "finish": "carbon",
+      "rarity": "epic",
+      "price": { "credits": 38000 }
+    },
+    {
+      "id": "paint_chrome",
+      "name": "cos.paint_chrome",
+      "color": "#DADADA",
+      "finish": "chrome",
+      "rarity": "epic",
+      "price": { "credits": 40000 }
+    },
+    {
+      "id": "paint_gold_chrome",
+      "name": "cos.paint_gold_chrome",
+      "color": "#FFD700",
+      "finish": "chrome",
+      "rarity": "legendary",
+      "price": { "credits": 80000 }
+    },
+    {
+      "id": "paint_rust",
+      "name": "cos.paint_rust",
+      "color": "#B7410E",
+      "finish": "matte",
+      "rarity": "rare",
+      "price": { "gold": 200 }
+    },
+    {
+      "id": "paint_tidewater",
+      "name": "cos.paint_tidewater",
+      "color": "#1B4D5C",
+      "finish": "metallic",
+      "rarity": "rare",
+      "price": { "gold": 200 }
+    },
+    {
+      "id": "paint_sandstorm",
+      "name": "cos.paint_sandstorm",
+      "color": "#D2A15B",
+      "finish": "matte",
+      "rarity": "rare",
+      "price": { "gold": 200 }
+    },
+    {
+      "id": "paint_glacier",
+      "name": "cos.paint_glacier",
+      "color": "#A8D8EA",
+      "finish": "pearl",
+      "rarity": "epic",
+      "price": { "gold": 300 }
+    },
+    {
+      "id": "paint_streetlight",
+      "name": "cos.paint_streetlight",
+      "color": "#FFB000",
+      "finish": "pearl",
+      "rarity": "epic",
+      "price": { "gold": 300 }
+    },
+    {
+      "id": "paint_molten",
+      "name": "cos.paint_molten",
+      "color": "#FF5F1F",
+      "finish": "metallic",
+      "rarity": "epic",
+      "price": { "gold": 300 }
+    },
+    {
+      "id": "paint_neon_night",
+      "name": "cos.paint_neon_night",
+      "color": "#7B2CBF",
+      "finish": "pearl",
+      "rarity": "epic",
+      "price": { "gold": 400 }
+    },
+    {
+      "id": "paint_champion",
+      "name": "cos.paint_champion",
+      "color": "#F5C542",
+      "finish": "chrome",
+      "rarity": "legendary",
+      "price": { "gold": 800 }
+    },
+    {
+      "id": "paint_season1",
+      "name": "cos.paint_season1",
+      "color": "#00B3A4",
+      "finish": "pearl",
+      "rarity": "legendary",
+      "price": { "gold": 600 }
+    },
+    {
+      "id": "paint_dragon_king",
+      "name": "cos.paint_dragon_king",
+      "color": "#B8001F",
+      "finish": "pearl",
+      "rarity": "legendary",
+      "price": { "gold": 700 }
+    }
+  ],
+  "wheels": [
+    {
+      "id": "wheels_stock",
+      "name": "cos.wheels_stock",
+      "color": "#2B2B2B",
+      "spokes": 5,
+      "rarity": "common",
+      "price": { "credits": 0 }
+    },
+    {
+      "id": "wheels_steelie",
+      "name": "cos.wheels_steelie",
+      "color": "#3A3A3A",
+      "spokes": 8,
+      "rarity": "common",
+      "price": { "credits": 0 }
+    },
+    {
+      "id": "wheels_five_star",
+      "name": "cos.wheels_five_star",
+      "color": "#C0C0C0",
+      "spokes": 5,
+      "rarity": "common",
+      "price": { "credits": 3000 }
+    },
+    {
+      "id": "wheels_black_ten",
+      "name": "cos.wheels_black_ten",
+      "color": "#111111",
+      "spokes": 10,
+      "rarity": "common",
+      "price": { "credits": 4000 }
+    },
+    {
+      "id": "wheels_beadlock",
+      "name": "cos.wheels_beadlock",
+      "color": "#2B2B2B",
+      "spokes": 8,
+      "rarity": "common",
+      "price": { "credits": 5000 }
+    },
+    {
+      "id": "wheels_bronze_six",
+      "name": "cos.wheels_bronze_six",
+      "color": "#8C6239",
+      "spokes": 6,
+      "rarity": "rare",
+      "price": { "credits": 8000 }
+    },
+    {
+      "id": "wheels_mesh",
+      "name": "cos.wheels_mesh",
+      "color": "#B0B0B0",
+      "spokes": 20,
+      "rarity": "rare",
+      "price": { "credits": 9000 }
+    },
+    {
+      "id": "wheels_twin_spoke",
+      "name": "cos.wheels_twin_spoke",
+      "color": "#8A8A8A",
+      "spokes": 10,
+      "rarity": "rare",
+      "price": { "credits": 9000 }
+    },
+    {
+      "id": "wheels_deep_dish",
+      "name": "cos.wheels_deep_dish",
+      "color": "#D9D9D9",
+      "spokes": 6,
+      "rarity": "rare",
+      "price": { "credits": 10000 }
+    },
+    {
+      "id": "wheels_turbofan",
+      "name": "cos.wheels_turbofan",
+      "color": "#E6E6E6",
+      "spokes": 12,
+      "rarity": "epic",
+      "price": { "credits": 22000 }
+    },
+    {
+      "id": "wheels_gold_mesh",
+      "name": "cos.wheels_gold_mesh",
+      "color": "#D4AF37",
+      "spokes": 15,
+      "rarity": "epic",
+      "price": { "credits": 25000 }
+    },
+    {
+      "id": "wheels_cloud",
+      "name": "cos.wheels_cloud",
+      "color": "#C8102E",
+      "spokes": 9,
+      "rarity": "epic",
+      "price": { "credits": 28000 }
+    },
+    {
+      "id": "wheels_chrome_spinner",
+      "name": "cos.wheels_chrome_spinner",
+      "color": "#F0F0F0",
+      "spokes": 7,
+      "rarity": "legendary",
+      "price": { "credits": 60000 }
+    },
+    {
+      "id": "wheels_champion",
+      "name": "cos.wheels_champion",
+      "color": "#F5C542",
+      "spokes": 7,
+      "rarity": "legendary",
+      "price": { "gold": 500 }
+    },
+    {
+      "id": "wheels_season1",
+      "name": "cos.wheels_season1",
+      "color": "#00B3A4",
+      "spokes": 12,
+      "rarity": "epic",
+      "price": { "gold": 300 }
+    }
+  ],
+  "sparks": [
+    {
+      "id": "sparks_default",
+      "name": "cos.sparks_default",
+      "color": "#FFB84D",
+      "rarity": "common",
+      "price": { "credits": 0 }
+    },
+    {
+      "id": "sparks_blue",
+      "name": "cos.sparks_blue",
+      "color": "#4DA6FF",
+      "rarity": "common",
+      "price": { "credits": 3000 }
+    },
+    {
+      "id": "sparks_red",
+      "name": "cos.sparks_red",
+      "color": "#FF3B30",
+      "rarity": "rare",
+      "price": { "credits": 8000 }
+    },
+    {
+      "id": "sparks_green",
+      "name": "cos.sparks_green",
+      "color": "#7CFC00",
+      "rarity": "rare",
+      "price": { "credits": 8000 }
+    },
+    {
+      "id": "sparks_purple",
+      "name": "cos.sparks_purple",
+      "color": "#B266FF",
+      "rarity": "rare",
+      "price": { "credits": 10000 }
+    },
+    {
+      "id": "sparks_white_hot",
+      "name": "cos.sparks_white_hot",
+      "color": "#FFFFFF",
+      "rarity": "epic",
+      "price": { "credits": 20000 }
+    },
+    {
+      "id": "sparks_gold",
+      "name": "cos.sparks_gold",
+      "color": "#FFD700",
+      "rarity": "epic",
+      "price": { "credits": 25000 }
+    },
+    {
+      "id": "sparks_firecracker",
+      "name": "cos.sparks_firecracker",
+      "color": "#FF2400",
+      "rarity": "legendary",
+      "price": { "credits": 50000 }
+    },
+    {
+      "id": "sparks_season1",
+      "name": "cos.sparks_season1",
+      "color": "#00E5D0",
+      "rarity": "epic",
+      "price": { "gold": 300 }
+    }
+  ],
+  "horns": [
+    {
+      "id": "horn_default",
+      "name": "cos.horn_default",
+      "frequencies": [415, 520],
+      "rarity": "common",
+      "price": { "credits": 0 }
+    },
+    {
+      "id": "horn_bicycle_bell",
+      "name": "cos.horn_bicycle_bell",
+      "frequencies": [2000, 2500],
+      "rarity": "common",
+      "price": { "credits": 2000 }
+    },
+    {
+      "id": "horn_air_truck",
+      "name": "cos.horn_air_truck",
+      "frequencies": [180, 220],
+      "rarity": "common",
+      "price": { "credits": 3000 }
+    },
+    {
+      "id": "horn_circus",
+      "name": "cos.horn_circus",
+      "frequencies": [523, 659, 784],
+      "rarity": "rare",
+      "price": { "credits": 6000 }
+    },
+    {
+      "id": "horn_train",
+      "name": "cos.horn_train",
+      "frequencies": [311, 370, 466],
+      "rarity": "rare",
+      "price": { "credits": 8000 }
+    },
+    {
+      "id": "horn_foghorn",
+      "name": "cos.horn_foghorn",
+      "frequencies": [110, 165],
+      "rarity": "rare",
+      "price": { "credits": 9000 }
+    },
+    {
+      "id": "horn_suona",
+      "name": "cos.horn_suona",
+      "frequencies": [587, 698, 880],
+      "rarity": "epic",
+      "price": { "credits": 15000 }
+    },
+    {
+      "id": "horn_opera_gong",
+      "name": "cos.horn_opera_gong",
+      "frequencies": [220, 330, 440],
+      "rarity": "epic",
+      "price": { "credits": 18000 }
+    },
+    {
+      "id": "horn_victory",
+      "name": "cos.horn_victory",
+      "frequencies": [523, 659, 784, 1047],
+      "rarity": "legendary",
+      "price": { "credits": 40000 }
+    },
+    {
+      "id": "horn_season1",
+      "name": "cos.horn_season1",
+      "frequencies": [392, 494, 587, 784],
+      "rarity": "epic",
+      "price": { "gold": 300 }
+    }
+  ],
+  "titles": [
+    {
+      "id": "title_rookie",
+      "name": "cos.title_rookie",
+      "rarity": "common",
+      "price": { "credits": 0 }
+    },
+    {
+      "id": "title_road_rage",
+      "name": "cos.title_road_rage",
+      "rarity": "common",
+      "price": { "credits": 3000 }
+    },
+    {
+      "id": "title_fender_bender",
+      "name": "cos.title_fender_bender",
+      "rarity": "common",
+      "price": { "credits": 3000 }
+    },
+    {
+      "id": "title_gentleman_driver",
+      "name": "cos.title_gentleman_driver",
+      "rarity": "rare",
+      "price": { "credits": 8000 }
+    },
+    {
+      "id": "title_bulldozer",
+      "name": "cos.title_bulldozer",
+      "rarity": "rare",
+      "price": { "credits": 10000 }
+    },
+    {
+      "id": "title_tbone_master",
+      "name": "cos.title_tbone_master",
+      "rarity": "rare",
+      "price": { "credits": 12000 }
+    },
+    {
+      "id": "title_launcher",
+      "name": "cos.title_launcher",
+      "rarity": "rare",
+      "price": { "credits": 12000 }
+    },
+    {
+      "id": "title_pit_boss",
+      "name": "cos.title_pit_boss",
+      "rarity": "rare",
+      "price": { "credits": 12000 }
+    },
+    {
+      "id": "title_wrecking_ball",
+      "name": "cos.title_wrecking_ball",
+      "rarity": "epic",
+      "price": { "credits": 25000 }
+    },
+    {
+      "id": "title_untouchable",
+      "name": "cos.title_untouchable",
+      "rarity": "epic",
+      "price": { "credits": 30000 }
+    },
+    {
+      "id": "title_dragon_rider",
+      "name": "cos.title_dragon_rider",
+      "rarity": "epic",
+      "price": { "credits": 30000 }
+    },
+    {
+      "id": "title_lucky_star",
+      "name": "cos.title_lucky_star",
+      "rarity": "rare",
+      "price": { "credits": 9000 }
+    },
+    {
+      "id": "title_pandamonium",
+      "name": "cos.title_pandamonium",
+      "rarity": "epic",
+      "price": { "credits": 20000 }
+    },
+    {
+      "id": "title_road_warrior",
+      "name": "cos.title_road_warrior",
+      "rarity": "legendary",
+      "price": { "credits": 60000 }
+    },
+    {
+      "id": "title_scrap_survivor",
+      "name": "cos.title_scrap_survivor",
+      "rarity": "rare",
+      "price": { "gold": 150 }
+    },
+    {
+      "id": "title_dockhand",
+      "name": "cos.title_dockhand",
+      "rarity": "rare",
+      "price": { "gold": 150 }
+    },
+    {
+      "id": "title_dune_rider",
+      "name": "cos.title_dune_rider",
+      "rarity": "rare",
+      "price": { "gold": 150 }
+    },
+    {
+      "id": "title_ice_breaker",
+      "name": "cos.title_ice_breaker",
+      "rarity": "epic",
+      "price": { "gold": 250 }
+    },
+    {
+      "id": "title_street_legend",
+      "name": "cos.title_street_legend",
+      "rarity": "epic",
+      "price": { "gold": 250 }
+    },
+    {
+      "id": "title_iron_will",
+      "name": "cos.title_iron_will",
+      "rarity": "epic",
+      "price": { "gold": 250 }
+    },
+    {
+      "id": "title_neon_king",
+      "name": "cos.title_neon_king",
+      "rarity": "epic",
+      "price": { "gold": 300 }
+    },
+    {
+      "id": "title_crash_king",
+      "name": "cos.title_crash_king",
+      "rarity": "legendary",
+      "price": { "gold": 1000 }
+    },
+    {
+      "id": "title_explorer",
+      "name": "cos.title_explorer",
+      "rarity": "epic",
+      "price": { "gold": 300 }
+    },
+    {
+      "id": "title_collector",
+      "name": "cos.title_collector",
+      "rarity": "epic",
+      "price": { "gold": 300 }
+    },
+    {
+      "id": "title_season1",
+      "name": "cos.title_season1",
+      "rarity": "legendary",
+      "price": { "gold": 500 }
+    },
+    {
+      "id": "title_founder",
+      "name": "cos.title_founder",
+      "rarity": "legendary",
+      "price": { "gold": 500 }
+    }
+  ],
+  "banners": [
+    {
+      "id": "banner_default",
+      "name": "cos.banner_default",
+      "colors": ["#222222", "#FF6A00"],
+      "rarity": "common",
+      "price": { "credits": 0 }
+    },
+    {
+      "id": "banner_checker",
+      "name": "cos.banner_checker",
+      "colors": ["#FFFFFF", "#111111"],
+      "rarity": "common",
+      "price": { "credits": 3000 }
+    },
+    {
+      "id": "banner_flame",
+      "name": "cos.banner_flame",
+      "colors": ["#FF4500", "#FFD700"],
+      "rarity": "rare",
+      "price": { "credits": 8000 }
+    },
+    {
+      "id": "banner_ink",
+      "name": "cos.banner_ink",
+      "colors": ["#F2EFE6", "#1A1A1A"],
+      "rarity": "rare",
+      "price": { "credits": 9000 }
+    },
+    {
+      "id": "banner_lantern",
+      "name": "cos.banner_lantern",
+      "colors": ["#C8102E", "#FFD166"],
+      "rarity": "rare",
+      "price": { "credits": 9000 }
+    },
+    {
+      "id": "banner_panda",
+      "name": "cos.banner_panda",
+      "colors": ["#FFFFFF", "#000000"],
+      "rarity": "epic",
+      "price": { "credits": 18000 }
+    },
+    {
+      "id": "banner_dragon",
+      "name": "cos.banner_dragon",
+      "colors": ["#B8001F", "#F5C542"],
+      "rarity": "epic",
+      "price": { "credits": 25000 }
+    },
+    {
+      "id": "banner_great_wall",
+      "name": "cos.banner_great_wall",
+      "colors": ["#6B5B45", "#C2B280"],
+      "rarity": "epic",
+      "price": { "credits": 22000 }
+    },
+    {
+      "id": "banner_junkyard",
+      "name": "cos.banner_junkyard",
+      "colors": ["#6B5B45", "#B7410E"],
+      "rarity": "rare",
+      "price": { "gold": 150 }
+    },
+    {
+      "id": "banner_harbor",
+      "name": "cos.banner_harbor",
+      "colors": ["#0E2A47", "#F2A900"],
+      "rarity": "rare",
+      "price": { "gold": 150 }
+    },
+    {
+      "id": "banner_desert",
+      "name": "cos.banner_desert",
+      "colors": ["#D2A15B", "#7A3E12"],
+      "rarity": "rare",
+      "price": { "gold": 150 }
+    },
+    {
+      "id": "banner_glacier",
+      "name": "cos.banner_glacier",
+      "colors": ["#E8F6FF", "#3A7CA5"],
+      "rarity": "epic",
+      "price": { "gold": 250 }
+    },
+    {
+      "id": "banner_city",
+      "name": "cos.banner_city",
+      "colors": ["#1C1C1C", "#FFB000"],
+      "rarity": "epic",
+      "price": { "gold": 250 }
+    },
+    {
+      "id": "banner_foundry",
+      "name": "cos.banner_foundry",
+      "colors": ["#2B2B2B", "#FF5F1F"],
+      "rarity": "epic",
+      "price": { "gold": 250 }
+    },
+    {
+      "id": "banner_neon",
+      "name": "cos.banner_neon",
+      "colors": ["#12002B", "#FF2BD6"],
+      "rarity": "epic",
+      "price": { "gold": 300 }
+    },
+    {
+      "id": "banner_champion",
+      "name": "cos.banner_champion",
+      "colors": ["#111111", "#F5C542"],
+      "rarity": "legendary",
+      "price": { "gold": 800 }
+    },
+    {
+      "id": "banner_season1",
+      "name": "cos.banner_season1",
+      "colors": ["#002B36", "#00E5D0"],
+      "rarity": "legendary",
+      "price": { "gold": 500 }
+    }
+  ]
+}

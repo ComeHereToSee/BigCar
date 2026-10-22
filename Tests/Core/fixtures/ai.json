@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "profiles": [
+    {
+      "id": "rookie",
+      "name": "ai.rookie",
+      "skill": 0.3,
+      "aggression": 0.5,
+      "reaction": 0.6,
+      "aimLead": 0.3,
+      "flankBias": 0.2,
+      "abilityUse": 0.2,
+      "boostUse": 0.3,
+      "retreatHealth": 0.0,
+      "mistakeRate": 0.25,
+      "focusPlayer": 0.6
+    },
+    {
+      "id": "regular",
+      "name": "ai.regular",
+      "skill": 0.5,
+      "aggression": 0.6,
+      "reaction": 0.45,
+      "aimLead": 0.5,
+      "flankBias": 0.4,
+      "abilityUse": 0.4,
+      "boostUse": 0.5,
+      "retreatHealth": 0.15,
+      "mistakeRate": 0.15,
+      "focusPlayer": 0.5
+    },
+    {
+      "id": "veteran",
+      "name": "ai.veteran",
+      "skill": 0.7,
+      "aggression": 0.7,
+      "reaction": 0.3,
+      "aimLead": 0.7,
+      "flankBias": 0.6,
+      "abilityUse": 0.6,
+      "boostUse": 0.6,
+      "retreatHealth": 0.2,
+      "mistakeRate": 0.08,
+      "focusPlayer": 0.5
+    },
+    {
+      "id": "elite",
+      "name": "ai.elite",
+      "skill": 0.85,
+      "aggression": 0.8,
+      "reaction": 0.2,
+      "aimLead": 0.85,
+      "flankBias": 0.8,
+      "abilityUse": 0.8,
+      "boostUse": 0.7,
+      "retreatHealth": 0.25,
+      "mistakeRate": 0.04,
+      "focusPlayer": 0.5
+    },
+    {
+      "id": "boss",
+      "name": "ai.boss",
+      "skill": 0.95,
+      "aggression": 0.9,
+      "reaction": 0.15,
+      "aimLead": 0.9,
+      "flankBias": 0.9,
+      "abilityUse": 0.9,
+      "boostUse": 0.8,
+      "retreatHealth": 0.3,
+      "mistakeRate": 0.02,
+      "focusPlayer": 0.9
+    }
+  ]
+}

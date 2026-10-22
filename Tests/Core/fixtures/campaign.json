@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "rivals": [
+    {
+      "id": "rival_test",
+      "name": "camp.rival_test",
+      "title": "camp.rival_test.title",
+      "vehicle": "test_truck",
+      "color": "#B7410E"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch1",
+      "name": "camp.ch1",
+      "description": "camp.ch1.desc",
+      "hub": "test_hub",
+      "unlockStars": 0,
+      "boss": "rival_test",
+      "color": "#B7410E",
+      "levels": [
+        {
+          "id": "ch1_l1",
+          "name": "camp.ch1_l1",
+          "description": "camp.ch1_l1.desc",
+          "arena": "test_box",
+          "mode": "derby",
+          "timeLimit": 240,
+          "maxTier": null,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "test_hatch",
+              "ai": "rookie",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 1
+              },
+              "equipment": {
+                "front": "front_basic"
+              },
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": {
+            "type": "win"
+          },
+          "stars": [
+            {
+              "type": "win"
+            },
+            {
+              "type": "takedowns",
+              "value": 1
+            },
+            {
+              "type": "time_under",
+              "value": 120
+            }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 4000,
+            "xp": 300,
+            "items": [
+              {
+                "type": "paint",
+                "id": "paint_gold"
+              }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch1_l1.intro.1"
+            ],
+            "outro": [
+              "dlg.ch1_l1.outro.1"
+            ]
+          },
+          "unlock": {
+            "level": null,
+            "stars": 0
+          }
+        },
+        {
+          "id": "ch1_l2",
+          "name": "camp.ch1_l2",
+          "description": "camp.ch1_l2.desc",
+          "arena": "test_ring",
+          "mode": "ring_out",
+          "timeLimit": 240,
+          "maxTier": null,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "test_hatch",
+              "ai": "rookie",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 1
+              },
+              "equipment": {
+                "front": "front_basic"
+              },
+              "boss": false
+            },
+            {
+              "vehicle": "test_hatch",
+              "ai": "rookie",
+              "team": 2,
+              "name": null,
+              "upgrades": {
+                "engine": 1
+              },
+              "equipment": {
+                "front": "front_basic"
+              },
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": {
+            "type": "win"
+          },
+          "stars": [
+            {
+              "type": "win"
+            },
+            {
+              "type": "hits_of_kind",
+              "kind": "t_bone",
+              "value": 2
+            },
+            {
+              "type": "no_wreck"
+            }
+          ],
+          "collectibles": 0,
+          "rewards": {
+            "credits": 4000,
+            "xp": 300,
+            "items": []
+          },
+          "story": {
+            "intro": [
+              "dlg.ch1_l2.intro.1"
+            ],
+            "outro": [
+              "dlg.ch1_l2.outro.1"
+            ]
+          },
+          "unlock": {
+            "level": null,
+            "stars": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "name": "camp.ch2",
+      "description": "camp.ch2.desc",
+      "hub": null,
+      "unlockStars": 2,
+      "boss": null,
+      "color": "#1F3F7F",
+      "levels": [
+        {
+          "id": "ch2_l1",
+          "name": "camp.ch2_l1",
+          "description": "camp.ch2_l1.desc",
+          "arena": "test_box",
+          "mode": "takedown",
+          "timeLimit": 240,
+          "maxTier": null,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "test_truck",
+              "ai": "boss",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 1
+              },
+              "equipment": {
+                "front": "front_basic"
+              },
+              "boss": true
+            }
+          ],
+          "allies": [],
+          "objective": {
+            "type": "win"
+          },
+          "stars": [
+            {
+              "type": "win"
+            },
+            {
+              "type": "score",
+              "value": 3000
+            },
+            {
+              "type": "damage_under",
+              "value": 50
+            }
+          ],
+          "collectibles": 1,
+          "rewards": {
+            "credits": 4000,
+            "xp": 300,
+            "items": [
+              {
+                "type": "vehicle",
+                "id": "test_truck"
+              },
+              {
+                "type": "currency",
+                "id": "gold",
+                "amount": 50
+              }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch2_l1.intro.1"
+            ],
+            "outro": [
+              "dlg.ch2_l1.outro.1"
+            ]
+          },
+          "unlock": {
+            "level": null,
+            "stars": 0
+          }
+        }
+      ]
+    }
+  ]
+}

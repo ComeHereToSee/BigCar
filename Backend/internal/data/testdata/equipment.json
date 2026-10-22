@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "equipment": [
+    {
+      "id": "front_bar_basic",
+      "slot": "front",
+      "name": "equip.front_bar_basic",
+      "description": "equip.front_bar_basic.desc",
+      "rarity": "common",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "ram_bar",
+        "length": 0.4,
+        "angleDeg": 0,
+        "color": "#5A5F66"
+      },
+      "mods": {
+        "ramPowerMul": 1.05,
+        "massAddKg": 20
+      },
+      "ability": null,
+      "cr": 5,
+      "price": {
+        "credits": 0
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "front_wedge_steel",
+      "slot": "front",
+      "name": "equip.front_wedge_steel",
+      "description": "equip.front_wedge_steel.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "wedge",
+        "length": 0.7,
+        "angleDeg": 0,
+        "color": "#5A5F66"
+      },
+      "mods": {
+        "launchPower": 1.0,
+        "massAddKg": 85,
+        "armorFront": 0.1
+      },
+      "ability": null,
+      "cr": 25,
+      "price": {
+        "credits": 30000
+      },
+      "unlockLevel": 8,
+      "allowedClasses": []
+    },
+    {
+      "id": "rear_bumper_heavy",
+      "slot": "rear",
+      "name": "equip.rear_bumper_heavy",
+      "description": "equip.rear_bumper_heavy.desc",
+      "rarity": "common",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "rear_bumper",
+        "length": 0.4,
+        "angleDeg": 0,
+        "color": "#5A5F66"
+      },
+      "mods": {
+        "armorRear": 0.08,
+        "massAddKg": 40
+      },
+      "ability": null,
+      "cr": 10,
+      "price": {
+        "credits": 8000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "side_plates_light",
+      "slot": "side",
+      "name": "equip.side_plates_light",
+      "description": "equip.side_plates_light.desc",
+      "rarity": "common",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "side_plates",
+        "length": 0.4,
+        "angleDeg": 0,
+        "color": "#5A5F66"
+      },
+      "mods": {
+        "armorLeft": 0.06,
+        "armorRight": 0.06
+      },
+      "ability": null,
+      "cr": 10,
+      "price": {
+        "credits": 6000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "roof_cage",
+      "slot": "roof",
+      "name": "equip.roof_cage",
+      "description": "equip.roof_cage.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "cage",
+        "length": 0.4,
+        "angleDeg": 0,
+        "color": "#5A5F66"
+      },
+      "mods": {
+        "armorTop": 0.15,
+        "massAddKg": 60
+      },
+      "ability": null,
+      "cr": 15,
+      "price": {
+        "credits": 12000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": [
+        "suv",
+        "pickup",
+        "truck",
+        "offroad"
+      ]
+    },
+    {
+      "id": "wheel_spikes",
+      "slot": "wheels",
+      "name": "equip.wheel_spikes",
+      "description": "equip.wheel_spikes.desc",
+      "rarity": "epic",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "wheel_spikes",
+        "length": 0.4,
+        "angleDeg": 0,
+        "color": "#5A5F66"
+      },
+      "mods": {
+        "tireDamage": 1.0
+      },
+      "ability": null,
+      "cr": 20,
+      "price": {
+        "credits": 15000
+      },
+      "unlockLevel": 3,
+      "allowedClasses": []
+    },
+    {
+      "id": "core_ballast",
+      "slot": "core",
+      "name": "equip.core_ballast",
+      "description": "equip.core_ballast.desc",
+      "rarity": "common",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "ballast",
+        "length": 0.4,
+        "angleDeg": 0,
+        "color": "#5A5F66"
+      },
+      "mods": {
+        "massAddKg": 120,
+        "cgHeightAdd": -0.03
+      },
+      "ability": null,
+      "cr": 8,
+      "price": {
+        "credits": 5000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "ability_nitro_burst",
+      "slot": "ability",
+      "name": "equip.ability_nitro_burst",
+      "description": "equip.ability_nitro_burst.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "none",
+        "length": 0.4,
+        "angleDeg": 0,
+        "color": "#5A5F66"
+      },
+      "mods": {},
+      "ability": "nitro_burst",
+      "cr": 15,
+      "price": {
+        "credits": 10000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "ability_hydraulic_jump",
+      "slot": "ability",
+      "name": "equip.ability_hydraulic_jump",
+      "description": "equip.ability_hydraulic_jump.desc",
+      "rarity": "epic",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "none",
+        "length": 0.4,
+        "angleDeg": 0,
+        "color": "#5A5F66"
+      },
+      "mods": {},
+      "ability": "hydraulic_jump",
+      "cr": 20,
+      "price": {
+        "credits": 20000
+      },
+      "unlockLevel": 5,
+      "allowedClasses": []
+    },
+    {
+      "id": "ability_brace",
+      "slot": "ability",
+      "name": "equip.ability_brace",
+      "description": "equip.ability_brace.desc",
+      "rarity": "legendary",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "none",
+        "length": 0.4,
+        "angleDeg": 0,
+        "color": "#5A5F66"
+      },
+      "mods": {},
+      "ability": "brace",
+      "cr": 30,
+      "price": {
+        "credits": 40000
+      },
+      "unlockLevel": 10,
+      "allowedClasses": []
+    }
+  ]
+}

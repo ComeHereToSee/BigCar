@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "brands": [
+    {
+      "id": "testa",
+      "name": "brand.testa",
+      "country": "DE",
+      "color": "#334455",
+      "licensed": false,
+      "reference": "Volkswagen"
+    },
+    {
+      "id": "testb",
+      "name": "brand.testb",
+      "country": "IT",
+      "color": "#CC0000",
+      "licensed": false,
+      "reference": "Ferrari"
+    },
+    {
+      "id": "testc",
+      "name": "brand.testc",
+      "country": "US",
+      "color": "#1F3F7F",
+      "licensed": false,
+      "reference": "Ford"
+    }
+  ]
+}

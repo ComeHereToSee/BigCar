@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "paints": [
+    {
+      "id": "paint_red",
+      "name": "cos.paint_red",
+      "color": "#CC1111",
+      "finish": "gloss",
+      "rarity": "common",
+      "price": {
+        "credits": 0
+      }
+    },
+    {
+      "id": "paint_gold",
+      "name": "cos.paint_gold",
+      "color": "#D4AF37",
+      "finish": "chrome",
+      "rarity": "epic",
+      "price": {
+        "credits": 20000
+      }
+    }
+  ],
+  "wheels": [
+    {
+      "id": "wheels_stock",
+      "name": "cos.wheels_stock",
+      "color": "#222222",
+      "spokes": 5,
+      "rarity": "common",
+      "price": {
+        "credits": 0
+      }
+    },
+    {
+      "id": "wheels_sport",
+      "name": "cos.wheels_sport",
+      "color": "#888888",
+      "spokes": 10,
+      "rarity": "rare",
+      "price": {
+        "credits": 8000
+      }
+    }
+  ],
+  "sparks": [
+    {
+      "id": "sparks_default",
+      "name": "cos.sparks_default",
+      "color": "#FFB84D",
+      "rarity": "common",
+      "price": {
+        "credits": 0
+      }
+    }
+  ],
+  "horns": [
+    {
+      "id": "horn_default",
+      "name": "cos.horn_default",
+      "frequencies": [
+        415,
+        520
+      ],
+      "rarity": "common",
+      "price": {
+        "credits": 0
+      }
+    }
+  ],
+  "titles": [
+    {
+      "id": "title_rookie",
+      "name": "cos.title_rookie",
+      "rarity": "common",
+      "price": {
+        "credits": 0
+      }
+    },
+    {
+      "id": "title_champion",
+      "name": "cos.title_champion",
+      "rarity": "legendary",
+      "price": {
+        "credits": 100000
+      }
+    }
+  ],
+  "banners": [
+    {
+      "id": "banner_default",
+      "name": "cos.banner_default",
+      "colors": [
+        "#222222",
+        "#FF6A00"
+      ],
+      "rarity": "common",
+      "price": {
+        "credits": 0
+      }
+    }
+  ]
+}

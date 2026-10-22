@@ -1,0 +1,1348 @@
+{
+  "version": 1,
+  "options": [
+    {
+      "id": "shadows",
+      "name": "ui.gfx.shadows",
+      "category": "quality",
+      "scalability": "Shadow",
+      "default": "high",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.level.low",
+          "level": 0
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.level.medium",
+          "level": 1
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.level.high",
+          "level": 2
+        },
+        {
+          "id": "epic",
+          "name": "ui.gfx.level.epic",
+          "level": 3
+        },
+        {
+          "id": "cinematic",
+          "name": "ui.gfx.level.cinematic",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "id": "textures",
+      "name": "ui.gfx.textures",
+      "category": "quality",
+      "scalability": "Texture",
+      "default": "epic",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.level.low",
+          "level": 0
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.level.medium",
+          "level": 1
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.level.high",
+          "level": 2
+        },
+        {
+          "id": "epic",
+          "name": "ui.gfx.level.epic",
+          "level": 3
+        },
+        {
+          "id": "cinematic",
+          "name": "ui.gfx.level.cinematic",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "id": "effects",
+      "name": "ui.gfx.effects",
+      "category": "quality",
+      "scalability": "Effects",
+      "default": "high",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.level.low",
+          "level": 0
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.level.medium",
+          "level": 1
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.level.high",
+          "level": 2
+        },
+        {
+          "id": "epic",
+          "name": "ui.gfx.level.epic",
+          "level": 3
+        },
+        {
+          "id": "cinematic",
+          "name": "ui.gfx.level.cinematic",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "id": "post_process",
+      "name": "ui.gfx.post_process",
+      "category": "quality",
+      "scalability": "PostProcess",
+      "default": "high",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.level.low",
+          "level": 0
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.level.medium",
+          "level": 1
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.level.high",
+          "level": 2
+        },
+        {
+          "id": "epic",
+          "name": "ui.gfx.level.epic",
+          "level": 3
+        },
+        {
+          "id": "cinematic",
+          "name": "ui.gfx.level.cinematic",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "id": "view_distance",
+      "name": "ui.gfx.view_distance",
+      "category": "quality",
+      "scalability": "ViewDistance",
+      "default": "epic",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.level.low",
+          "level": 0
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.level.medium",
+          "level": 1
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.level.high",
+          "level": 2
+        },
+        {
+          "id": "epic",
+          "name": "ui.gfx.level.epic",
+          "level": 3
+        },
+        {
+          "id": "cinematic",
+          "name": "ui.gfx.level.cinematic",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "id": "foliage",
+      "name": "ui.gfx.foliage",
+      "category": "quality",
+      "scalability": "Foliage",
+      "default": "high",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.level.low",
+          "level": 0
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.level.medium",
+          "level": 1
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.level.high",
+          "level": 2
+        },
+        {
+          "id": "epic",
+          "name": "ui.gfx.level.epic",
+          "level": 3
+        },
+        {
+          "id": "cinematic",
+          "name": "ui.gfx.level.cinematic",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "id": "shading",
+      "name": "ui.gfx.shading",
+      "category": "quality",
+      "scalability": "Shading",
+      "default": "high",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.level.low",
+          "level": 0
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.level.medium",
+          "level": 1
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.level.high",
+          "level": 2
+        },
+        {
+          "id": "epic",
+          "name": "ui.gfx.level.epic",
+          "level": 3
+        },
+        {
+          "id": "cinematic",
+          "name": "ui.gfx.level.cinematic",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "id": "reflection_quality",
+      "name": "ui.gfx.reflection_quality",
+      "category": "quality",
+      "scalability": "Reflection",
+      "default": "high",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.level.low",
+          "level": 0
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.level.medium",
+          "level": 1
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.level.high",
+          "level": 2
+        },
+        {
+          "id": "epic",
+          "name": "ui.gfx.level.epic",
+          "level": 3
+        },
+        {
+          "id": "cinematic",
+          "name": "ui.gfx.level.cinematic",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "id": "gi_quality",
+      "name": "ui.gfx.gi_quality",
+      "category": "quality",
+      "scalability": "GlobalIllumination",
+      "default": "high",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.level.low",
+          "level": 0
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.level.medium",
+          "level": 1
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.level.high",
+          "level": 2
+        },
+        {
+          "id": "epic",
+          "name": "ui.gfx.level.epic",
+          "level": 3
+        },
+        {
+          "id": "cinematic",
+          "name": "ui.gfx.level.cinematic",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "id": "aa_quality",
+      "name": "ui.gfx.aa_quality",
+      "category": "quality",
+      "scalability": "AntiAliasing",
+      "default": "high",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.level.low",
+          "level": 0
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.level.medium",
+          "level": 1
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.level.high",
+          "level": 2
+        },
+        {
+          "id": "epic",
+          "name": "ui.gfx.level.epic",
+          "level": 3
+        },
+        {
+          "id": "cinematic",
+          "name": "ui.gfx.level.cinematic",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "id": "gi_method",
+      "name": "ui.gfx.gi_method",
+      "category": "lighting",
+      "default": "lumen",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.gi_method.off",
+          "cvars": {
+            "r.DynamicGlobalIlluminationMethod": "0"
+          }
+        },
+        {
+          "id": "ssgi",
+          "name": "ui.gfx.gi_method.ssgi",
+          "cvars": {
+            "r.DynamicGlobalIlluminationMethod": "2",
+            "r.SSGI.Quality": "3"
+          }
+        },
+        {
+          "id": "lumen",
+          "name": "ui.gfx.gi_method.lumen",
+          "cvars": {
+            "r.DynamicGlobalIlluminationMethod": "1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "reflection_method",
+      "name": "ui.gfx.reflection_method",
+      "category": "lighting",
+      "default": "lumen",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.reflection_method.off",
+          "cvars": {
+            "r.ReflectionMethod": "0"
+          }
+        },
+        {
+          "id": "ssr",
+          "name": "ui.gfx.reflection_method.ssr",
+          "cvars": {
+            "r.ReflectionMethod": "2",
+            "r.SSR.Quality": "3"
+          }
+        },
+        {
+          "id": "lumen",
+          "name": "ui.gfx.reflection_method.lumen",
+          "cvars": {
+            "r.ReflectionMethod": "1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hardware_rt",
+      "name": "ui.gfx.hardware_rt",
+      "category": "lighting",
+      "default": "off",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "cvars": {
+            "r.Lumen.HardwareRayTracing": "0"
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "cvars": {
+            "r.Lumen.HardwareRayTracing": "1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "virtual_shadows",
+      "name": "ui.gfx.virtual_shadows",
+      "category": "lighting",
+      "default": "on",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "cvars": {
+            "r.Shadow.Virtual.Enable": "0"
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "cvars": {
+            "r.Shadow.Virtual.Enable": "1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contact_shadows",
+      "name": "ui.gfx.contact_shadows",
+      "category": "lighting",
+      "default": "on",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "cvars": {
+            "r.ContactShadows": "0"
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "cvars": {
+            "r.ContactShadows": "1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "volumetric_fog",
+      "name": "ui.gfx.volumetric_fog",
+      "category": "lighting",
+      "default": "on",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "cvars": {
+            "r.VolumetricFog": "0"
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "cvars": {
+            "r.VolumetricFog": "1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ambient_occlusion",
+      "name": "ui.gfx.ambient_occlusion",
+      "category": "post",
+      "default": "on",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "cvars": {
+            "r.AmbientOcclusionLevels": "0"
+          },
+          "post": {
+            "ambientOcclusion": 0.0
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "cvars": {
+            "r.AmbientOcclusionLevels": "-1"
+          },
+          "post": {
+            "ambientOcclusion": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "motion_blur",
+      "name": "ui.gfx.motion_blur",
+      "category": "post",
+      "default": "low",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.motion_blur.off",
+          "cvars": {
+            "r.MotionBlurQuality": "0"
+          },
+          "post": {
+            "motionBlur": 0.0
+          }
+        },
+        {
+          "id": "low",
+          "name": "ui.gfx.motion_blur.low",
+          "cvars": {
+            "r.MotionBlurQuality": "3"
+          },
+          "post": {
+            "motionBlur": 0.25
+          }
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.motion_blur.high",
+          "cvars": {
+            "r.MotionBlurQuality": "4"
+          },
+          "post": {
+            "motionBlur": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "bloom",
+      "name": "ui.gfx.bloom",
+      "category": "post",
+      "default": "on",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "cvars": {
+            "r.BloomQuality": "0"
+          },
+          "post": {
+            "bloom": 0.0
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "cvars": {
+            "r.BloomQuality": "5"
+          },
+          "post": {
+            "bloom": 0.675
+          }
+        }
+      ]
+    },
+    {
+      "id": "lens_flares",
+      "name": "ui.gfx.lens_flares",
+      "category": "post",
+      "default": "on",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "cvars": {
+            "r.LensFlareQuality": "0"
+          },
+          "post": {
+            "lensFlare": 0.0
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "cvars": {
+            "r.LensFlareQuality": "2"
+          },
+          "post": {
+            "lensFlare": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "depth_of_field",
+      "name": "ui.gfx.depth_of_field",
+      "category": "post",
+      "default": "on",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "cvars": {
+            "r.DepthOfFieldQuality": "0"
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "cvars": {
+            "r.DepthOfFieldQuality": "2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chromatic_aberration",
+      "name": "ui.gfx.chromatic_aberration",
+      "category": "post",
+      "default": "off",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "cvars": {
+            "r.SceneColorFringeQuality": "0"
+          },
+          "post": {
+            "chromaticAberration": 0.0
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "cvars": {
+            "r.SceneColorFringeQuality": "1"
+          },
+          "post": {
+            "chromaticAberration": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "id": "film_grain",
+      "name": "ui.gfx.film_grain",
+      "category": "post",
+      "default": "off",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "post": {
+            "filmGrain": 0.0
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "post": {
+            "filmGrain": 0.15
+          }
+        }
+      ]
+    },
+    {
+      "id": "vignette",
+      "name": "ui.gfx.vignette",
+      "category": "post",
+      "default": "on",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.off",
+          "post": {
+            "vignette": 0.0
+          }
+        },
+        {
+          "id": "on",
+          "name": "ui.gfx.on",
+          "post": {
+            "vignette": 0.4
+          }
+        }
+      ]
+    },
+    {
+      "id": "anisotropy",
+      "name": "ui.gfx.anisotropy",
+      "category": "quality",
+      "default": "x8",
+      "values": [
+        {
+          "id": "x2",
+          "name": "ui.gfx.anisotropy.x2",
+          "cvars": {
+            "r.MaxAnisotropy": "2"
+          }
+        },
+        {
+          "id": "x4",
+          "name": "ui.gfx.anisotropy.x4",
+          "cvars": {
+            "r.MaxAnisotropy": "4"
+          }
+        },
+        {
+          "id": "x8",
+          "name": "ui.gfx.anisotropy.x8",
+          "cvars": {
+            "r.MaxAnisotropy": "8"
+          }
+        },
+        {
+          "id": "x16",
+          "name": "ui.gfx.anisotropy.x16",
+          "cvars": {
+            "r.MaxAnisotropy": "16"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sharpening",
+      "name": "ui.gfx.sharpening",
+      "category": "post",
+      "default": "low",
+      "values": [
+        {
+          "id": "off",
+          "name": "ui.gfx.sharpening.off",
+          "cvars": {
+            "r.Tonemapper.Sharpen": "0"
+          }
+        },
+        {
+          "id": "low",
+          "name": "ui.gfx.sharpening.low",
+          "cvars": {
+            "r.Tonemapper.Sharpen": "0.4"
+          }
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.sharpening.high",
+          "cvars": {
+            "r.Tonemapper.Sharpen": "0.8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "debris_detail",
+      "name": "ui.gfx.debris_detail",
+      "category": "game",
+      "default": "medium",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.debris_detail.low",
+          "game": {
+            "maxDebris": 24,
+            "sparkCount": 6,
+            "skidMarks": 0
+          }
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.debris_detail.medium",
+          "game": {
+            "maxDebris": 64,
+            "sparkCount": 14,
+            "skidMarks": 1
+          }
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.debris_detail.high",
+          "game": {
+            "maxDebris": 160,
+            "sparkCount": 28,
+            "skidMarks": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "deformation_detail",
+      "name": "ui.gfx.deformation_detail",
+      "category": "game",
+      "default": "medium",
+      "values": [
+        {
+          "id": "low",
+          "name": "ui.gfx.deformation_detail.low",
+          "game": {
+            "deformSegments": 8
+          }
+        },
+        {
+          "id": "medium",
+          "name": "ui.gfx.deformation_detail.medium",
+          "game": {
+            "deformSegments": 14
+          }
+        },
+        {
+          "id": "high",
+          "name": "ui.gfx.deformation_detail.high",
+          "game": {
+            "deformSegments": 22
+          }
+        }
+      ]
+    }
+  ],
+  "upscalers": [
+    {
+      "id": "taa",
+      "name": "ui.gfx.upscaler.taa",
+      "vendor": "epic",
+      "enable": {
+        "r.AntiAliasingMethod": "2"
+      },
+      "modes": [
+        {
+          "id": "native",
+          "name": "ui.gfx.mode.custom"
+        }
+      ]
+    },
+    {
+      "id": "tsr",
+      "name": "ui.gfx.upscaler.tsr",
+      "vendor": "epic",
+      "enable": {
+        "r.AntiAliasingMethod": "4"
+      },
+      "modes": [
+        {
+          "id": "native",
+          "name": "ui.gfx.mode.native",
+          "screenPercentage": 100
+        },
+        {
+          "id": "quality",
+          "name": "ui.gfx.mode.quality",
+          "screenPercentage": 66.7
+        },
+        {
+          "id": "balanced",
+          "name": "ui.gfx.mode.balanced",
+          "screenPercentage": 58
+        },
+        {
+          "id": "performance",
+          "name": "ui.gfx.mode.performance",
+          "screenPercentage": 50
+        },
+        {
+          "id": "ultra_performance",
+          "name": "ui.gfx.mode.ultra_performance",
+          "screenPercentage": 33.3
+        }
+      ]
+    },
+    {
+      "id": "fxaa",
+      "name": "ui.gfx.upscaler.fxaa",
+      "vendor": "epic",
+      "enable": {
+        "r.AntiAliasingMethod": "1"
+      },
+      "modes": [
+        {
+          "id": "native",
+          "name": "ui.gfx.mode.custom"
+        }
+      ]
+    },
+    {
+      "id": "dlss",
+      "name": "ui.gfx.upscaler.dlss",
+      "vendor": "nvidia",
+      "detectCvar": "r.NGX.DLSS.Enable",
+      "enable": {
+        "r.AntiAliasingMethod": "4",
+        "r.NGX.DLSS.Enable": "1"
+      },
+      "disable": {
+        "r.NGX.DLSS.Enable": "0"
+      },
+      "modes": [
+        {
+          "id": "native",
+          "name": "ui.gfx.mode.dlaa",
+          "screenPercentage": 100
+        },
+        {
+          "id": "quality",
+          "name": "ui.gfx.mode.quality",
+          "screenPercentage": 66.7
+        },
+        {
+          "id": "balanced",
+          "name": "ui.gfx.mode.balanced",
+          "screenPercentage": 58
+        },
+        {
+          "id": "performance",
+          "name": "ui.gfx.mode.performance",
+          "screenPercentage": 50
+        },
+        {
+          "id": "ultra_performance",
+          "name": "ui.gfx.mode.ultra_performance",
+          "screenPercentage": 33.3
+        }
+      ],
+      "frameGen": {
+        "detectCvar": "r.Streamline.DLSSG.Enable",
+        "on": {
+          "r.Streamline.DLSSG.Enable": "1"
+        },
+        "off": {
+          "r.Streamline.DLSSG.Enable": "0"
+        }
+      }
+    },
+    {
+      "id": "fsr4",
+      "name": "ui.gfx.upscaler.fsr4",
+      "vendor": "amd",
+      "detectCvar": "r.FidelityFX.FSR4.Enabled",
+      "enable": {
+        "r.AntiAliasingMethod": "4",
+        "r.FidelityFX.FSR4.Enabled": "1"
+      },
+      "disable": {
+        "r.FidelityFX.FSR4.Enabled": "0"
+      },
+      "modes": [
+        {
+          "id": "native",
+          "name": "ui.gfx.mode.native",
+          "cvars": {
+            "r.FidelityFX.FSR4.QualityMode": "0"
+          }
+        },
+        {
+          "id": "quality",
+          "name": "ui.gfx.mode.quality",
+          "cvars": {
+            "r.FidelityFX.FSR4.QualityMode": "1"
+          }
+        },
+        {
+          "id": "balanced",
+          "name": "ui.gfx.mode.balanced",
+          "cvars": {
+            "r.FidelityFX.FSR4.QualityMode": "2"
+          }
+        },
+        {
+          "id": "performance",
+          "name": "ui.gfx.mode.performance",
+          "cvars": {
+            "r.FidelityFX.FSR4.QualityMode": "3"
+          }
+        },
+        {
+          "id": "ultra_performance",
+          "name": "ui.gfx.mode.ultra_performance",
+          "cvars": {
+            "r.FidelityFX.FSR4.QualityMode": "4"
+          }
+        }
+      ],
+      "frameGen": {
+        "detectCvar": "r.FidelityFX.FI.Enabled",
+        "on": {
+          "r.FidelityFX.FI.Enabled": "1"
+        },
+        "off": {
+          "r.FidelityFX.FI.Enabled": "0"
+        }
+      }
+    },
+    {
+      "id": "fsr",
+      "name": "ui.gfx.upscaler.fsr",
+      "vendor": "amd",
+      "detectCvar": "r.FidelityFX.FSR.Enabled",
+      "enable": {
+        "r.AntiAliasingMethod": "4",
+        "r.FidelityFX.FSR.Enabled": "1"
+      },
+      "disable": {
+        "r.FidelityFX.FSR.Enabled": "0"
+      },
+      "modes": [
+        {
+          "id": "native",
+          "name": "ui.gfx.mode.native",
+          "cvars": {
+            "r.FidelityFX.FSR.QualityMode": "0"
+          }
+        },
+        {
+          "id": "quality",
+          "name": "ui.gfx.mode.quality",
+          "cvars": {
+            "r.FidelityFX.FSR.QualityMode": "1"
+          }
+        },
+        {
+          "id": "balanced",
+          "name": "ui.gfx.mode.balanced",
+          "cvars": {
+            "r.FidelityFX.FSR.QualityMode": "2"
+          }
+        },
+        {
+          "id": "performance",
+          "name": "ui.gfx.mode.performance",
+          "cvars": {
+            "r.FidelityFX.FSR.QualityMode": "3"
+          }
+        },
+        {
+          "id": "ultra_performance",
+          "name": "ui.gfx.mode.ultra_performance",
+          "cvars": {
+            "r.FidelityFX.FSR.QualityMode": "4"
+          }
+        }
+      ],
+      "frameGen": {
+        "detectCvar": "r.FidelityFX.FI.Enabled",
+        "on": {
+          "r.FidelityFX.FI.Enabled": "1"
+        },
+        "off": {
+          "r.FidelityFX.FI.Enabled": "0"
+        }
+      }
+    },
+    {
+      "id": "fsr3",
+      "name": "ui.gfx.upscaler.fsr3",
+      "vendor": "amd",
+      "detectCvar": "r.FidelityFX.FSR3.Enabled",
+      "enable": {
+        "r.AntiAliasingMethod": "4",
+        "r.FidelityFX.FSR3.Enabled": "1"
+      },
+      "disable": {
+        "r.FidelityFX.FSR3.Enabled": "0"
+      },
+      "modes": [
+        {
+          "id": "native",
+          "name": "ui.gfx.mode.native",
+          "cvars": {
+            "r.FidelityFX.FSR3.QualityMode": "0"
+          }
+        },
+        {
+          "id": "quality",
+          "name": "ui.gfx.mode.quality",
+          "cvars": {
+            "r.FidelityFX.FSR3.QualityMode": "1"
+          }
+        },
+        {
+          "id": "balanced",
+          "name": "ui.gfx.mode.balanced",
+          "cvars": {
+            "r.FidelityFX.FSR3.QualityMode": "2"
+          }
+        },
+        {
+          "id": "performance",
+          "name": "ui.gfx.mode.performance",
+          "cvars": {
+            "r.FidelityFX.FSR3.QualityMode": "3"
+          }
+        },
+        {
+          "id": "ultra_performance",
+          "name": "ui.gfx.mode.ultra_performance",
+          "cvars": {
+            "r.FidelityFX.FSR3.QualityMode": "4"
+          }
+        }
+      ],
+      "frameGen": {
+        "detectCvar": "r.FidelityFX.FI.Enabled",
+        "on": {
+          "r.FidelityFX.FI.Enabled": "1"
+        },
+        "off": {
+          "r.FidelityFX.FI.Enabled": "0"
+        }
+      }
+    },
+    {
+      "id": "xess",
+      "name": "ui.gfx.upscaler.xess",
+      "vendor": "intel",
+      "detectCvar": "r.XeSS.Enabled",
+      "enable": {
+        "r.AntiAliasingMethod": "4",
+        "r.XeSS.Enabled": "1"
+      },
+      "disable": {
+        "r.XeSS.Enabled": "0"
+      },
+      "modes": [
+        {
+          "id": "quality",
+          "name": "ui.gfx.mode.quality",
+          "cvars": {
+            "r.XeSS.Quality": "3"
+          }
+        },
+        {
+          "id": "balanced",
+          "name": "ui.gfx.mode.balanced",
+          "cvars": {
+            "r.XeSS.Quality": "2"
+          }
+        },
+        {
+          "id": "performance",
+          "name": "ui.gfx.mode.performance",
+          "cvars": {
+            "r.XeSS.Quality": "1"
+          }
+        },
+        {
+          "id": "ultra_performance",
+          "name": "ui.gfx.mode.ultra_performance",
+          "cvars": {
+            "r.XeSS.Quality": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "id": "low",
+      "name": "ui.gfx.preset.low",
+      "values": {
+        "shadows": "low",
+        "textures": "low",
+        "effects": "low",
+        "post_process": "low",
+        "view_distance": "low",
+        "foliage": "low",
+        "shading": "low",
+        "reflection_quality": "low",
+        "gi_quality": "low",
+        "aa_quality": "low",
+        "gi_method": "off",
+        "reflection_method": "ssr",
+        "hardware_rt": "off",
+        "virtual_shadows": "off",
+        "contact_shadows": "off",
+        "volumetric_fog": "off",
+        "ambient_occlusion": "off",
+        "motion_blur": "off",
+        "bloom": "on",
+        "lens_flares": "off",
+        "depth_of_field": "off",
+        "anisotropy": "x2",
+        "sharpening": "low",
+        "debris_detail": "low",
+        "deformation_detail": "low"
+      },
+      "upscaler": "tsr",
+      "upscalerMode": "performance"
+    },
+    {
+      "id": "medium",
+      "name": "ui.gfx.preset.medium",
+      "values": {
+        "shadows": "medium",
+        "textures": "medium",
+        "effects": "medium",
+        "post_process": "medium",
+        "view_distance": "medium",
+        "foliage": "medium",
+        "shading": "medium",
+        "reflection_quality": "medium",
+        "gi_quality": "medium",
+        "aa_quality": "medium",
+        "gi_method": "ssgi",
+        "reflection_method": "ssr",
+        "hardware_rt": "off",
+        "virtual_shadows": "off",
+        "contact_shadows": "off",
+        "volumetric_fog": "on",
+        "ambient_occlusion": "on",
+        "motion_blur": "low",
+        "bloom": "on",
+        "lens_flares": "off",
+        "depth_of_field": "off",
+        "anisotropy": "x4",
+        "sharpening": "low",
+        "debris_detail": "medium",
+        "deformation_detail": "medium"
+      },
+      "upscaler": "tsr",
+      "upscalerMode": "balanced"
+    },
+    {
+      "id": "high",
+      "name": "ui.gfx.preset.high",
+      "values": {
+        "shadows": "high",
+        "textures": "high",
+        "effects": "high",
+        "post_process": "high",
+        "view_distance": "high",
+        "foliage": "high",
+        "shading": "high",
+        "reflection_quality": "high",
+        "gi_quality": "high",
+        "aa_quality": "high",
+        "gi_method": "lumen",
+        "reflection_method": "lumen",
+        "hardware_rt": "off",
+        "virtual_shadows": "on",
+        "contact_shadows": "on",
+        "volumetric_fog": "on",
+        "ambient_occlusion": "on",
+        "motion_blur": "low",
+        "bloom": "on",
+        "lens_flares": "on",
+        "depth_of_field": "on",
+        "anisotropy": "x8",
+        "sharpening": "low",
+        "debris_detail": "medium",
+        "deformation_detail": "medium"
+      },
+      "upscaler": "tsr",
+      "upscalerMode": "quality"
+    },
+    {
+      "id": "epic",
+      "name": "ui.gfx.preset.epic",
+      "values": {
+        "shadows": "epic",
+        "textures": "epic",
+        "effects": "epic",
+        "post_process": "epic",
+        "view_distance": "epic",
+        "foliage": "epic",
+        "shading": "epic",
+        "reflection_quality": "epic",
+        "gi_quality": "epic",
+        "aa_quality": "epic",
+        "gi_method": "lumen",
+        "reflection_method": "lumen",
+        "hardware_rt": "off",
+        "virtual_shadows": "on",
+        "contact_shadows": "on",
+        "volumetric_fog": "on",
+        "ambient_occlusion": "on",
+        "motion_blur": "high",
+        "bloom": "on",
+        "lens_flares": "on",
+        "depth_of_field": "on",
+        "anisotropy": "x16",
+        "sharpening": "low",
+        "debris_detail": "high",
+        "deformation_detail": "high"
+      },
+      "upscaler": "tsr",
+      "upscalerMode": "quality"
+    },
+    {
+      "id": "cinematic",
+      "name": "ui.gfx.preset.cinematic",
+      "values": {
+        "shadows": "cinematic",
+        "textures": "cinematic",
+        "effects": "cinematic",
+        "post_process": "cinematic",
+        "view_distance": "cinematic",
+        "foliage": "cinematic",
+        "shading": "cinematic",
+        "reflection_quality": "cinematic",
+        "gi_quality": "cinematic",
+        "aa_quality": "cinematic",
+        "gi_method": "lumen",
+        "reflection_method": "lumen",
+        "hardware_rt": "on",
+        "virtual_shadows": "on",
+        "contact_shadows": "on",
+        "volumetric_fog": "on",
+        "ambient_occlusion": "on",
+        "motion_blur": "high",
+        "bloom": "on",
+        "lens_flares": "on",
+        "depth_of_field": "on",
+        "anisotropy": "x16",
+        "sharpening": "low",
+        "debris_detail": "high",
+        "deformation_detail": "high"
+      },
+      "upscaler": "tsr",
+      "upscalerMode": "native"
+    }
+  ],
+  "lowLatency": {
+    "detectCvar": "t.Streamline.Reflex.Enable",
+    "on": {
+      "t.Streamline.Reflex.Enable": "1"
+    },
+    "off": {
+      "t.Streamline.Reflex.Enable": "0"
+    }
+  }
+}

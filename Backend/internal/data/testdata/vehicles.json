@@ -1,0 +1,472 @@
+{
+  "version": 1,
+  "vehicles": [
+    {
+      "id": "hoshino_corolla",
+      "brand": "hoshino",
+      "name": "veh.hoshino_corolla",
+      "reference": "Toyota Corolla",
+      "class": "compact",
+      "body": "compact",
+      "tier": 1,
+      "price": {
+        "credits": 0
+      },
+      "unlockLevel": 1,
+      "starter": true,
+      "drivetrain": "fwd",
+      "engineLayout": "front",
+      "massKg": 1300,
+      "powerKw": 103,
+      "torqueNm": 172,
+      "idleRpm": 850,
+      "redlineRpm": 6800,
+      "gears": [
+        3.5,
+        2.1,
+        1.4,
+        1.0,
+        0.8
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 3.9,
+      "topSpeedKmh": 210,
+      "dimensions": {
+        "length": 4.37,
+        "width": 1.79,
+        "height": 1.44,
+        "wheelbase": 2.53,
+        "trackFront": 1.54,
+        "trackRear": 1.52,
+        "groundClearance": 0.15,
+        "wheelRadius": 0.33,
+        "wheelWidth": 0.22
+      },
+      "cgHeight": 0.654,
+      "frontWeight": 0.55,
+      "grip": 1.0,
+      "brakeG": 0.9,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 1.5,
+        "damping": 0.4,
+        "travel": 0.15,
+        "antiRoll": 0.5
+      },
+      "dragCoefficient": 0.33,
+      "downforce": 0.2,
+      "toughness": 1.0,
+      "armor": {
+        "front": 0.05,
+        "rear": 0.05,
+        "left": 0.05,
+        "right": 0.05,
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "ramPower": 1.0,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 5
+      },
+      "colors": [
+        "#D7263D",
+        "#FFFFFF"
+      ],
+      "tags": [
+        "popular",
+        "japanese"
+      ]
+    },
+    {
+      "id": "ironhorse_ranger",
+      "brand": "ironhorse",
+      "name": "veh.ironhorse_ranger",
+      "reference": "Ford Ranger",
+      "class": "pickup",
+      "body": "pickup",
+      "tier": 1,
+      "price": {
+        "credits": 0
+      },
+      "unlockLevel": 1,
+      "starter": true,
+      "drivetrain": "awd",
+      "engineLayout": "front",
+      "massKg": 1900,
+      "powerKw": 157,
+      "torqueNm": 500,
+      "idleRpm": 850,
+      "redlineRpm": 6800,
+      "gears": [
+        3.5,
+        2.1,
+        1.4,
+        1.0,
+        0.8
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 3.9,
+      "topSpeedKmh": 210,
+      "dimensions": {
+        "length": 5.35,
+        "width": 1.92,
+        "height": 1.82,
+        "wheelbase": 3.1,
+        "trackFront": 1.67,
+        "trackRear": 1.65,
+        "groundClearance": 0.15,
+        "wheelRadius": 0.33,
+        "wheelWidth": 0.22
+      },
+      "cgHeight": 0.787,
+      "frontWeight": 0.55,
+      "grip": 1.0,
+      "brakeG": 0.9,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 1.5,
+        "damping": 0.4,
+        "travel": 0.15,
+        "antiRoll": 0.5
+      },
+      "dragCoefficient": 0.33,
+      "downforce": 0.2,
+      "toughness": 1.0,
+      "armor": {
+        "front": 0.05,
+        "rear": 0.05,
+        "left": 0.05,
+        "right": 0.05,
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "ramPower": 1.0,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 5
+      },
+      "colors": [
+        "#1F4E79",
+        "#B0B0B0"
+      ],
+      "tags": [
+        "american",
+        "offroad"
+      ]
+    },
+    {
+      "id": "hoshino_supra",
+      "brand": "hoshino",
+      "name": "veh.hoshino_supra",
+      "reference": "Toyota Supra",
+      "class": "sports",
+      "body": "sports",
+      "tier": 3,
+      "price": {
+        "credits": 20000
+      },
+      "unlockLevel": 1,
+      "starter": false,
+      "drivetrain": "rwd",
+      "engineLayout": "front",
+      "massKg": 1500,
+      "powerKw": 285,
+      "torqueNm": 500,
+      "idleRpm": 850,
+      "redlineRpm": 6800,
+      "gears": [
+        3.5,
+        2.1,
+        1.4,
+        1.0,
+        0.8
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 3.9,
+      "topSpeedKmh": 270,
+      "dimensions": {
+        "length": 4.38,
+        "width": 1.85,
+        "height": 1.29,
+        "wheelbase": 2.54,
+        "trackFront": 1.6,
+        "trackRear": 1.58,
+        "groundClearance": 0.15,
+        "wheelRadius": 0.33,
+        "wheelWidth": 0.22
+      },
+      "cgHeight": 0.601,
+      "frontWeight": 0.55,
+      "grip": 1.0,
+      "brakeG": 0.9,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 1.5,
+        "damping": 0.4,
+        "travel": 0.15,
+        "antiRoll": 0.5
+      },
+      "dragCoefficient": 0.33,
+      "downforce": 0.2,
+      "toughness": 1.0,
+      "armor": {
+        "front": 0.05,
+        "rear": 0.05,
+        "left": 0.05,
+        "right": 0.05,
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "ramPower": 1.0,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 5
+      },
+      "colors": [
+        "#F2C200",
+        "#111111"
+      ],
+      "tags": [
+        "japanese"
+      ]
+    },
+    {
+      "id": "ironhorse_f150r",
+      "brand": "ironhorse",
+      "name": "veh.ironhorse_f150r",
+      "reference": "Ford F-150 Raptor",
+      "class": "truck",
+      "body": "truck",
+      "tier": 3,
+      "price": {
+        "credits": 90000
+      },
+      "unlockLevel": 5,
+      "starter": false,
+      "drivetrain": "awd",
+      "engineLayout": "front",
+      "massKg": 2600,
+      "powerKw": 336,
+      "torqueNm": 691,
+      "idleRpm": 850,
+      "redlineRpm": 6800,
+      "gears": [
+        3.5,
+        2.1,
+        1.4,
+        1.0,
+        0.8
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 3.9,
+      "topSpeedKmh": 270,
+      "dimensions": {
+        "length": 5.89,
+        "width": 2.19,
+        "height": 1.99,
+        "wheelbase": 3.42,
+        "trackFront": 1.94,
+        "trackRear": 1.92,
+        "groundClearance": 0.15,
+        "wheelRadius": 0.33,
+        "wheelWidth": 0.22
+      },
+      "cgHeight": 0.847,
+      "frontWeight": 0.55,
+      "grip": 1.0,
+      "brakeG": 0.9,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 1.5,
+        "damping": 0.4,
+        "travel": 0.15,
+        "antiRoll": 0.5
+      },
+      "dragCoefficient": 0.33,
+      "downforce": 0.2,
+      "toughness": 1.0,
+      "armor": {
+        "front": 0.05,
+        "rear": 0.05,
+        "left": 0.05,
+        "right": 0.05,
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "ramPower": 1.0,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 5
+      },
+      "colors": [
+        "#3A3A3A",
+        "#FF6A00"
+      ],
+      "tags": [
+        "american",
+        "heavy"
+      ]
+    },
+    {
+      "id": "fulmine_f8r",
+      "brand": "fulmine",
+      "name": "veh.fulmine_f8r",
+      "reference": "Ferrari F8 Tributo",
+      "class": "supercar",
+      "body": "supercar",
+      "tier": 4,
+      "price": {
+        "credits": 450000
+      },
+      "unlockLevel": 20,
+      "starter": false,
+      "drivetrain": "rwd",
+      "engineLayout": "mid",
+      "massKg": 1435,
+      "powerKw": 530,
+      "torqueNm": 770,
+      "idleRpm": 850,
+      "redlineRpm": 6800,
+      "gears": [
+        3.5,
+        2.1,
+        1.4,
+        1.0,
+        0.8
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 3.9,
+      "topSpeedKmh": 300,
+      "dimensions": {
+        "length": 4.61,
+        "width": 1.98,
+        "height": 1.21,
+        "wheelbase": 2.67,
+        "trackFront": 1.73,
+        "trackRear": 1.71,
+        "groundClearance": 0.15,
+        "wheelRadius": 0.33,
+        "wheelWidth": 0.22
+      },
+      "cgHeight": 0.574,
+      "frontWeight": 0.55,
+      "grip": 1.0,
+      "brakeG": 0.9,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 1.5,
+        "damping": 0.4,
+        "travel": 0.15,
+        "antiRoll": 0.5
+      },
+      "dragCoefficient": 0.33,
+      "downforce": 0.2,
+      "toughness": 1.0,
+      "armor": {
+        "front": 0.05,
+        "rear": 0.05,
+        "left": 0.05,
+        "right": 0.05,
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "ramPower": 1.0,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 5
+      },
+      "colors": [
+        "#C8102E",
+        "#F2C200"
+      ],
+      "tags": [
+        "italian",
+        "luxury"
+      ]
+    },
+    {
+      "id": "fulmine_sf90x",
+      "brand": "fulmine",
+      "name": "veh.fulmine_sf90x",
+      "reference": "Ferrari SF90",
+      "class": "hypercar",
+      "body": "hypercar",
+      "tier": 5,
+      "price": {
+        "credits": 1200000
+      },
+      "unlockLevel": 40,
+      "starter": false,
+      "drivetrain": "awd",
+      "engineLayout": "mid",
+      "massKg": 1570,
+      "powerKw": 735,
+      "torqueNm": 800,
+      "idleRpm": 850,
+      "redlineRpm": 6800,
+      "gears": [
+        3.5,
+        2.1,
+        1.4,
+        1.0,
+        0.8
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 3.9,
+      "topSpeedKmh": 330,
+      "dimensions": {
+        "length": 4.71,
+        "width": 1.97,
+        "height": 1.19,
+        "wheelbase": 2.73,
+        "trackFront": 1.72,
+        "trackRear": 1.7,
+        "groundClearance": 0.15,
+        "wheelRadius": 0.33,
+        "wheelWidth": 0.22
+      },
+      "cgHeight": 0.567,
+      "frontWeight": 0.55,
+      "grip": 1.0,
+      "brakeG": 0.9,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 1.5,
+        "damping": 0.4,
+        "travel": 0.15,
+        "antiRoll": 0.5
+      },
+      "dragCoefficient": 0.33,
+      "downforce": 0.2,
+      "toughness": 1.0,
+      "armor": {
+        "front": 0.05,
+        "rear": 0.05,
+        "left": 0.05,
+        "right": 0.05,
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "ramPower": 1.0,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 5
+      },
+      "colors": [
+        "#C8102E"
+      ],
+      "tags": [
+        "italian",
+        "luxury",
+        "ev"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6151 @@
+{
+  "version": 1,
+  "rivals": [
+    {
+      "id": "rival_rust",
+      "name": "camp.rival_rust",
+      "title": "camp.rival_rust.title",
+      "vehicle": "ironhorse_crownvic",
+      "color": "#B7410E"
+    },
+    {
+      "id": "rival_hook",
+      "name": "camp.rival_hook",
+      "title": "camp.rival_hook.title",
+      "vehicle": "kaiserling_sprinter",
+      "color": "#1F5AA6"
+    },
+    {
+      "id": "rival_scorpion",
+      "name": "camp.rival_scorpion",
+      "title": "camp.rival_scorpion.title",
+      "vehicle": "ironhorse_f150r",
+      "color": "#E25303"
+    },
+    {
+      "id": "rival_wolf",
+      "name": "camp.rival_wolf",
+      "title": "camp.rival_wolf.title",
+      "vehicle": "takane_wrx",
+      "color": "#A8D8EA"
+    },
+    {
+      "id": "rival_ghost",
+      "name": "camp.rival_ghost",
+      "title": "camp.rival_ghost.title",
+      "vehicle": "ryujin_r34",
+      "color": "#6A5ACD"
+    },
+    {
+      "id": "rival_titan",
+      "name": "camp.rival_titan",
+      "title": "camp.rival_titan.title",
+      "vehicle": "ironwood_w900",
+      "color": "#7A0019"
+    },
+    {
+      "id": "rival_neon",
+      "name": "camp.rival_neon",
+      "title": "camp.rival_neon.title",
+      "vehicle": "toromonte_huracan",
+      "color": "#FF2BD6"
+    },
+    {
+      "id": "rival_crown",
+      "name": "camp.rival_crown",
+      "title": "camp.rival_crown.title",
+      "vehicle": "cangqiong_u8",
+      "color": "#F5C542"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch1",
+      "name": "camp.ch1",
+      "description": "camp.ch1.desc",
+      "hub": "hub_ch1",
+      "unlockStars": 0,
+      "boss": "rival_rust",
+      "color": "#B7410E",
+      "levels": [
+        {
+          "id": "ch1_l1",
+          "name": "camp.ch1_l1",
+          "description": "camp.ch1_l1.desc",
+          "arena": "rust_bowl",
+          "mode": "derby",
+          "timeLimit": 240,
+          "maxTier": 1,
+          "loaner": "lucciola_500",
+          "opponents": [
+            {
+              "vehicle": "hoshino_corolla",
+              "ai": "rookie",
+              "team": 1,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hanbit_elantra",
+              "ai": "rookie",
+              "team": 2,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "feldmark_golf",
+              "ai": "rookie",
+              "team": 3,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 2 },
+            { "type": "damage_under", "value": 60 }
+          ],
+          "collectibles": 1,
+          "rewards": {
+            "credits": 4000,
+            "xp": 300,
+            "items": [
+              { "type": "equipment", "id": "front_bar_basic" }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch1_l1.intro.1",
+              "dlg.ch1_l1.intro.2",
+              "dlg.ch1_l1.intro.3",
+              "dlg.ch1_l1.intro.4",
+              "dlg.ch1_l1.intro.5"
+            ],
+            "outro": ["dlg.ch1_l1.outro.1", "dlg.ch1_l1.outro.2", "dlg.ch1_l1.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch1_l2",
+          "name": "camp.ch1_l2",
+          "description": "camp.ch1_l2.desc",
+          "arena": "scrap_pit",
+          "mode": "takedown",
+          "timeLimit": 300,
+          "maxTier": 1,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironhorse_focus",
+              "ai": "rookie",
+              "team": 1,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "bramble_cooper",
+              "ai": "rookie",
+              "team": 2,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kazeyama_civic",
+              "ai": "rookie",
+              "team": 3,
+              "name": null,
+              "upgrades": {},
+              "equipment": { "front": "front_bar_basic" },
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_corolla",
+              "ai": "rookie",
+              "team": 4,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 2 },
+            { "type": "score", "value": 4000 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 4600,
+            "xp": 340,
+            "items": [
+              { "type": "paint", "id": "paint_rust" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch1_l2.intro.1", "dlg.ch1_l2.intro.2", "dlg.ch1_l2.intro.3"],
+            "outro": ["dlg.ch1_l2.outro.1", "dlg.ch1_l2.outro.2", "dlg.ch1_l2.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch1_l3",
+          "name": "camp.ch1_l3",
+          "description": "camp.ch1_l3.desc",
+          "arena": "crusher_yard",
+          "mode": "destruction",
+          "timeLimit": 180,
+          "maxTier": 1,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "feldmark_t1",
+              "ai": "rookie",
+              "team": 1,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_transit",
+              "ai": "rookie",
+              "team": 2,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "destroy_props", "value": 15 },
+          "stars": [
+            { "type": "destroy_props", "value": 15 },
+            { "type": "destroy_props", "value": 25 },
+            { "type": "time_under", "value": 120 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 5200,
+            "xp": 380,
+            "items": [
+              { "type": "equipment", "id": "roof_cage_basic" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch1_l3.intro.1", "dlg.ch1_l3.intro.2"],
+            "outro": ["dlg.ch1_l3.outro.1", "dlg.ch1_l3.outro.2", "dlg.ch1_l3.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch1_l4",
+          "name": "camp.ch1_l4",
+          "description": "camp.ch1_l4.desc",
+          "arena": "junk_tower",
+          "mode": "ring_out",
+          "timeLimit": 240,
+          "maxTier": 1,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "hoshino_ae86",
+              "ai": "rookie",
+              "team": 1,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "akatsuki_mx5",
+              "ai": "rookie",
+              "team": 2,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "lucciola_500",
+              "ai": "rookie",
+              "team": 3,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 2 },
+            { "type": "no_wreck" }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 5800,
+            "xp": 420,
+            "items": [
+              { "type": "equipment", "id": "front_wedge_steel" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch1_l4.intro.1", "dlg.ch1_l4.intro.2"],
+            "outro": ["dlg.ch1_l4.outro.1", "dlg.ch1_l4.outro.2", "dlg.ch1_l4.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch1_l5",
+          "name": "camp.ch1_l5",
+          "description": "camp.ch1_l5.desc",
+          "arena": "rust_bowl",
+          "mode": "takedown",
+          "timeLimit": 300,
+          "maxTier": 1,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironhorse_focus",
+              "ai": "rookie",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hanbit_elantra",
+              "ai": "rookie",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "bramble_cooper",
+              "ai": "rookie",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_corolla",
+              "ai": "rookie",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "launch", "value": 2 },
+            { "type": "collect", "value": 3 }
+          ],
+          "collectibles": 3,
+          "rewards": {
+            "credits": 6400,
+            "xp": 460,
+            "items": [
+              { "type": "title", "id": "title_launcher" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch1_l5.intro.1", "dlg.ch1_l5.intro.2", "dlg.ch1_l5.intro.3", "dlg.ch1_l5.intro.4"],
+            "outro": ["dlg.ch1_l5.outro.1", "dlg.ch1_l5.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch1_l6",
+          "name": "camp.ch1_l6",
+          "description": "camp.ch1_l6.desc",
+          "arena": "scrap_pit",
+          "mode": "derby",
+          "timeLimit": 300,
+          "maxTier": 1,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironhorse_transit",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_hilux",
+              "ai": "rookie",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "feldmark_t1",
+              "ai": "rookie",
+              "team": 3,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "regular",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": { "front": "front_bar_basic" },
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_focus",
+              "ai": "rookie",
+              "team": 5,
+              "name": null,
+              "upgrades": {},
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "pit", "value": 1 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 3,
+          "rewards": {
+            "credits": 7000,
+            "xp": 500,
+            "items": [
+              { "type": "horn", "id": "horn_air_truck" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch1_l6.intro.1", "dlg.ch1_l6.intro.2", "dlg.ch1_l6.intro.3"],
+            "outro": ["dlg.ch1_l6.outro.1", "dlg.ch1_l6.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch1_l7",
+          "name": "camp.ch1_l7",
+          "description": "camp.ch1_l7.desc",
+          "arena": "crusher_yard",
+          "mode": "king_of_hill",
+          "timeLimit": 300,
+          "maxTier": 1,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "hoshino_hilux",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "kazeyama_civic",
+              "ai": "regular",
+              "team": 0,
+              "name": "camp.char_yu",
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hill_time", "value": 60 },
+            { "type": "takedowns", "value": 3 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 7600,
+            "xp": 540,
+            "items": [
+              { "type": "banner", "id": "banner_checker" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch1_l7.intro.1", "dlg.ch1_l7.intro.2"],
+            "outro": ["dlg.ch1_l7.outro.1", "dlg.ch1_l7.outro.2", "dlg.ch1_l7.outro.3", "dlg.ch1_l7.outro.4"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch1_l8",
+          "name": "camp.ch1_l8",
+          "description": "camp.ch1_l8.desc",
+          "arena": "rust_bowl",
+          "mode": "boss",
+          "timeLimit": 300,
+          "maxTier": 1,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "boss",
+              "team": 1,
+              "name": "camp.rival_rust",
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_bar_heavy", "rear": "rear_bumper_tow", "roof": "roof_cage_basic" },
+              "boss": true
+            },
+            {
+              "vehicle": "hoshino_hilux",
+              "ai": "rookie",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_transit",
+              "ai": "rookie",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "boss" },
+          "stars": [
+            { "type": "boss" },
+            { "type": "hits_of_kind", "kind": "head_on", "value": 3 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 0,
+          "rewards": {
+            "credits": 12000,
+            "xp": 1200,
+            "items": [
+              { "type": "vehicle", "id": "ironhorse_crownvic" },
+              { "type": "title", "id": "title_scrap_survivor" },
+              { "type": "banner", "id": "banner_junkyard" }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch1_l8.intro.1",
+              "dlg.ch1_l8.intro.2",
+              "dlg.ch1_l8.intro.3",
+              "dlg.ch1_l8.intro.4",
+              "dlg.ch1_l8.intro.5",
+              "dlg.ch1_l8.intro.6"
+            ],
+            "outro": [
+              "dlg.ch1_l8.outro.1",
+              "dlg.ch1_l8.outro.2",
+              "dlg.ch1_l8.outro.3",
+              "dlg.ch1_l8.outro.4",
+              "dlg.ch1_l8.outro.5"
+            ]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "name": "camp.ch2",
+      "description": "camp.ch2.desc",
+      "hub": "hub_ch2",
+      "unlockStars": 12,
+      "boss": "rival_hook",
+      "color": "#1F5AA6",
+      "levels": [
+        {
+          "id": "ch2_l1",
+          "name": "camp.ch2_l1",
+          "description": "camp.ch2_l1.desc",
+          "arena": "harbor_deck",
+          "mode": "derby",
+          "timeLimit": 300,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "hoshino_camry",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kazeyama_crv",
+              "ai": "rookie",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_transit",
+              "ai": "regular",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_rav4",
+              "ai": "rookie",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_focus",
+              "ai": "regular",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 3 },
+            { "type": "collect", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 7000,
+            "xp": 450,
+            "items": [
+              { "type": "paint", "id": "paint_tidewater" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch2_l1.intro.1", "dlg.ch2_l1.intro.2", "dlg.ch2_l1.intro.3"],
+            "outro": ["dlg.ch2_l1.outro.1", "dlg.ch2_l1.outro.2"]
+          },
+          "unlock": { "level": "ch1_l8", "stars": 12 }
+        },
+        {
+          "id": "ch2_l2",
+          "name": "camp.ch2_l2",
+          "description": "camp.ch2_l2.desc",
+          "arena": "crane_pier",
+          "mode": "ring_out",
+          "timeLimit": 240,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kazeyama_accord",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_camry",
+              "ai": "regular",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_s15",
+              "ai": "rookie",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "rookie",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 3 },
+            { "type": "no_wreck" }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 7700,
+            "xp": 490,
+            "items": [
+              { "type": "equipment", "id": "rear_bumper_reinforced" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch2_l2.intro.1", "dlg.ch2_l2.intro.2"],
+            "outro": ["dlg.ch2_l2.outro.1", "dlg.ch2_l2.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch2_l3",
+          "name": "camp.ch2_l3",
+          "description": "camp.ch2_l3.desc",
+          "arena": "container_maze",
+          "mode": "takedown",
+          "timeLimit": 300,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kaiserling_sprinter",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_f150",
+              "ai": "regular",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_s15",
+              "ai": "regular",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_camry",
+              "ai": "rookie",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "longteng_seal",
+              "ai": "regular",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "rear_end", "value": 3 },
+            { "type": "score", "value": 6000 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 8400,
+            "xp": 530,
+            "items": [
+              { "type": "currency", "id": "gold", "amount": 50 }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch2_l3.intro.1",
+              "dlg.ch2_l3.intro.2",
+              "dlg.ch2_l3.intro.3",
+              "dlg.ch2_l3.intro.4",
+              "dlg.ch2_l3.intro.5"
+            ],
+            "outro": ["dlg.ch2_l3.outro.1", "dlg.ch2_l3.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch2_l4",
+          "name": "camp.ch2_l4",
+          "description": "camp.ch2_l4.desc",
+          "arena": "harbor_deck",
+          "mode": "team_takedown",
+          "timeLimit": 360,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "lonestar_silverado",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_f150",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "kazeyama_civic",
+              "ai": "regular",
+              "team": 0,
+              "name": "camp.char_yu",
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "veteran",
+              "team": 0,
+              "name": "camp.rival_rust",
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 5 },
+            { "type": "hits_of_kind", "kind": "head_on", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 9100,
+            "xp": 570,
+            "items": [
+              { "type": "equipment", "id": "side_plates_steel" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch2_l4.intro.1", "dlg.ch2_l4.intro.2", "dlg.ch2_l4.intro.3"],
+            "outro": ["dlg.ch2_l4.outro.1", "dlg.ch2_l4.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch2_l5",
+          "name": "camp.ch2_l5",
+          "description": "camp.ch2_l5.desc",
+          "arena": "harbor_deck",
+          "mode": "destruction",
+          "timeLimit": 180,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kazeyama_crv",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_rav4",
+              "ai": "regular",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_sprinter",
+              "ai": "regular",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "destroy_props", "value": 15 },
+          "stars": [
+            { "type": "destroy_props", "value": 15 },
+            { "type": "destroy_props", "value": 22 },
+            { "type": "time_under", "value": 150 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 9800,
+            "xp": 610,
+            "items": [
+              { "type": "sparks", "id": "sparks_blue" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch2_l5.intro.1", "dlg.ch2_l5.intro.2"],
+            "outro": ["dlg.ch2_l5.outro.1", "dlg.ch2_l5.outro.2", "dlg.ch2_l5.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch2_l6",
+          "name": "camp.ch2_l6",
+          "description": "camp.ch2_l6.desc",
+          "arena": "container_maze",
+          "mode": "survival",
+          "timeLimit": 120,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "hoshino_camry",
+              "ai": "rookie",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": { "front": "front_bar_basic" },
+              "boss": false
+            },
+            {
+              "vehicle": "kazeyama_accord",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": { "front": "front_bar_basic" },
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_f150",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "lonestar_silverado",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_s15",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_sprinter",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": { "front": "front_bar_basic" },
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "survive", "value": 120 },
+          "stars": [
+            { "type": "survive", "value": 120 },
+            { "type": "damage_under", "value": 60 },
+            { "type": "takedowns", "value": 3 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 10500,
+            "xp": 650,
+            "items": [
+              { "type": "equipment", "id": "tire_offroad" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch2_l6.intro.1", "dlg.ch2_l6.intro.2"],
+            "outro": ["dlg.ch2_l6.outro.1", "dlg.ch2_l6.outro.2", "dlg.ch2_l6.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch2_l7",
+          "name": "camp.ch2_l7",
+          "description": "camp.ch2_l7.desc",
+          "arena": "harbor_deck",
+          "mode": "bounty",
+          "timeLimit": 300,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "hoshino_camry",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kazeyama_accord",
+              "ai": "regular",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_s15",
+              "ai": "regular",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "longteng_seal",
+              "ai": "regular",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "coulomb_modely",
+              "ai": "regular",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "regular",
+              "team": 6,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "score", "value": 8000 },
+            { "type": "hits_of_kind", "kind": "pit", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 11200,
+            "xp": 690,
+            "items": [
+              { "type": "title", "id": "title_pit_boss" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch2_l7.intro.1", "dlg.ch2_l7.intro.2"],
+            "outro": ["dlg.ch2_l7.outro.1", "dlg.ch2_l7.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch2_l8",
+          "name": "camp.ch2_l8",
+          "description": "camp.ch2_l8.desc",
+          "arena": "crane_pier",
+          "mode": "boss",
+          "timeLimit": 300,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kaiserling_sprinter",
+              "ai": "boss",
+              "team": 1,
+              "name": "camp.rival_hook",
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_battering_ram", "side": "side_blades_basic", "core": "core_ballast_lead" },
+              "boss": true
+            },
+            {
+              "vehicle": "ironhorse_f150",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "boss" },
+          "stars": [
+            { "type": "boss" },
+            { "type": "hits_of_kind", "kind": "side_swipe", "value": 3 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 0,
+          "rewards": {
+            "credits": 21000,
+            "xp": 1500,
+            "items": [
+              { "type": "vehicle", "id": "kaiserling_sprinter" },
+              { "type": "title", "id": "title_dockhand" },
+              { "type": "banner", "id": "banner_harbor" }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch2_l8.intro.1",
+              "dlg.ch2_l8.intro.2",
+              "dlg.ch2_l8.intro.3",
+              "dlg.ch2_l8.intro.4",
+              "dlg.ch2_l8.intro.5"
+            ],
+            "outro": [
+              "dlg.ch2_l8.outro.1",
+              "dlg.ch2_l8.outro.2",
+              "dlg.ch2_l8.outro.3",
+              "dlg.ch2_l8.outro.4",
+              "dlg.ch2_l8.outro.5"
+            ]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "name": "camp.ch3",
+      "description": "camp.ch3.desc",
+      "hub": "hub_ch3",
+      "unlockStars": 30,
+      "boss": "rival_scorpion",
+      "color": "#E25303",
+      "levels": [
+        {
+          "id": "ch3_l1",
+          "name": "camp.ch3_l1",
+          "description": "camp.ch3_l1.desc",
+          "arena": "dune_basin",
+          "mode": "derby",
+          "timeLimit": 300,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_f150",
+              "ai": "regular",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_rav4",
+              "ai": "regular",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "lonestar_silverado",
+              "ai": "regular",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_s15",
+              "ai": "regular",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kazeyama_crv",
+              "ai": "regular",
+              "team": 6,
+              "name": null,
+              "upgrades": { "engine": 1, "armor": 1 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "launch", "value": 2 },
+            { "type": "collect", "value": 3 }
+          ],
+          "collectibles": 3,
+          "rewards": {
+            "credits": 11000,
+            "xp": 650,
+            "items": [
+              { "type": "paint", "id": "paint_sandstorm" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch3_l1.intro.1", "dlg.ch3_l1.intro.2"],
+            "outro": ["dlg.ch3_l1.outro.1", "dlg.ch3_l1.outro.2", "dlg.ch3_l1.outro.3", "dlg.ch3_l1.outro.4"]
+          },
+          "unlock": { "level": "ch2_l8", "stars": 30 }
+        },
+        {
+          "id": "ch3_l2",
+          "name": "camp.ch3_l2",
+          "description": "camp.ch3_l2.desc",
+          "arena": "mesa_top",
+          "mode": "ring_out",
+          "timeLimit": 240,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kazeyama_accord",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "rattler_charger",
+              "ai": "regular",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "coulomb_model3",
+              "ai": "regular",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_s15",
+              "ai": "regular",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 3 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 11800,
+            "xp": 690,
+            "items": [
+              { "type": "equipment", "id": "side_skirt_rubber" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch3_l2.intro.1", "dlg.ch3_l2.intro.2", "dlg.ch3_l2.intro.3"],
+            "outro": ["dlg.ch3_l2.outro.1", "dlg.ch3_l2.outro.2", "dlg.ch3_l2.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch3_l3",
+          "name": "camp.ch3_l3",
+          "description": "camp.ch3_l3.desc",
+          "arena": "oasis_koth",
+          "mode": "king_of_hill",
+          "timeLimit": 360,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_wedge_steel" },
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_f150",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_wedge_steel" },
+              "boss": false
+            },
+            {
+              "vehicle": "lonestar_silverado",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "veteran",
+              "team": 0,
+              "name": "camp.rival_rust",
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "kazeyama_civic",
+              "ai": "regular",
+              "team": 0,
+              "name": "camp.char_yu",
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hill_time", "value": 60 },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 12600,
+            "xp": 730,
+            "items": [
+              { "type": "banner", "id": "banner_flame" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch3_l3.intro.1", "dlg.ch3_l3.intro.2"],
+            "outro": ["dlg.ch3_l3.outro.1", "dlg.ch3_l3.outro.2", "dlg.ch3_l3.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch3_l4",
+          "name": "camp.ch3_l4",
+          "description": "camp.ch3_l4.desc",
+          "arena": "quarry_pit",
+          "mode": "takedown",
+          "timeLimit": 300,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironhorse_f150",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_wedge_steel" },
+              "boss": false
+            },
+            {
+              "vehicle": "rattler_charger",
+              "ai": "regular",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "longteng_han",
+              "ai": "regular",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "qingyun_et7",
+              "ai": "regular",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "nordvik_xc90",
+              "ai": "regular",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "crush", "value": 1 },
+            { "type": "score", "value": 7000 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 13400,
+            "xp": 770,
+            "items": [
+              { "type": "equipment", "id": "ability_hydraulic_jump" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch3_l4.intro.1", "dlg.ch3_l4.intro.2"],
+            "outro": ["dlg.ch3_l4.outro.1", "dlg.ch3_l4.outro.2", "dlg.ch3_l4.outro.3", "dlg.ch3_l4.outro.4"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch3_l5",
+          "name": "camp.ch3_l5",
+          "description": "camp.ch3_l5.desc",
+          "arena": "dune_basin",
+          "mode": "survival",
+          "timeLimit": 150,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_wedge_steel" },
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_f150",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_wedge_steel" },
+              "boss": false
+            },
+            {
+              "vehicle": "lonestar_silverado",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_hilux",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "jiayuan_l9",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_sprinter",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "survive", "value": 150 },
+          "stars": [
+            { "type": "survive", "value": 150 },
+            { "type": "takedowns", "value": 4 },
+            { "type": "damage_under", "value": 70 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 14200,
+            "xp": 810,
+            "items": [
+              { "type": "currency", "id": "gold", "amount": 60 }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch3_l5.intro.1", "dlg.ch3_l5.intro.2"],
+            "outro": ["dlg.ch3_l5.outro.1", "dlg.ch3_l5.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch3_l6",
+          "name": "camp.ch3_l6",
+          "description": "camp.ch3_l6.desc",
+          "arena": "quarry_pit",
+          "mode": "derby",
+          "timeLimit": 300,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "rattler_charger",
+              "ai": "regular",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_s15",
+              "ai": "veteran",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "coulomb_model3",
+              "ai": "regular",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "longteng_seal",
+              "ai": "regular",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "veteran",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_wedge_steel" },
+              "boss": false
+            },
+            {
+              "vehicle": "kazeyama_accord",
+              "ai": "regular",
+              "team": 6,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "side_swipe", "value": 3 },
+            { "type": "damage_under", "value": 40 }
+          ],
+          "collectibles": 1,
+          "rewards": {
+            "credits": 15000,
+            "xp": 850,
+            "items": [
+              { "type": "title", "id": "title_bulldozer" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch3_l6.intro.1", "dlg.ch3_l6.intro.2"],
+            "outro": ["dlg.ch3_l6.outro.1", "dlg.ch3_l6.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch3_l7",
+          "name": "camp.ch3_l7",
+          "description": "camp.ch3_l7.desc",
+          "arena": "oasis_koth",
+          "mode": "team_elimination",
+          "timeLimit": 360,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironhorse_f150",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_wedge_steel" },
+              "boss": false
+            },
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_wedge_steel" },
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "veteran",
+              "team": 0,
+              "name": "camp.rival_rust",
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 2 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 15800,
+            "xp": 890,
+            "items": [
+              { "type": "equipment", "id": "tire_chains" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch3_l7.intro.1", "dlg.ch3_l7.intro.2"],
+            "outro": ["dlg.ch3_l7.outro.1", "dlg.ch3_l7.outro.2", "dlg.ch3_l7.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch3_l8",
+          "name": "camp.ch3_l8",
+          "description": "camp.ch3_l8.desc",
+          "arena": "dune_basin",
+          "mode": "boss",
+          "timeLimit": 300,
+          "maxTier": 2,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironhorse_f150r",
+              "ai": "boss",
+              "team": 1,
+              "name": "camp.rival_scorpion",
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {
+                "front": "front_wedge_scorpion",
+                "wheels": "tire_offroad",
+                "roof": "roof_cage_racing",
+                "ability": "ability_hydraulic_jump"
+              },
+              "boss": true
+            },
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_wedge_steel" },
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_hilux",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "boss" },
+          "stars": [
+            { "type": "boss" },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 2 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 0,
+          "rewards": {
+            "credits": 33000,
+            "xp": 1950,
+            "items": [
+              { "type": "vehicle", "id": "ironhorse_f150r" },
+              { "type": "title", "id": "title_dune_rider" },
+              { "type": "banner", "id": "banner_desert" }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch3_l8.intro.1",
+              "dlg.ch3_l8.intro.2",
+              "dlg.ch3_l8.intro.3",
+              "dlg.ch3_l8.intro.4",
+              "dlg.ch3_l8.intro.5",
+              "dlg.ch3_l8.intro.6"
+            ],
+            "outro": [
+              "dlg.ch3_l8.outro.1",
+              "dlg.ch3_l8.outro.2",
+              "dlg.ch3_l8.outro.3",
+              "dlg.ch3_l8.outro.4",
+              "dlg.ch3_l8.outro.5"
+            ]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        }
+      ]
+    },
+    {
+      "id": "ch4",
+      "name": "camp.ch4",
+      "description": "camp.ch4.desc",
+      "hub": "hub_ch4",
+      "unlockStars": 50,
+      "boss": "rival_wolf",
+      "color": "#A8D8EA",
+      "levels": [
+        {
+          "id": "ch4_l1",
+          "name": "camp.ch4_l1",
+          "description": "camp.ch4_l1.desc",
+          "arena": "frozen_lake",
+          "mode": "derby",
+          "timeLimit": 300,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "takane_wrx",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hagane_evo",
+              "ai": "veteran",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "regular",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_landcruiser",
+              "ai": "regular",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "nordvik_xc90",
+              "ai": "regular",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "highmoor_defender",
+              "ai": "veteran",
+              "team": 6,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 3 },
+            { "type": "collect", "value": 3 }
+          ],
+          "collectibles": 3,
+          "rewards": {
+            "credits": 16000,
+            "xp": 900,
+            "items": [
+              { "type": "paint", "id": "paint_glacier" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch4_l1.intro.1", "dlg.ch4_l1.intro.2"],
+            "outro": ["dlg.ch4_l1.outro.1", "dlg.ch4_l1.outro.2"]
+          },
+          "unlock": { "level": "ch3_l8", "stars": 50 }
+        },
+        {
+          "id": "ch4_l2",
+          "name": "camp.ch4_l2",
+          "description": "camp.ch4_l2.desc",
+          "arena": "snow_fort",
+          "mode": "king_of_hill",
+          "timeLimit": 360,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "hagane_evo",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "takane_wrx",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "highmoor_defender",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "veteran",
+              "team": 0,
+              "name": "camp.rival_rust",
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_f150r",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_scorpion",
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hill_time", "value": 80 },
+            { "type": "hits_of_kind", "kind": "head_on", "value": 3 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 17000,
+            "xp": 950,
+            "items": [
+              { "type": "equipment", "id": "roof_armor_plate" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch4_l2.intro.1", "dlg.ch4_l2.intro.2", "dlg.ch4_l2.intro.3"],
+            "outro": ["dlg.ch4_l2.outro.1", "dlg.ch4_l2.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch4_l3",
+          "name": "camp.ch4_l3",
+          "description": "camp.ch4_l3.desc",
+          "arena": "glacier_shelf",
+          "mode": "ring_out",
+          "timeLimit": 240,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "takane_wrx",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hagane_evo",
+              "ai": "veteran",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_r34",
+              "ai": "veteran",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "akatsuki_rx7",
+              "ai": "veteran",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "vierling_rs6",
+              "ai": "veteran",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 3 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 18000,
+            "xp": 1000,
+            "items": [
+              { "type": "horn", "id": "horn_foghorn" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch4_l3.intro.1", "dlg.ch4_l3.intro.2", "dlg.ch4_l3.intro.3"],
+            "outro": ["dlg.ch4_l3.outro.1", "dlg.ch4_l3.outro.2", "dlg.ch4_l3.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch4_l4",
+          "name": "camp.ch4_l4",
+          "description": "camp.ch4_l4.desc",
+          "arena": "snow_fort",
+          "mode": "destruction",
+          "timeLimit": 180,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "hoshino_landcruiser",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "highmoor_defender",
+              "ai": "veteran",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "mesa_wrangler",
+              "ai": "veteran",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "destroy_props", "value": 8 },
+          "stars": [
+            { "type": "destroy_props", "value": 8 },
+            { "type": "destroy_props", "value": 12 },
+            { "type": "time_under", "value": 120 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 19000,
+            "xp": 1050,
+            "items": [
+              { "type": "equipment", "id": "core_engine_shield" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch4_l4.intro.1", "dlg.ch4_l4.intro.2", "dlg.ch4_l4.intro.3"],
+            "outro": ["dlg.ch4_l4.outro.1", "dlg.ch4_l4.outro.2", "dlg.ch4_l4.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch4_l5",
+          "name": "camp.ch4_l5",
+          "description": "camp.ch4_l5.desc",
+          "arena": "frozen_lake",
+          "mode": "survival",
+          "timeLimit": 150,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "hoshino_landcruiser",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "highmoor_defender",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "crestmont_escalade",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "seiran_lx",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "anvil_trx",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_f150r",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": { "front": "front_wedge_steel" },
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "survive", "value": 150 },
+          "stars": [
+            { "type": "survive", "value": 150 },
+            { "type": "takedowns", "value": 4 },
+            { "type": "hits_of_kind", "kind": "pit", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 20000,
+            "xp": 1100,
+            "items": [
+              { "type": "currency", "id": "gold", "amount": 80 }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch4_l5.intro.1", "dlg.ch4_l5.intro.2", "dlg.ch4_l5.intro.3"],
+            "outro": ["dlg.ch4_l5.outro.1", "dlg.ch4_l5.outro.2", "dlg.ch4_l5.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch4_l6",
+          "name": "camp.ch4_l6",
+          "description": "camp.ch4_l6.desc",
+          "arena": "snow_fort",
+          "mode": "team_elimination",
+          "timeLimit": 360,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "takane_wrx",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hagane_evo",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "ironhorse_f150r",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_scorpion",
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 2 },
+            { "type": "damage_under", "value": 60 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 21000,
+            "xp": 1150,
+            "items": [
+              { "type": "title", "id": "title_tbone_master" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch4_l6.intro.1", "dlg.ch4_l6.intro.2"],
+            "outro": ["dlg.ch4_l6.outro.1", "dlg.ch4_l6.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch4_l7",
+          "name": "camp.ch4_l7",
+          "description": "camp.ch4_l7.desc",
+          "arena": "frozen_lake",
+          "mode": "takedown",
+          "timeLimit": 300,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "takane_wrx",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hagane_evo",
+              "ai": "veteran",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_gtr",
+              "ai": "veteran",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "vierling_rs6",
+              "ai": "veteran",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "wolfram_m5",
+              "ai": "veteran",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_r34",
+              "ai": "veteran",
+              "team": 6,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "rear_end", "value": 4 },
+            { "type": "score", "value": 9000 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 22000,
+            "xp": 1200,
+            "items": [
+              { "type": "wheels", "id": "wheels_beadlock" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch4_l7.intro.1", "dlg.ch4_l7.intro.2"],
+            "outro": ["dlg.ch4_l7.outro.1", "dlg.ch4_l7.outro.2", "dlg.ch4_l7.outro.3", "dlg.ch4_l7.outro.4"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch4_l8",
+          "name": "camp.ch4_l8",
+          "description": "camp.ch4_l8.desc",
+          "arena": "frozen_lake",
+          "mode": "boss",
+          "timeLimit": 300,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "takane_wrx",
+              "ai": "boss",
+              "team": 1,
+              "name": "camp.rival_wolf",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {
+                "side": "side_hubs_shredder",
+                "wheels": "tire_spikes_drill",
+                "roof": "roof_cage_racing",
+                "ability": "ability_brace"
+              },
+              "boss": true
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "boss" },
+          "stars": [
+            { "type": "boss" },
+            { "type": "hits_of_kind", "kind": "side_swipe", "value": 3 },
+            { "type": "time_under", "value": 180 }
+          ],
+          "collectibles": 0,
+          "rewards": {
+            "credits": 48000,
+            "xp": 2700,
+            "items": [
+              { "type": "vehicle", "id": "takane_wrx" },
+              { "type": "title", "id": "title_ice_breaker" },
+              { "type": "banner", "id": "banner_glacier" }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch4_l8.intro.1",
+              "dlg.ch4_l8.intro.2",
+              "dlg.ch4_l8.intro.3",
+              "dlg.ch4_l8.intro.4",
+              "dlg.ch4_l8.intro.5",
+              "dlg.ch4_l8.intro.6"
+            ],
+            "outro": [
+              "dlg.ch4_l8.outro.1",
+              "dlg.ch4_l8.outro.2",
+              "dlg.ch4_l8.outro.3",
+              "dlg.ch4_l8.outro.4",
+              "dlg.ch4_l8.outro.5"
+            ]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        }
+      ]
+    },
+    {
+      "id": "ch5",
+      "name": "camp.ch5",
+      "description": "camp.ch5.desc",
+      "hub": "hub_ch5",
+      "unlockStars": 72,
+      "boss": "rival_ghost",
+      "color": "#6A5ACD",
+      "levels": [
+        {
+          "id": "ch5_l1",
+          "name": "camp.ch5_l1",
+          "description": "camp.ch5_l1.desc",
+          "arena": "downtown_plaza",
+          "mode": "derby",
+          "timeLimit": 300,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ryujin_r34",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_supra",
+              "ai": "veteran",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "akatsuki_rx7",
+              "ai": "veteran",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "side": "side_blades_basic" },
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_mustang",
+              "ai": "veteran",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "wolfram_m3",
+              "ai": "veteran",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_c63",
+              "ai": "veteran",
+              "team": 6,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 3 },
+            { "type": "collect", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 22000,
+            "xp": 1200,
+            "items": [
+              { "type": "paint", "id": "paint_streetlight" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch5_l1.intro.1", "dlg.ch5_l1.intro.2", "dlg.ch5_l1.intro.3", "dlg.ch5_l1.intro.4"],
+            "outro": ["dlg.ch5_l1.outro.1", "dlg.ch5_l1.outro.2", "dlg.ch5_l1.outro.3"]
+          },
+          "unlock": { "level": "ch4_l8", "stars": 72 }
+        },
+        {
+          "id": "ch5_l2",
+          "name": "camp.ch5_l2",
+          "description": "camp.ch5_l2.desc",
+          "arena": "highway_interchange",
+          "mode": "takedown",
+          "timeLimit": 300,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ryujin_gtr",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "lonestar_camaro",
+              "ai": "veteran",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_supra",
+              "ai": "veteran",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "wolfram_m3",
+              "ai": "veteran",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "vierling_rs6",
+              "ai": "veteran",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "xinghe_su7",
+              "ai": "veteran",
+              "team": 6,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "launch", "value": 2 },
+            { "type": "score", "value": 9000 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 23200,
+            "xp": 1260,
+            "items": [
+              { "type": "equipment", "id": "core_lightweight_kit" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch5_l2.intro.1", "dlg.ch5_l2.intro.2"],
+            "outro": ["dlg.ch5_l2.outro.1", "dlg.ch5_l2.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch5_l3",
+          "name": "camp.ch5_l3",
+          "description": "camp.ch5_l3.desc",
+          "arena": "parking_rooftop",
+          "mode": "ring_out",
+          "timeLimit": 240,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "akatsuki_rx7",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kazeyama_nsx",
+              "ai": "veteran",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "lonestar_corvette",
+              "ai": "veteran",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_supra",
+              "ai": "veteran",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_r34",
+              "ai": "veteran",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 3 },
+            { "type": "no_wreck" }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 24400,
+            "xp": 1320,
+            "items": [
+              { "type": "banner", "id": "banner_lantern" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch5_l3.intro.1", "dlg.ch5_l3.intro.2"],
+            "outro": ["dlg.ch5_l3.outro.1", "dlg.ch5_l3.outro.2", "dlg.ch5_l3.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch5_l4",
+          "name": "camp.ch5_l4",
+          "description": "camp.ch5_l4.desc",
+          "arena": "downtown_plaza",
+          "mode": "team_takedown",
+          "timeLimit": 360,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ryujin_gtr",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "akatsuki_rx7",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "side": "side_blades_basic" },
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_supra",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "veteran",
+              "team": 0,
+              "name": "camp.rival_rust",
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "takane_wrx",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_wolf",
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "side": "side_hubs_shredder" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 5 },
+            { "type": "hits_of_kind", "kind": "pit", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 25600,
+            "xp": 1380,
+            "items": [
+              { "type": "equipment", "id": "tire_runflat" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch5_l4.intro.1", "dlg.ch5_l4.intro.2", "dlg.ch5_l4.intro.3"],
+            "outro": ["dlg.ch5_l4.outro.1", "dlg.ch5_l4.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch5_l5",
+          "name": "camp.ch5_l5",
+          "description": "camp.ch5_l5.desc",
+          "arena": "highway_interchange",
+          "mode": "bounty",
+          "timeLimit": 300,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ryujin_gtr",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "lonestar_camaro",
+              "ai": "veteran",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "rattler_hellcat",
+              "ai": "veteran",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "wolfram_m5",
+              "ai": "veteran",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_c63",
+              "ai": "veteran",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_supra",
+              "ai": "elite",
+              "team": 6,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "vierling_rs6",
+              "ai": "veteran",
+              "team": 7,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "score", "value": 10000 },
+            { "type": "hits_of_kind", "kind": "head_on", "value": 3 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 26800,
+            "xp": 1440,
+            "items": [
+              { "type": "title", "id": "title_untouchable" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch5_l5.intro.1", "dlg.ch5_l5.intro.2", "dlg.ch5_l5.intro.3"],
+            "outro": ["dlg.ch5_l5.outro.1", "dlg.ch5_l5.outro.2", "dlg.ch5_l5.outro.3", "dlg.ch5_l5.outro.4"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch5_l6",
+          "name": "camp.ch5_l6",
+          "description": "camp.ch5_l6.desc",
+          "arena": "downtown_plaza",
+          "mode": "survival",
+          "timeLimit": 150,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "crestmont_escalade",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_sclass",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "anvil_trx",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "seiran_lx",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "titanus_hummerev",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "coulomb_cybertruck",
+              "ai": "veteran",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 2, "armor": 2, "chassis": 2, "tires": 2 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "survive", "value": 150 },
+          "stars": [
+            { "type": "survive", "value": 150 },
+            { "type": "damage_under", "value": 60 },
+            { "type": "takedowns", "value": 5 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 28000,
+            "xp": 1500,
+            "items": [
+              { "type": "currency", "id": "gold", "amount": 100 }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch5_l6.intro.1", "dlg.ch5_l6.intro.2"],
+            "outro": ["dlg.ch5_l6.outro.1", "dlg.ch5_l6.outro.2", "dlg.ch5_l6.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch5_l7",
+          "name": "camp.ch5_l7",
+          "description": "camp.ch5_l7.desc",
+          "arena": "highway_interchange",
+          "mode": "team_elimination",
+          "timeLimit": 360,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ryujin_gtr",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "lonestar_corvette",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "takane_wrx",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_wolf",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "side": "side_hubs_shredder" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 2 },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 29200,
+            "xp": 1560,
+            "items": [
+              { "type": "equipment", "id": "side_blades_basic" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch5_l7.intro.1", "dlg.ch5_l7.intro.2"],
+            "outro": ["dlg.ch5_l7.outro.1", "dlg.ch5_l7.outro.2", "dlg.ch5_l7.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch5_l8",
+          "name": "camp.ch5_l8",
+          "description": "camp.ch5_l8.desc",
+          "arena": "parking_rooftop",
+          "mode": "boss",
+          "timeLimit": 300,
+          "maxTier": 3,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ryujin_r34",
+              "ai": "boss",
+              "team": 1,
+              "name": "camp.rival_ghost",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {
+                "front": "front_wedge_titanium",
+                "side": "side_hubs_shredder",
+                "core": "core_lightweight_kit",
+                "ability": "ability_nitro_burst"
+              },
+              "boss": true
+            },
+            {
+              "vehicle": "ryujin_gtr",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hoshino_supra",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "boss" },
+          "stars": [
+            { "type": "boss" },
+            { "type": "hits_of_kind", "kind": "launch", "value": 2 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 0,
+          "rewards": {
+            "credits": 66000,
+            "xp": 3600,
+            "items": [
+              { "type": "vehicle", "id": "ryujin_r34" },
+              { "type": "title", "id": "title_street_legend" },
+              { "type": "banner", "id": "banner_city" }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch5_l8.intro.1",
+              "dlg.ch5_l8.intro.2",
+              "dlg.ch5_l8.intro.3",
+              "dlg.ch5_l8.intro.4",
+              "dlg.ch5_l8.intro.5",
+              "dlg.ch5_l8.intro.6",
+              "dlg.ch5_l8.intro.7"
+            ],
+            "outro": [
+              "dlg.ch5_l8.outro.1",
+              "dlg.ch5_l8.outro.2",
+              "dlg.ch5_l8.outro.3",
+              "dlg.ch5_l8.outro.4",
+              "dlg.ch5_l8.outro.5",
+              "dlg.ch5_l8.outro.6"
+            ]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        }
+      ]
+    },
+    {
+      "id": "ch6",
+      "name": "camp.ch6",
+      "description": "camp.ch6.desc",
+      "hub": "hub_ch6",
+      "unlockStars": 95,
+      "boss": "rival_titan",
+      "color": "#FF5F1F",
+      "levels": [
+        {
+          "id": "ch6_l1",
+          "name": "camp.ch6_l1",
+          "description": "camp.ch6_l1.desc",
+          "arena": "steel_dome",
+          "mode": "derby",
+          "timeLimit": 300,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "eisvogel_911ts",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_g63",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "vierling_r8",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_gtr",
+              "ai": "elite",
+              "team": 4,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "eisvogel_cayenne",
+              "ai": "elite",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "anvil_trx",
+              "ai": "elite",
+              "team": 6,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "nettuno_mc20",
+              "ai": "elite",
+              "team": 7,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "head_on", "value": 3 },
+            { "type": "collect", "value": 3 }
+          ],
+          "collectibles": 3,
+          "rewards": {
+            "credits": 30000,
+            "xp": 1550,
+            "items": [
+              { "type": "paint", "id": "paint_molten" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch6_l1.intro.1", "dlg.ch6_l1.intro.2", "dlg.ch6_l1.intro.3", "dlg.ch6_l1.intro.4"],
+            "outro": ["dlg.ch6_l1.outro.1", "dlg.ch6_l1.outro.2", "dlg.ch6_l1.outro.3"]
+          },
+          "unlock": { "level": "ch5_l8", "stars": 95 }
+        },
+        {
+          "id": "ch6_l2",
+          "name": "camp.ch6_l2",
+          "description": "camp.ch6_l2.desc",
+          "arena": "foundry_floor",
+          "mode": "takedown",
+          "timeLimit": 300,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kaiserling_g63",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "eisvogel_cayenne",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "toromonte_urus",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "highmoor_rangerover",
+              "ai": "elite",
+              "team": 4,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "cangqiong_u8",
+              "ai": "elite",
+              "team": 5,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hartwell_bentayga",
+              "ai": "elite",
+              "team": 6,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "titanus_hummerev",
+              "ai": "elite",
+              "team": 7,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "crush", "value": 1 },
+            { "type": "score", "value": 12000 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 31500,
+            "xp": 1620,
+            "items": [
+              { "type": "equipment", "id": "core_shock_absorbers" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch6_l2.intro.1", "dlg.ch6_l2.intro.2"],
+            "outro": ["dlg.ch6_l2.outro.1", "dlg.ch6_l2.outro.2", "dlg.ch6_l2.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch6_l3",
+          "name": "camp.ch6_l3",
+          "description": "camp.ch6_l3.desc",
+          "arena": "airfield_hangar",
+          "mode": "team_takedown",
+          "timeLimit": 360,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironwood_w900",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_unimog",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "anvil_trx",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "veteran",
+              "team": 0,
+              "name": "camp.rival_rust",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_f150r",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_scorpion",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 6 },
+            { "type": "hits_of_kind", "kind": "launch", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 33000,
+            "xp": 1690,
+            "items": [
+              { "type": "sparks", "id": "sparks_white_hot" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch6_l3.intro.1", "dlg.ch6_l3.intro.2", "dlg.ch6_l3.intro.3"],
+            "outro": ["dlg.ch6_l3.outro.1", "dlg.ch6_l3.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch6_l4",
+          "name": "camp.ch6_l4",
+          "description": "camp.ch6_l4.desc",
+          "arena": "foundry_floor",
+          "mode": "destruction",
+          "timeLimit": 180,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kaiserling_unimog",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "anvil_trx",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "titanus_hummerev",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "destroy_props", "value": 18 },
+          "stars": [
+            { "type": "destroy_props", "value": 18 },
+            { "type": "destroy_props", "value": 25 },
+            { "type": "time_under", "value": 150 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 34500,
+            "xp": 1760,
+            "items": [
+              { "type": "equipment", "id": "core_autorepair_basic" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch6_l4.intro.1", "dlg.ch6_l4.intro.2", "dlg.ch6_l4.intro.3"],
+            "outro": ["dlg.ch6_l4.outro.1", "dlg.ch6_l4.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch6_l5",
+          "name": "camp.ch6_l5",
+          "description": "camp.ch6_l5.desc",
+          "arena": "steel_dome",
+          "mode": "survival",
+          "timeLimit": 150,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironwood_w900",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_unimog",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "anvil_trx",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "titanus_hummerev",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "cangqiong_u8",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_bigfoot",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "survive", "value": 150 },
+          "stars": [
+            { "type": "survive", "value": 150 },
+            { "type": "takedowns", "value": 5 },
+            { "type": "damage_under", "value": 70 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 36000,
+            "xp": 1830,
+            "items": [
+              { "type": "currency", "id": "gold", "amount": 120 }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch6_l5.intro.1", "dlg.ch6_l5.intro.2", "dlg.ch6_l5.intro.3"],
+            "outro": ["dlg.ch6_l5.outro.1", "dlg.ch6_l5.outro.2", "dlg.ch6_l5.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch6_l6",
+          "name": "camp.ch6_l6",
+          "description": "camp.ch6_l6.desc",
+          "arena": "airfield_hangar",
+          "mode": "takedown",
+          "timeLimit": 300,
+          "maxTier": 4,
+          "loaner": "rattler_charger",
+          "opponents": [
+            {
+              "vehicle": "eisvogel_911ts",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "vierling_r8",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": { "engine": 3, "armor": 3, "chassis": 3, "tires": 3, "suspension": 3, "brakes": 3 },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "lonestar_corvette",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "wolfram_m5",
+              "ai": "elite",
+              "team": 4,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "rattler_hellcat",
+              "ai": "elite",
+              "team": 5,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_gtr",
+              "ai": "elite",
+              "team": 6,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_c63",
+              "ai": "elite",
+              "team": 7,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "head_on", "value": 2 },
+            { "type": "score", "value": 10000 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 37500,
+            "xp": 1900,
+            "items": [
+              { "type": "horn", "id": "horn_train" }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch6_l6.intro.1",
+              "dlg.ch6_l6.intro.2",
+              "dlg.ch6_l6.intro.3",
+              "dlg.ch6_l6.intro.4",
+              "dlg.ch6_l6.intro.5",
+              "dlg.ch6_l6.intro.6"
+            ],
+            "outro": [
+              "dlg.ch6_l6.outro.1",
+              "dlg.ch6_l6.outro.2",
+              "dlg.ch6_l6.outro.3",
+              "dlg.ch6_l6.outro.4",
+              "dlg.ch6_l6.outro.5"
+            ]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch6_l7",
+          "name": "camp.ch6_l7",
+          "description": "camp.ch6_l7.desc",
+          "arena": "steel_dome",
+          "mode": "team_elimination",
+          "timeLimit": 360,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironwood_w900",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_unimog",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "anvil_trx",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "kazeyama_civic",
+              "ai": "veteran",
+              "team": 0,
+              "name": "camp.char_yu",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "ryujin_r34",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_ghost",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 3 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 39000,
+            "xp": 1970,
+            "items": [
+              { "type": "title", "id": "title_wrecking_ball" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch6_l7.intro.1", "dlg.ch6_l7.intro.2", "dlg.ch6_l7.intro.3", "dlg.ch6_l7.intro.4"],
+            "outro": ["dlg.ch6_l7.outro.1", "dlg.ch6_l7.outro.2", "dlg.ch6_l7.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch6_l8",
+          "name": "camp.ch6_l8",
+          "description": "camp.ch6_l8.desc",
+          "arena": "foundry_floor",
+          "mode": "boss",
+          "timeLimit": 300,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "ironwood_w900",
+              "ai": "boss",
+              "team": 1,
+              "name": "camp.rival_titan",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {
+                "front": "front_battering_ram",
+                "roof": "roof_armor_heavy",
+                "core": "core_ballast_tungsten",
+                "side": "side_plates_composite",
+                "ability": "ability_ram_charge"
+              },
+              "boss": true
+            },
+            {
+              "vehicle": "kaiserling_unimog",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "anvil_trx",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "boss" },
+          "stars": [
+            { "type": "boss" },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 3 },
+            { "type": "damage_under", "value": 60 }
+          ],
+          "collectibles": 0,
+          "rewards": {
+            "credits": 90000,
+            "xp": 4800,
+            "items": [
+              { "type": "vehicle", "id": "ironwood_w900" },
+              { "type": "title", "id": "title_iron_will" },
+              { "type": "banner", "id": "banner_foundry" },
+              { "type": "equipment", "id": "core_frame_titanium" }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch6_l8.intro.1",
+              "dlg.ch6_l8.intro.2",
+              "dlg.ch6_l8.intro.3",
+              "dlg.ch6_l8.intro.4",
+              "dlg.ch6_l8.intro.5",
+              "dlg.ch6_l8.intro.6"
+            ],
+            "outro": [
+              "dlg.ch6_l8.outro.1",
+              "dlg.ch6_l8.outro.2",
+              "dlg.ch6_l8.outro.3",
+              "dlg.ch6_l8.outro.4",
+              "dlg.ch6_l8.outro.5"
+            ]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        }
+      ]
+    },
+    {
+      "id": "ch7",
+      "name": "camp.ch7",
+      "description": "camp.ch7.desc",
+      "hub": "hub_ch7",
+      "unlockStars": 118,
+      "boss": "rival_neon",
+      "color": "#FF2BD6",
+      "levels": [
+        {
+          "id": "ch7_l1",
+          "name": "camp.ch7_l1",
+          "description": "camp.ch7_l1.desc",
+          "arena": "neon_rooftop",
+          "mode": "ring_out",
+          "timeLimit": 240,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "toromonte_huracan",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kestrel_720s",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "nettuno_mc20",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "vierling_r8",
+              "ai": "elite",
+              "team": 4,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "eisvogel_gt3rs",
+              "ai": "elite",
+              "team": 5,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "thornbury_dbs",
+              "ai": "elite",
+              "team": 6,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 3 },
+            { "type": "no_wreck" }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 40000,
+            "xp": 1950,
+            "items": [
+              { "type": "paint", "id": "paint_neon_night" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch7_l1.intro.1", "dlg.ch7_l1.intro.2", "dlg.ch7_l1.intro.3"],
+            "outro": ["dlg.ch7_l1.outro.1", "dlg.ch7_l1.outro.2", "dlg.ch7_l1.outro.3"]
+          },
+          "unlock": { "level": "ch6_l8", "stars": 118 }
+        },
+        {
+          "id": "ch7_l2",
+          "name": "camp.ch7_l2",
+          "description": "camp.ch7_l2.desc",
+          "arena": "neon_arcade",
+          "mode": "king_of_hill",
+          "timeLimit": 360,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "toromonte_huracan",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            },
+            {
+              "vehicle": "kestrel_720s",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "side": "side_hubs_shredder" },
+              "boss": false
+            },
+            {
+              "vehicle": "eisvogel_911ts",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "ryujin_r34",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_ghost",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            },
+            {
+              "vehicle": "takane_wrx",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_wolf",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "side": "side_hubs_shredder" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hill_time", "value": 90 },
+            { "type": "hits_of_kind", "kind": "side_swipe", "value": 3 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 41800,
+            "xp": 2030,
+            "items": [
+              { "type": "equipment", "id": "side_plates_composite" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch7_l2.intro.1", "dlg.ch7_l2.intro.2"],
+            "outro": ["dlg.ch7_l2.outro.1", "dlg.ch7_l2.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch7_l3",
+          "name": "camp.ch7_l3",
+          "description": "camp.ch7_l3.desc",
+          "arena": "skyline_helipad",
+          "mode": "ring_out",
+          "timeLimit": 240,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "fulmine_sf90",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "toromonte_urus",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "eisvogel_cayenne",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "aldermere_cullinan",
+              "ai": "elite",
+              "team": 4,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "fulmine_purosangue",
+              "ai": "elite",
+              "team": 5,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 3 },
+            { "type": "hits_of_kind", "kind": "head_on", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 43600,
+            "xp": 2110,
+            "items": [
+              { "type": "wheels", "id": "wheels_turbofan" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch7_l3.intro.1", "dlg.ch7_l3.intro.2", "dlg.ch7_l3.intro.3"],
+            "outro": ["dlg.ch7_l3.outro.1", "dlg.ch7_l3.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch7_l4",
+          "name": "camp.ch7_l4",
+          "description": "camp.ch7_l4.desc",
+          "arena": "neon_arcade",
+          "mode": "bounty",
+          "timeLimit": 300,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "toromonte_huracan",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kestrel_720s",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "nettuno_mc20",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "vierling_r8",
+              "ai": "elite",
+              "team": 4,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "eisvogel_911ts",
+              "ai": "elite",
+              "team": 5,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "thornbury_dbs",
+              "ai": "elite",
+              "team": 6,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "hartwell_continental",
+              "ai": "elite",
+              "team": 7,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "eisvogel_taycan",
+              "ai": "elite",
+              "team": 8,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "score", "value": 12000 },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 3 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 45400,
+            "xp": 2190,
+            "items": [
+              { "type": "title", "id": "title_pandamonium" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch7_l4.intro.1", "dlg.ch7_l4.intro.2"],
+            "outro": ["dlg.ch7_l4.outro.1", "dlg.ch7_l4.outro.2", "dlg.ch7_l4.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch7_l5",
+          "name": "camp.ch7_l5",
+          "description": "camp.ch7_l5.desc",
+          "arena": "neon_rooftop",
+          "mode": "survival",
+          "timeLimit": 150,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kaiserling_g63",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "toromonte_urus",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "highmoor_rangerover",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "cangqiong_u8",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "aldermere_cullinan",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_maybach",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "survive", "value": 150 },
+          "stars": [
+            { "type": "survive", "value": 150 },
+            { "type": "takedowns", "value": 5 },
+            { "type": "damage_under", "value": 60 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 47200,
+            "xp": 2270,
+            "items": [
+              { "type": "currency", "id": "gold", "amount": 150 }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch7_l5.intro.1", "dlg.ch7_l5.intro.2", "dlg.ch7_l5.intro.3"],
+            "outro": ["dlg.ch7_l5.outro.1", "dlg.ch7_l5.outro.2", "dlg.ch7_l5.outro.3", "dlg.ch7_l5.outro.4"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch7_l6",
+          "name": "camp.ch7_l6",
+          "description": "camp.ch7_l6.desc",
+          "arena": "neon_arcade",
+          "mode": "team_elimination",
+          "timeLimit": 360,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "fulmine_sf90",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kestrel_720s",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "ironhorse_f150r",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_scorpion",
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 2 },
+            { "type": "hits_of_kind", "kind": "launch", "value": 2 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 49000,
+            "xp": 2350,
+            "items": [
+              { "type": "equipment", "id": "rear_spikes_barbed" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch7_l6.intro.1", "dlg.ch7_l6.intro.2", "dlg.ch7_l6.intro.3"],
+            "outro": ["dlg.ch7_l6.outro.1", "dlg.ch7_l6.outro.2", "dlg.ch7_l6.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch7_l7",
+          "name": "camp.ch7_l7",
+          "description": "camp.ch7_l7.desc",
+          "arena": "neon_arcade",
+          "mode": "takedown",
+          "timeLimit": 300,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "toromonte_huracan",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kestrel_720s",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "fulmine_sf90",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "eisvogel_gt3rs",
+              "ai": "elite",
+              "team": 4,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "vierling_r8",
+              "ai": "elite",
+              "team": 5,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "nettuno_mc20",
+              "ai": "elite",
+              "team": 6,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "thornbury_dbs",
+              "ai": "elite",
+              "team": 7,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "eisvogel_911ts",
+              "ai": "elite",
+              "team": 8,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "pit", "value": 3 },
+            { "type": "score", "value": 14000 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 50800,
+            "xp": 2430,
+            "items": [
+              { "type": "banner", "id": "banner_dragon" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch7_l7.intro.1", "dlg.ch7_l7.intro.2"],
+            "outro": ["dlg.ch7_l7.outro.1", "dlg.ch7_l7.outro.2", "dlg.ch7_l7.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch7_l8",
+          "name": "camp.ch7_l8",
+          "description": "camp.ch7_l8.desc",
+          "arena": "neon_arcade",
+          "mode": "boss",
+          "timeLimit": 300,
+          "maxTier": 4,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "toromonte_huracan",
+              "ai": "boss",
+              "team": 1,
+              "name": "camp.rival_neon",
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {
+                "front": "front_wedge_titanium",
+                "side": "side_blades_scythe",
+                "wheels": "tire_slicks",
+                "core": "core_gyro_stabilizer",
+                "ability": "ability_shock_bumper"
+              },
+              "boss": true
+            },
+            {
+              "vehicle": "kestrel_720s",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "nettuno_mc20",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "boss" },
+          "stars": [
+            { "type": "boss" },
+            { "type": "hits_of_kind", "kind": "side_swipe", "value": 3 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 0,
+          "rewards": {
+            "credits": 120000,
+            "xp": 6000,
+            "items": [
+              { "type": "vehicle", "id": "toromonte_huracan" },
+              { "type": "title", "id": "title_neon_king" },
+              { "type": "banner", "id": "banner_neon" }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch7_l8.intro.1",
+              "dlg.ch7_l8.intro.2",
+              "dlg.ch7_l8.intro.3",
+              "dlg.ch7_l8.intro.4",
+              "dlg.ch7_l8.intro.5"
+            ],
+            "outro": [
+              "dlg.ch7_l8.outro.1",
+              "dlg.ch7_l8.outro.2",
+              "dlg.ch7_l8.outro.3",
+              "dlg.ch7_l8.outro.4",
+              "dlg.ch7_l8.outro.5",
+              "dlg.ch7_l8.outro.6"
+            ]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        }
+      ]
+    },
+    {
+      "id": "ch8",
+      "name": "camp.ch8",
+      "description": "camp.ch8.desc",
+      "hub": "hub_ch8",
+      "unlockStars": 140,
+      "boss": "rival_crown",
+      "color": "#F5C542",
+      "levels": [
+        {
+          "id": "ch8_l1",
+          "name": "camp.ch8_l1",
+          "description": "camp.ch8_l1.desc",
+          "arena": "crash_colosseum",
+          "mode": "derby",
+          "timeLimit": 300,
+          "maxTier": 5,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "fulmine_sf90",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "seiran_lfa",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "toromonte_urus",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_g63",
+              "ai": "elite",
+              "team": 4,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "kestrel_720s",
+              "ai": "elite",
+              "team": 5,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "cangqiong_u8",
+              "ai": "elite",
+              "team": 6,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "aldermere_cullinan",
+              "ai": "elite",
+              "team": 7,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "eisvogel_911ts",
+              "ai": "elite",
+              "team": 8,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 4 },
+            { "type": "collect", "value": 3 }
+          ],
+          "collectibles": 3,
+          "rewards": {
+            "credits": 52000,
+            "xp": 2400,
+            "items": [
+              { "type": "paint", "id": "paint_champion" }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch8_l1.intro.1",
+              "dlg.ch8_l1.intro.2",
+              "dlg.ch8_l1.intro.3",
+              "dlg.ch8_l1.intro.4",
+              "dlg.ch8_l1.intro.5"
+            ],
+            "outro": ["dlg.ch8_l1.outro.1", "dlg.ch8_l1.outro.2"]
+          },
+          "unlock": { "level": "ch7_l8", "stars": 140 }
+        },
+        {
+          "id": "ch8_l2",
+          "name": "camp.ch8_l2",
+          "description": "camp.ch8_l2.desc",
+          "arena": "championship_ring",
+          "mode": "ring_out",
+          "timeLimit": 240,
+          "maxTier": 5,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "toromonte_revuelto",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "kestrel_p1",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "munja_nevera",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "fulmine_laferrari",
+              "ai": "elite",
+              "team": 4,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "valmont_chiron",
+              "ai": "elite",
+              "team": 5,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "vortice_huayra",
+              "ai": "elite",
+              "team": 6,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ragnvald_jesko",
+              "ai": "elite",
+              "team": 7,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 4 },
+            { "type": "no_wreck" }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 55000,
+            "xp": 2520,
+            "items": [
+              { "type": "equipment", "id": "roof_rollbar_titanium" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch8_l2.intro.1", "dlg.ch8_l2.intro.2"],
+            "outro": ["dlg.ch8_l2.outro.1", "dlg.ch8_l2.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch8_l3",
+          "name": "camp.ch8_l3",
+          "description": "camp.ch8_l3.desc",
+          "arena": "crash_colosseum",
+          "mode": "team_takedown",
+          "timeLimit": 360,
+          "maxTier": 5,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "valmont_chiron",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "ragnvald_jesko",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            },
+            {
+              "vehicle": "munja_nevera",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "side": "side_hubs_shredder" },
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_rust",
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_f150r",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_scorpion",
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 6 },
+            { "type": "hits_of_kind", "kind": "launch", "value": 3 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 58000,
+            "xp": 2640,
+            "items": [
+              { "type": "sparks", "id": "sparks_gold" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch8_l3.intro.1", "dlg.ch8_l3.intro.2", "dlg.ch8_l3.intro.3"],
+            "outro": ["dlg.ch8_l3.outro.1", "dlg.ch8_l3.outro.2", "dlg.ch8_l3.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch8_l4",
+          "name": "camp.ch8_l4",
+          "description": "camp.ch8_l4.desc",
+          "arena": "crash_colosseum",
+          "mode": "destruction",
+          "timeLimit": 180,
+          "maxTier": 5,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kaiserling_g63",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "cangqiong_u8",
+              "ai": "elite",
+              "team": 2,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "titanus_hummerev",
+              "ai": "elite",
+              "team": 3,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "aldermere_cullinan",
+              "ai": "elite",
+              "team": 4,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": {},
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "destroy_props", "value": 30 },
+          "stars": [
+            { "type": "destroy_props", "value": 30 },
+            { "type": "destroy_props", "value": 45 },
+            { "type": "time_under", "value": 150 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 61000,
+            "xp": 2760,
+            "items": [
+              { "type": "equipment", "id": "core_autorepair" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch8_l4.intro.1", "dlg.ch8_l4.intro.2", "dlg.ch8_l4.intro.3"],
+            "outro": ["dlg.ch8_l4.outro.1", "dlg.ch8_l4.outro.2", "dlg.ch8_l4.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch8_l5",
+          "name": "camp.ch8_l5",
+          "description": "camp.ch8_l5.desc",
+          "arena": "steel_dome",
+          "mode": "team_elimination",
+          "timeLimit": 360,
+          "maxTier": 5,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kestrel_p1",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            },
+            {
+              "vehicle": "fulmine_laferrari",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "side": "side_hubs_shredder" },
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "ryujin_r34",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_ghost",
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "takedowns", "value": 2 },
+            { "type": "damage_under", "value": 40 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 64000,
+            "xp": 2880,
+            "items": [
+              { "type": "horn", "id": "horn_victory" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch8_l5.intro.1", "dlg.ch8_l5.intro.2", "dlg.ch8_l5.intro.3"],
+            "outro": ["dlg.ch8_l5.outro.1", "dlg.ch8_l5.outro.2"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch8_l6",
+          "name": "camp.ch8_l6",
+          "description": "camp.ch8_l6.desc",
+          "arena": "crash_colosseum",
+          "mode": "survival",
+          "timeLimit": 180,
+          "maxTier": 5,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "kaiserling_g63",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "toromonte_urus",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "cangqiong_u8",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "titanus_hummerev",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "ironwood_w900",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            },
+            {
+              "vehicle": "kaiserling_unimog",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 4,
+                "armor": 4,
+                "chassis": 4,
+                "tires": 4,
+                "suspension": 4,
+                "brakes": 4,
+                "nitro": 4,
+                "transmission": 4
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "survive", "value": 180 },
+          "stars": [
+            { "type": "survive", "value": 180 },
+            { "type": "takedowns", "value": 6 },
+            { "type": "damage_under", "value": 60 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 67000,
+            "xp": 3000,
+            "items": [
+              { "type": "currency", "id": "gold", "amount": 200 }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch8_l6.intro.1", "dlg.ch8_l6.intro.2", "dlg.ch8_l6.intro.3"],
+            "outro": ["dlg.ch8_l6.outro.1", "dlg.ch8_l6.outro.2", "dlg.ch8_l6.outro.3", "dlg.ch8_l6.outro.4"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch8_l7",
+          "name": "camp.ch8_l7",
+          "description": "camp.ch8_l7.desc",
+          "arena": "crash_colosseum",
+          "mode": "king_of_hill",
+          "timeLimit": 360,
+          "maxTier": 5,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "valmont_chiron",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {},
+              "boss": false
+            },
+            {
+              "vehicle": "toromonte_revuelto",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_wedge_titanium" },
+              "boss": false
+            },
+            {
+              "vehicle": "vortice_huayra",
+              "ai": "elite",
+              "team": 1,
+              "name": null,
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "side": "side_hubs_shredder" },
+              "boss": false
+            }
+          ],
+          "allies": [
+            {
+              "vehicle": "rattler_charger",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.char_qin",
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_bar_heavy", "core": "core_frame_reinforced" },
+              "boss": false
+            },
+            {
+              "vehicle": "ironhorse_crownvic",
+              "ai": "elite",
+              "team": 0,
+              "name": "camp.rival_rust",
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": { "front": "front_bar_heavy" },
+              "boss": false
+            }
+          ],
+          "objective": { "type": "win" },
+          "stars": [
+            { "type": "win" },
+            { "type": "hill_time", "value": 90 },
+            { "type": "hits_of_kind", "kind": "head_on", "value": 3 }
+          ],
+          "collectibles": 2,
+          "rewards": {
+            "credits": 70000,
+            "xp": 3120,
+            "items": [
+              { "type": "paint", "id": "paint_dragon_king" }
+            ]
+          },
+          "story": {
+            "intro": ["dlg.ch8_l7.intro.1", "dlg.ch8_l7.intro.2", "dlg.ch8_l7.intro.3", "dlg.ch8_l7.intro.4"],
+            "outro": ["dlg.ch8_l7.outro.1", "dlg.ch8_l7.outro.2", "dlg.ch8_l7.outro.3"]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        },
+        {
+          "id": "ch8_l8",
+          "name": "camp.ch8_l8",
+          "description": "camp.ch8_l8.desc",
+          "arena": "crash_colosseum",
+          "mode": "boss",
+          "timeLimit": 360,
+          "maxTier": null,
+          "loaner": null,
+          "opponents": [
+            {
+              "vehicle": "cangqiong_u8",
+              "ai": "boss",
+              "team": 1,
+              "name": "camp.rival_crown",
+              "upgrades": {
+                "engine": 5,
+                "armor": 5,
+                "chassis": 5,
+                "tires": 5,
+                "suspension": 5,
+                "brakes": 5,
+                "nitro": 5,
+                "transmission": 5,
+                "weight": 5
+              },
+              "equipment": {
+                "front": "front_battering_ram",
+                "side": "side_plates_composite",
+                "roof": "roof_rollbar_titanium",
+                "core": "core_autorepair",
+                "wheels": "tire_runflat",
+                "rear": "rear_bumper_crumple",
+                "ability": "ability_field_repair"
+              },
+              "boss": true
+            }
+          ],
+          "allies": [],
+          "objective": { "type": "boss" },
+          "stars": [
+            { "type": "boss" },
+            { "type": "hits_of_kind", "kind": "t_bone", "value": 3 },
+            { "type": "damage_under", "value": 50 }
+          ],
+          "collectibles": 0,
+          "rewards": {
+            "credits": 150000,
+            "xp": 8000,
+            "items": [
+              { "type": "vehicle", "id": "cangqiong_u8" },
+              { "type": "title", "id": "title_crash_king" },
+              { "type": "banner", "id": "banner_champion" },
+              { "type": "wheels", "id": "wheels_champion" },
+              { "type": "currency", "id": "gold", "amount": 500 }
+            ]
+          },
+          "story": {
+            "intro": [
+              "dlg.ch8_l8.intro.1",
+              "dlg.ch8_l8.intro.2",
+              "dlg.ch8_l8.intro.3",
+              "dlg.ch8_l8.intro.4",
+              "dlg.ch8_l8.intro.5",
+              "dlg.ch8_l8.intro.6",
+              "dlg.ch8_l8.intro.7",
+              "dlg.ch8_l8.intro.8"
+            ],
+            "outro": [
+              "dlg.ch8_l8.outro.1",
+              "dlg.ch8_l8.outro.2",
+              "dlg.ch8_l8.outro.3",
+              "dlg.ch8_l8.outro.4",
+              "dlg.ch8_l8.outro.5",
+              "dlg.ch8_l8.outro.6"
+            ]
+          },
+          "unlock": { "level": null, "stars": 0 }
+        }
+      ]
+    }
+  ]
+}

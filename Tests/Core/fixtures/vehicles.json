@@ -1,0 +1,344 @@
+{
+  "version": 1,
+  "vehicles": [
+    {
+      "id": "test_hatch",
+      "brand": "testa",
+      "name": "veh.test_hatch",
+      "reference": "ref test_hatch",
+      "class": "hatchback",
+      "tier": 1,
+      "price": {
+        "credits": 0
+      },
+      "unlockLevel": 1,
+      "drivetrain": "fwd",
+      "engineLayout": "front",
+      "massKg": 1250,
+      "powerKw": 96,
+      "torqueNm": 200,
+      "idleRpm": 850,
+      "redlineRpm": 6500,
+      "gears": [
+        3.6,
+        2.1,
+        1.4,
+        1.03,
+        0.82
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 4.1,
+      "topSpeedKmh": 190,
+      "dimensions": {
+        "length": 4.26,
+        "width": 1.79,
+        "height": 1.46,
+        "wheelbase": 2.63,
+        "trackFront": 1.54,
+        "trackRear": 1.52,
+        "groundClearance": 0.14,
+        "wheelRadius": 0.32,
+        "wheelWidth": 0.22
+      },
+      "frontWeight": 0.61,
+      "grip": 1.0,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 1.6,
+        "damping": 0.45,
+        "travel": 0.14,
+        "antiRoll": 0.6
+      },
+      "dragCoefficient": 0.32,
+      "downforce": 0.0,
+      "toughness": 1.0,
+      "ramPower": 1.0,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 6
+      },
+      "colors": [
+        "#AA2222",
+        "#111111"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "starter": true
+    },
+    {
+      "id": "test_sedan",
+      "brand": "testc",
+      "name": "veh.test_sedan",
+      "reference": "ref test_sedan",
+      "class": "sedan",
+      "tier": 2,
+      "price": {
+        "credits": 60000
+      },
+      "unlockLevel": 1,
+      "drivetrain": "rwd",
+      "engineLayout": "front",
+      "massKg": 1600,
+      "powerKw": 224,
+      "torqueNm": 400,
+      "idleRpm": 850,
+      "redlineRpm": 6800,
+      "gears": [
+        4.2,
+        2.6,
+        1.7,
+        1.3,
+        1.0,
+        0.8
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 3.4,
+      "topSpeedKmh": 240,
+      "dimensions": {
+        "length": 4.88,
+        "width": 1.84,
+        "height": 1.45,
+        "wheelbase": 2.82,
+        "trackFront": 1.58,
+        "trackRear": 1.58,
+        "groundClearance": 0.14,
+        "wheelRadius": 0.34,
+        "wheelWidth": 0.24
+      },
+      "frontWeight": 0.53,
+      "grip": 1.0,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 1.6,
+        "damping": 0.45,
+        "travel": 0.14,
+        "antiRoll": 0.6
+      },
+      "dragCoefficient": 0.32,
+      "downforce": 0.0,
+      "toughness": 1.0,
+      "ramPower": 1.0,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 6
+      },
+      "colors": [
+        "#AA2222",
+        "#111111"
+      ],
+      "tags": [
+        "popular"
+      ]
+    },
+    {
+      "id": "test_super",
+      "brand": "testb",
+      "name": "veh.test_super",
+      "reference": "ref test_super",
+      "class": "supercar",
+      "tier": 4,
+      "price": {
+        "credits": 450000
+      },
+      "unlockLevel": 1,
+      "drivetrain": "rwd",
+      "engineLayout": "mid",
+      "massKg": 1435,
+      "powerKw": 530,
+      "torqueNm": 770,
+      "idleRpm": 850,
+      "redlineRpm": 8000,
+      "gears": [
+        3.13,
+        2.18,
+        1.63,
+        1.29,
+        1.03,
+        0.84,
+        0.69
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 3.6,
+      "topSpeedKmh": 340,
+      "dimensions": {
+        "length": 4.61,
+        "width": 1.98,
+        "height": 1.21,
+        "wheelbase": 2.65,
+        "trackFront": 1.68,
+        "trackRear": 1.65,
+        "groundClearance": 0.11,
+        "wheelRadius": 0.35,
+        "wheelWidth": 0.3
+      },
+      "frontWeight": 0.42,
+      "grip": 1.2,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 2.0,
+        "damping": 0.45,
+        "travel": 0.1,
+        "antiRoll": 0.8
+      },
+      "dragCoefficient": 0.32,
+      "downforce": 0.8,
+      "toughness": 0.85,
+      "ramPower": 1.0,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 6
+      },
+      "colors": [
+        "#AA2222",
+        "#111111"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "cgHeight": 0.42
+    },
+    {
+      "id": "test_truck",
+      "brand": "testc",
+      "name": "veh.test_truck",
+      "reference": "ref test_truck",
+      "class": "pickup",
+      "tier": 3,
+      "price": {
+        "credits": 180000
+      },
+      "unlockLevel": 1,
+      "drivetrain": "awd",
+      "engineLayout": "front",
+      "massKg": 2500,
+      "powerKw": 300,
+      "torqueNm": 690,
+      "idleRpm": 850,
+      "redlineRpm": 6000,
+      "gears": [
+        4.7,
+        2.99,
+        2.15,
+        1.77,
+        1.52,
+        1.28,
+        1.0,
+        0.85,
+        0.69,
+        0.63
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 3.55,
+      "topSpeedKmh": 180,
+      "dimensions": {
+        "length": 5.9,
+        "width": 2.1,
+        "height": 1.98,
+        "wheelbase": 3.7,
+        "trackFront": 1.75,
+        "trackRear": 1.75,
+        "groundClearance": 0.28,
+        "wheelRadius": 0.43,
+        "wheelWidth": 0.3
+      },
+      "frontWeight": 0.55,
+      "grip": 1.0,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 1.2,
+        "damping": 0.4,
+        "travel": 0.25,
+        "antiRoll": 0.7
+      },
+      "dragCoefficient": 0.32,
+      "downforce": 0.0,
+      "toughness": 1.6,
+      "ramPower": 1.5,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 6
+      },
+      "colors": [
+        "#AA2222",
+        "#111111"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "armor": {
+        "front": 0.2,
+        "rear": 0.1,
+        "left": 0.1,
+        "right": 0.1,
+        "top": 0.05,
+        "bottom": 0.05
+      }
+    },
+    {
+      "id": "test_ev",
+      "brand": "testa",
+      "name": "veh.test_ev",
+      "reference": "ref test_ev",
+      "class": "sedan",
+      "tier": 2,
+      "price": {
+        "credits": 90000
+      },
+      "unlockLevel": 1,
+      "drivetrain": "rwd",
+      "engineLayout": "rear",
+      "massKg": 1850,
+      "powerKw": 220,
+      "torqueNm": 420,
+      "idleRpm": 850,
+      "redlineRpm": 16000,
+      "gears": [
+        9.0
+      ],
+      "reverseRatio": 3.3,
+      "finalDrive": 1.0,
+      "topSpeedKmh": 225,
+      "dimensions": {
+        "length": 4.88,
+        "width": 1.84,
+        "height": 1.45,
+        "wheelbase": 2.82,
+        "trackFront": 1.58,
+        "trackRear": 1.58,
+        "groundClearance": 0.14,
+        "wheelRadius": 0.34,
+        "wheelWidth": 0.24
+      },
+      "frontWeight": 0.55,
+      "grip": 1.0,
+      "steerLockDeg": 36,
+      "suspension": {
+        "frequency": 1.6,
+        "damping": 0.45,
+        "travel": 0.14,
+        "antiRoll": 0.6
+      },
+      "dragCoefficient": 0.32,
+      "downforce": 0.0,
+      "toughness": 1.0,
+      "ramPower": 1.0,
+      "boost": {
+        "capacity": 100,
+        "accel": 6.0,
+        "regenPerSec": 6
+      },
+      "colors": [
+        "#AA2222",
+        "#111111"
+      ],
+      "tags": [
+        "ev"
+      ]
+    }
+  ]
+}

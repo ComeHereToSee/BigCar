@@ -1,0 +1,8 @@
+# Used by BuildKit for Backend/Dockerfile (build context = repository root).
+# Only the backend sources and the game data are sent to the builder.
+*
+!Backend/
+!Content/BigCar/Data/
+Backend/Dockerfile*
+Backend/docker-compose.yml
+Backend/bin/

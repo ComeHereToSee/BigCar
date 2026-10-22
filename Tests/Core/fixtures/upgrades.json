@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "tierCostMultiplier": [
+    1.0,
+    1.6,
+    2.5,
+    4.0,
+    6.0
+  ],
+  "categories": [
+    {
+      "id": "engine",
+      "name": "upg.engine",
+      "description": "upg.engine.desc",
+      "levels": [
+        {
+          "cost": 3000,
+          "mods": {
+            "powerMul": 1.05,
+            "torqueMul": 1.04
+          }
+        },
+        {
+          "cost": 7000,
+          "mods": {
+            "powerMul": 1.1,
+            "torqueMul": 1.08
+          }
+        },
+        {
+          "cost": 15000,
+          "mods": {
+            "powerMul": 1.15,
+            "torqueMul": 1.12
+          }
+        },
+        {
+          "cost": 30000,
+          "mods": {
+            "powerMul": 1.2,
+            "torqueMul": 1.16
+          }
+        },
+        {
+          "cost": 60000,
+          "mods": {
+            "powerMul": 1.25,
+            "torqueMul": 1.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "transmission",
+      "name": "upg.transmission",
+      "description": "upg.transmission.desc",
+      "levels": [
+        {
+          "cost": 3000,
+          "mods": {
+            "topSpeedMul": 1.01
+          }
+        },
+        {
+          "cost": 7000,
+          "mods": {
+            "topSpeedMul": 1.02
+          }
+        },
+        {
+          "cost": 15000,
+          "mods": {
+            "topSpeedMul": 1.03
+          }
+        },
+        {
+          "cost": 30000,
+          "mods": {
+            "topSpeedMul": 1.04
+          }
+        },
+        {
+          "cost": 60000,
+          "mods": {
+            "topSpeedMul": 1.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "suspension",
+      "name": "upg.suspension",
+      "description": "upg.suspension.desc",
+      "levels": [
+        {
+          "cost": 3000,
+          "mods": {
+            "suspensionMul": 1.04
+          }
+        },
+        {
+          "cost": 7000,
+          "mods": {
+            "suspensionMul": 1.08
+          }
+        },
+        {
+          "cost": 15000,
+          "mods": {
+            "suspensionMul": 1.12
+          }
+        },
+        {
+          "cost": 30000,
+          "mods": {
+            "suspensionMul": 1.16
+          }
+        },
+        {
+          "cost": 60000,
+          "mods": {
+            "suspensionMul": 1.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "tires",
+      "name": "upg.tires",
+      "description": "upg.tires.desc",
+      "levels": [
+        {
+          "cost": 3000,
+          "mods": {
+            "gripMul": 1.03
+          }
+        },
+        {
+          "cost": 7000,
+          "mods": {
+            "gripMul": 1.06
+          }
+        },
+        {
+          "cost": 15000,
+          "mods": {
+            "gripMul": 1.09
+          }
+        },
+        {
+          "cost": 30000,
+          "mods": {
+            "gripMul": 1.12
+          }
+        },
+        {
+          "cost": 60000,
+          "mods": {
+            "gripMul": 1.15
+          }
+        }
+      ]
+    },
+    {
+      "id": "brakes",
+      "name": "upg.brakes",
+      "description": "upg.brakes.desc",
+      "levels": [
+        {
+          "cost": 3000,
+          "mods": {
+            "brakeMul": 1.06
+          }
+        },
+        {
+          "cost": 7000,
+          "mods": {
+            "brakeMul": 1.12
+          }
+        },
+        {
+          "cost": 15000,
+          "mods": {
+            "brakeMul": 1.18
+          }
+        },
+        {
+          "cost": 30000,
+          "mods": {
+            "brakeMul": 1.24
+          }
+        },
+        {
+          "cost": 60000,
+          "mods": {
+            "brakeMul": 1.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "chassis",
+      "name": "upg.chassis",
+      "description": "upg.chassis.desc",
+      "levels": [
+        {
+          "cost": 3000,
+          "mods": {
+            "toughnessMul": 1.08
+          }
+        },
+        {
+          "cost": 7000,
+          "mods": {
+            "toughnessMul": 1.16
+          }
+        },
+        {
+          "cost": 15000,
+          "mods": {
+            "toughnessMul": 1.24
+          }
+        },
+        {
+          "cost": 30000,
+          "mods": {
+            "toughnessMul": 1.32
+          }
+        },
+        {
+          "cost": 60000,
+          "mods": {
+            "toughnessMul": 1.4
+          }
+        }
+      ]
+    },
+    {
+      "id": "armor",
+      "name": "upg.armor",
+      "description": "upg.armor.desc",
+      "levels": [
+        {
+          "cost": 3000,
+          "mods": {
+            "armorAll": 0.03,
+            "massAddKg": 20
+          }
+        },
+        {
+          "cost": 7000,
+          "mods": {
+            "armorAll": 0.06,
+            "massAddKg": 40
+          }
+        },
+        {
+          "cost": 15000,
+          "mods": {
+            "armorAll": 0.09,
+            "massAddKg": 60
+          }
+        },
+        {
+          "cost": 30000,
+          "mods": {
+            "armorAll": 0.12,
+            "massAddKg": 80
+          }
+        },
+        {
+          "cost": 60000,
+          "mods": {
+            "armorAll": 0.15,
+            "massAddKg": 100
+          }
+        }
+      ]
+    },
+    {
+      "id": "weight",
+      "name": "upg.weight",
+      "description": "upg.weight.desc",
+      "levels": [
+        {
+          "cost": 3000,
+          "mods": {
+            "massMul": 0.98
+          }
+        },
+        {
+          "cost": 7000,
+          "mods": {
+            "massMul": 0.96
+          }
+        },
+        {
+          "cost": 15000,
+          "mods": {
+            "massMul": 0.94
+          }
+        },
+        {
+          "cost": 30000,
+          "mods": {
+            "massMul": 0.92
+          }
+        },
+        {
+          "cost": 60000,
+          "mods": {
+            "massMul": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "nitro",
+      "name": "upg.nitro",
+      "description": "upg.nitro.desc",
+      "levels": [
+        {
+          "cost": 3000,
+          "mods": {
+            "boostCapacityAdd": 10,
+            "boostRegenMul": 1.08
+          }
+        },
+        {
+          "cost": 7000,
+          "mods": {
+            "boostCapacityAdd": 20,
+            "boostRegenMul": 1.16
+          }
+        },
+        {
+          "cost": 15000,
+          "mods": {
+            "boostCapacityAdd": 30,
+            "boostRegenMul": 1.24
+          }
+        },
+        {
+          "cost": 30000,
+          "mods": {
+            "boostCapacityAdd": 40,
+            "boostRegenMul": 1.32
+          }
+        },
+        {
+          "cost": 60000,
+          "mods": {
+            "boostCapacityAdd": 50,
+            "boostRegenMul": 1.4
+          }
+        }
+      ]
+    }
+  ]
+}

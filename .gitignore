@@ -1,0 +1,40 @@
+# Local CMake builds
+/build*/
+/out/
+
+# Unreal Engine generated
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Packaged/
+Artifacts/
+.vs/
+.vscode/
+.idea/
+*.sln
+*.code-workspace
+*.xcworkspace
+*.VC.db
+*.opensdf
+*.sdf
+*.suo
+
+# Third-party upscaler plugins are installed by developers (see docs/UPSCALERS.md), not committed
+Plugins/DLSS*/
+Plugins/StreamlineCore/
+Plugins/StreamlineDLSSG/
+Plugins/StreamlineReflex/
+Plugins/NIS/
+Plugins/FSR*/
+Plugins/XeSS*/
+
+# Backend
+Backend/bin/
+Backend/.env
+
+# Python / misc
+__pycache__/
+*.pyc
+.DS_Store
+Deploy/.env

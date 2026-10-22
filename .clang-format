@@ -1,0 +1,23 @@
+# Style of the engine-agnostic core (Source/CrashCore), tests and tools. Unreal module code (Source/BigCar) follows
+# Unreal conventions and uses Slate's declarative syntax, so it is not auto-formatted.
+BasedOnStyle: Microsoft
+Language: Cpp
+Standard: c++20
+UseTab: ForIndentation
+TabWidth: 4
+IndentWidth: 4
+ColumnLimit: 140
+BreakBeforeBraces: Allman
+AllowShortFunctionsOnASingleLine: InlineOnly
+AllowShortLambdasOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AccessModifierOffset: -4
+NamespaceIndentation: None
+FixNamespaceComments: true
+SortIncludes: CaseSensitive
+IncludeBlocks: Preserve
+PointerAlignment: Left
+AlignTrailingComments: true
+SpaceAfterTemplateKeyword: true
+Cpp11BracedListStyle: true

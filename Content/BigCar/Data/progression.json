@@ -1,0 +1,375 @@
+{
+  "version": 1,
+  "player": { "maxLevel": 100, "xpBase": 1000, "xpGrowth": 1.05 },
+  "levelRewards": [
+    {
+      "level": 2,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 5000 }
+      ]
+    },
+    {
+      "level": 3,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 5000 },
+        { "type": "equipment", "id": "rear_bumper_reinforced" }
+      ]
+    },
+    {
+      "level": 4,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 6000 },
+        { "type": "paint", "id": "paint_china_red" }
+      ]
+    },
+    {
+      "level": 5,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 8000 },
+        { "type": "currency", "id": "gold", "amount": 20 },
+        { "type": "equipment", "id": "side_plates_steel" }
+      ]
+    },
+    {
+      "level": 6,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 8800 }
+      ]
+    },
+    {
+      "level": 7,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 9600 }
+      ]
+    },
+    {
+      "level": 8,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 10400 }
+      ]
+    },
+    {
+      "level": 9,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 11200 }
+      ]
+    },
+    {
+      "level": 10,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 15000 },
+        { "type": "currency", "id": "gold", "amount": 50 },
+        { "type": "title", "id": "title_road_rage" },
+        { "type": "equipment", "id": "front_bar_heavy" }
+      ]
+    },
+    {
+      "level": 13,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 8500 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 15,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 20000 },
+        { "type": "currency", "id": "gold", "amount": 50 },
+        { "type": "wheels", "id": "wheels_five_star" }
+      ]
+    },
+    {
+      "level": 18,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 11000 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 20,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 30000 },
+        { "type": "currency", "id": "gold", "amount": 80 },
+        { "type": "vehicle", "id": "hoshino_ae86" },
+        { "type": "banner", "id": "banner_ink" }
+      ]
+    },
+    {
+      "level": 23,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 13500 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 25,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 35000 },
+        { "type": "currency", "id": "gold", "amount": 80 },
+        { "type": "equipment", "id": "ability_ram_charge" }
+      ]
+    },
+    {
+      "level": 28,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 16000 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 30,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 45000 },
+        { "type": "currency", "id": "gold", "amount": 100 },
+        { "type": "paint", "id": "paint_porcelain_blue" },
+        { "type": "title", "id": "title_fender_bender" }
+      ]
+    },
+    {
+      "level": 33,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 18500 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 35,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 32000 }
+      ]
+    },
+    {
+      "level": 38,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 21000 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 40,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 60000 },
+        { "type": "currency", "id": "gold", "amount": 120 },
+        { "type": "equipment", "id": "core_gyro_stabilizer" },
+        { "type": "sparks", "id": "sparks_purple" }
+      ]
+    },
+    {
+      "level": 43,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 23500 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 45,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 40000 }
+      ]
+    },
+    {
+      "level": 48,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 26000 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 50,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 80000 },
+        { "type": "currency", "id": "gold", "amount": 200 },
+        { "type": "vehicle", "id": "ryujin_gtr" },
+        { "type": "title", "id": "title_road_warrior" }
+      ]
+    },
+    {
+      "level": 53,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 28500 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 55,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 48000 }
+      ]
+    },
+    {
+      "level": 58,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 31000 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 60,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 100000 },
+        { "type": "currency", "id": "gold", "amount": 200 },
+        { "type": "paint", "id": "paint_jade" },
+        { "type": "horn", "id": "horn_opera_gong" }
+      ]
+    },
+    {
+      "level": 63,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 33500 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 65,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 56000 }
+      ]
+    },
+    {
+      "level": 68,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 36000 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 70,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 120000 },
+        { "type": "currency", "id": "gold", "amount": 250 },
+        { "type": "equipment", "id": "front_wedge_scorpion" }
+      ]
+    },
+    {
+      "level": 73,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 38500 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 75,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 130000 },
+        { "type": "currency", "id": "gold", "amount": 250 },
+        { "type": "banner", "id": "banner_great_wall" }
+      ]
+    },
+    {
+      "level": 78,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 41000 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 80,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 150000 },
+        { "type": "currency", "id": "gold", "amount": 300 },
+        { "type": "paint", "id": "paint_imperial_gold" },
+        { "type": "title", "id": "title_dragon_rider" }
+      ]
+    },
+    {
+      "level": 83,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 43500 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 85,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 72000 }
+      ]
+    },
+    {
+      "level": 88,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 46000 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 90,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 180000 },
+        { "type": "currency", "id": "gold", "amount": 300 },
+        { "type": "wheels", "id": "wheels_gold_mesh" }
+      ]
+    },
+    {
+      "level": 93,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 48500 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 95,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 80000 }
+      ]
+    },
+    {
+      "level": 98,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 51000 },
+        { "type": "currency", "id": "gold", "amount": 10 }
+      ]
+    },
+    {
+      "level": 100,
+      "items": [
+        { "type": "currency", "id": "credits", "amount": 300000 },
+        { "type": "currency", "id": "gold", "amount": 500 },
+        { "type": "vehicle", "id": "seiran_lfa" },
+        { "type": "paint", "id": "paint_gold_chrome" },
+        { "type": "title", "id": "title_gentleman_driver" }
+      ]
+    }
+  ],
+  "match": {
+    "participationCredits": 800,
+    "participationXp": 150,
+    "creditsPerScore": 1.5,
+    "xpPerScore": 0.8,
+    "winMultiplier": 1.5,
+    "rankedMultiplier": 1.25,
+    "maxCredits": 40000,
+    "maxXp": 20000
+  },
+  "score": {
+    "head_on": 250,
+    "t_bone": 400,
+    "side_swipe": 120,
+    "rear_end": 120,
+    "launch": 500,
+    "crush": 600,
+    "pit": 300,
+    "glance": 0,
+    "takedown": 1000,
+    "assist": 350,
+    "ring_out": 800,
+    "revenge": 300,
+    "multi_takedown": 500,
+    "airtime_per_sec": 40,
+    "hill_per_sec": 20,
+    "survival_per_sec": 5,
+    "prop_destroyed": 50,
+    "combo_step": 0.2,
+    "combo_max": 2.0,
+    "combo_window": 4.0,
+    "min_damage_for_points": 25
+  },
+  "ranks": [
+    { "id": "bronze", "name": "rank.bronze", "minRating": 0, "divisions": 3, "color": "#B08D57" },
+    { "id": "silver", "name": "rank.silver", "minRating": 1300, "divisions": 3, "color": "#C0C0C0" },
+    { "id": "gold", "name": "rank.gold", "minRating": 1500, "divisions": 3, "color": "#D4AF37" },
+    { "id": "platinum", "name": "rank.platinum", "minRating": 1700, "divisions": 3, "color": "#3FD0C9" },
+    { "id": "diamond", "name": "rank.diamond", "minRating": 1900, "divisions": 3, "color": "#5AB4FF" },
+    { "id": "master", "name": "rank.master", "minRating": 2100, "divisions": 1, "color": "#B266FF" },
+    { "id": "crash_king", "name": "rank.crash_king", "minRating": 2300, "divisions": 1, "color": "#FF3B30" }
+  ]
+}

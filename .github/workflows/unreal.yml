@@ -1,0 +1,195 @@
+# Unreal Engine build, cook, package and automation tests — entirely in the cloud.
+#
+# Uses Epic's official Linux development container (ghcr.io/epicgames/unreal-engine). Access to that image requires
+# a GitHub account linked to an Epic Games account (see docs/BUILD_CI.md). Configure in the repository settings:
+#   secrets.UE_GHCR_USER   GitHub username linked to Epic
+#   secrets.UE_GHCR_TOKEN  classic PAT of that user with read:packages
+#   vars.UE_IMAGE          (optional) image tag, default ghcr.io/epicgames/unreal-engine:dev-slim-5.5.4
+#   vars.UE_RUNNER         (optional) runner label with enough disk (≥ 150 GB), default ubuntu-latest
+#   vars.UE_WINDOWS_RUNNER (optional) "true" to also build Win64 on a self-hosted runner labelled [self-hosted, windows, unreal]
+# Without the secrets this workflow reports how to enable it and succeeds (the always-on CI still covers the core,
+# simulation, data and backend).
+name: Unreal
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    paths:
+      - "Source/**"
+      - "Config/**"
+      - "Content/**"
+      - "BigCar.uproject"
+      - ".github/workflows/unreal.yml"
+  workflow_dispatch:
+    inputs:
+      package:
+        description: "Cook and package client + dedicated server"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: unreal-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    name: Check Unreal access
+    runs-on: ubuntu-latest
+    outputs:
+      enabled: ${{ steps.check.outputs.enabled }}
+      windows: ${{ steps.check.outputs.windows }}
+    steps:
+      - id: check
+        env:
+          UE_USER: ${{ secrets.UE_GHCR_USER }}
+          UE_TOKEN: ${{ secrets.UE_GHCR_TOKEN }}
+          UE_WINDOWS: ${{ vars.UE_WINDOWS_RUNNER }}
+        run: |
+          if [ -n "$UE_USER" ] && [ -n "$UE_TOKEN" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Unreal build skipped::Set secrets UE_GHCR_USER and UE_GHCR_TOKEN (GitHub account linked to Epic Games, PAT with read:packages) to build, cook and test the Unreal project in the cloud. See docs/BUILD_CI.md."
+          fi
+          echo "windows=${UE_WINDOWS:-false}" >> "$GITHUB_OUTPUT"
+
+  linux:
+    name: Linux editor + game + server, automation tests
+    needs: gate
+    if: needs.gate.outputs.enabled == 'true'
+    runs-on: ${{ vars.UE_RUNNER || 'ubuntu-latest' }}
+    timeout-minutes: 300
+    permissions:
+      contents: read
+      packages: write
+    env:
+      UE_IMAGE: ${{ vars.UE_IMAGE || 'ghcr.io/epicgames/unreal-engine:dev-slim-5.5.4' }}
+    steps:
+      - name: Free disk space (GitHub-hosted runners only)
+        if: runner.environment == 'github-hosted'
+        run: |
+          df -h /
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL /usr/local/share/boost /usr/share/swift
+          sudo docker image prune --all --force || true
+          # Put Docker's storage on the larger temporary disk when present.
+          if [ -d /mnt ] && [ "$(df --output=avail -BG /mnt | tail -1 | tr -dc 0-9)" -gt 40 ]; then
+            sudo systemctl stop docker
+            echo '{"data-root": "/mnt/docker"}' | sudo tee /etc/docker/daemon.json
+            sudo systemctl start docker
+          fi
+          df -h / /mnt || true
+
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR (Epic image)
+        run: echo "${{ secrets.UE_GHCR_TOKEN }}" | docker login ghcr.io -u "${{ secrets.UE_GHCR_USER }}" --password-stdin
+
+      - name: Pull Unreal Engine image
+        run: docker pull "$UE_IMAGE"
+
+      - name: Prepare workspace
+        run: |
+          mkdir -p Artifacts
+          chmod -R a+rwX "$GITHUB_WORKSPACE"
+
+      - name: Build editor target (BigCarEditor)
+        run: |
+          docker run --rm -v "$GITHUB_WORKSPACE":/project -w /project "$UE_IMAGE" bash -lc '
+            set -euo pipefail
+            /home/ue4/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh BigCarEditor Linux Development \
+              -project=/project/BigCar.uproject -waitmutex -NoHotReload
+          ' 2>&1 | tee Artifacts/build-editor.log
+
+      - name: Automation tests (headless)
+        run: |
+          docker run --rm -v "$GITHUB_WORKSPACE":/project -w /project "$UE_IMAGE" bash -lc '
+            set -uo pipefail
+            /home/ue4/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Cmd /project/BigCar.uproject \
+              -ExecCmds="Automation RunTests BigCar; Quit" -testexit="Automation Test Queue Empty" \
+              -ReportExportPath=/project/Artifacts/TestReport -unattended -nullrhi -nosplash -nopause -stdout -log
+          ' 2>&1 | tee Artifacts/automation.log
+          python3 - <<'PY'
+          import json, sys, pathlib
+          report = pathlib.Path("Artifacts/TestReport/index.json")
+          if not report.exists():
+              print("::error::No automation report produced"); sys.exit(1)
+          data = json.loads(report.read_text(encoding="utf-8-sig"))
+          failed = data.get("failed", 0)
+          succeeded = data.get("succeeded", 0)
+          print(f"automation: {succeeded} passed, {failed} failed")
+          for t in data.get("tests", []):
+              if t.get("state") != "Success":
+                  print(f"::error::{t.get('fullTestPath')}: " + "; ".join(e.get("event", {}).get("message", "") for e in t.get("entries", [])[:5]))
+          sys.exit(1 if failed or succeeded == 0 else 0)
+          PY
+
+      - name: Cook and package client + dedicated server
+        if: github.event_name != 'pull_request' && (github.event_name != 'workflow_dispatch' || inputs.package)
+        run: |
+          docker run --rm -v "$GITHUB_WORKSPACE":/project -w /project "$UE_IMAGE" bash -lc '
+            set -euo pipefail
+            /home/ue4/UnrealEngine/Engine/Build/BatchFiles/RunUAT.sh BuildCookRun \
+              -project=/project/BigCar.uproject -noP4 -utf8output -unattended -nocompileeditor \
+              -platform=Linux -clientconfig=Development \
+              -server -serverplatform=Linux -serverconfig=Development \
+              -build -cook -stage -pak -iostore -prereqs -archive -archivedirectory=/project/Packaged
+          ' 2>&1 | tee Artifacts/package.log
+          tar -C Packaged -czf Artifacts/BigCar-Linux.tar.gz Linux || true
+          tar -C Packaged -czf Artifacts/BigCar-LinuxServer.tar.gz LinuxServer || true
+          ls -la Artifacts
+
+      - name: Publish dedicated server image to GHCR
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          image="ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/bigcar-server"
+          tar -xzf Artifacts/BigCar-LinuxServer.tar.gz -C Deploy/server
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          docker build -t "$image:latest" -t "$image:${{ github.sha }}" Deploy/server
+          docker push --all-tags "$image"
+
+      - name: Upload logs and test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unreal-linux-logs
+          path: |
+            Artifacts/*.log
+            Artifacts/TestReport
+          retention-days: 14
+
+      - name: Upload packaged builds
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: unreal-linux-packages
+          path: Artifacts/*.tar.gz
+          if-no-files-found: ignore
+          retention-days: 7
+
+  windows:
+    name: Win64 client (self-hosted)
+    needs: gate
+    if: needs.gate.outputs.windows == 'true'
+    runs-on: [self-hosted, windows, unreal]
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build, cook and package Win64
+        shell: pwsh
+        run: |
+          $ue = if ($env:UE_ROOT) { $env:UE_ROOT } else { "C:\Program Files\Epic Games\UE_5.5" }
+          & "$ue\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun `
+            -project="$env:GITHUB_WORKSPACE\BigCar.uproject" -noP4 -utf8output -unattended `
+            -platform=Win64 -clientconfig=Shipping -build -cook -stage -pak -iostore -prereqs `
+            -archive -archivedirectory="$env:GITHUB_WORKSPACE\Packaged"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Compress-Archive -Path "$env:GITHUB_WORKSPACE\Packaged\Windows\*" -DestinationPath "$env:GITHUB_WORKSPACE\BigCar-Win64.zip"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: unreal-win64
+          path: BigCar-Win64.zip
+          retention-days: 7

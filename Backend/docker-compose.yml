@@ -1,0 +1,45 @@
+# Local stack: backend + PostgreSQL.
+#
+#   cd Backend && docker compose up --build
+#
+# The backend image is built with the repository root as context (it bundles
+# Content/BigCar/Data). Override secrets via environment variables or a .env
+# file next to this compose file; the defaults are for local development only.
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: bigcar
+      POSTGRES_PASSWORD: bigcar
+      POSTGRES_DB: bigcar
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bigcar -d bigcar"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  backend:
+    build:
+      context: ..
+      dockerfile: Backend/Dockerfile
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      BIGCAR_DATABASE_URL: postgres://bigcar:bigcar@postgres:5432/bigcar?sslmode=disable
+      BIGCAR_TOKEN_SECRET: ${BIGCAR_TOKEN_SECRET:-local-dev-token-secret-0123456789abcdef}
+      BIGCAR_SERVER_KEY: ${BIGCAR_SERVER_KEY:-local-dev-server-key}
+      BIGCAR_WEBHOOK_SECRET: ${BIGCAR_WEBHOOK_SECRET:-local-dev-webhook-secret}
+      BIGCAR_DEV: ${BIGCAR_DEV:-1}
+      BIGCAR_LOG_LEVEL: ${BIGCAR_LOG_LEVEL:-info}
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+volumes:
+  pgdata:

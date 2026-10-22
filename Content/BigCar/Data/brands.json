@@ -1,0 +1,357 @@
+{
+  "version": 1,
+  "brands": [
+    {
+      "id": "hoshino",
+      "name": "brand.hoshino",
+      "country": "JP",
+      "color": "#EB0A1E",
+      "licensed": false,
+      "reference": "Toyota"
+    },
+    {
+      "id": "kazeyama",
+      "name": "brand.kazeyama",
+      "country": "JP",
+      "color": "#CC0000",
+      "licensed": false,
+      "reference": "Honda"
+    },
+    {
+      "id": "ryujin",
+      "name": "brand.ryujin",
+      "country": "JP",
+      "color": "#C3002F",
+      "licensed": false,
+      "reference": "Nissan"
+    },
+    {
+      "id": "takane",
+      "name": "brand.takane",
+      "country": "JP",
+      "color": "#013C74",
+      "licensed": false,
+      "reference": "Subaru"
+    },
+    {
+      "id": "hagane",
+      "name": "brand.hagane",
+      "country": "JP",
+      "color": "#E60012",
+      "licensed": false,
+      "reference": "Mitsubishi"
+    },
+    {
+      "id": "akatsuki",
+      "name": "brand.akatsuki",
+      "country": "JP",
+      "color": "#8B1A1A",
+      "licensed": false,
+      "reference": "Mazda"
+    },
+    {
+      "id": "seiran",
+      "name": "brand.seiran",
+      "country": "JP",
+      "color": "#1A1A1A",
+      "licensed": false,
+      "reference": "Lexus"
+    },
+    {
+      "id": "feldmark",
+      "name": "brand.feldmark",
+      "country": "DE",
+      "color": "#001E50",
+      "licensed": false,
+      "reference": "Volkswagen"
+    },
+    {
+      "id": "wolfram",
+      "name": "brand.wolfram",
+      "country": "DE",
+      "color": "#1C69D4",
+      "licensed": false,
+      "reference": "BMW"
+    },
+    {
+      "id": "kaiserling",
+      "name": "brand.kaiserling",
+      "country": "DE",
+      "color": "#A8A8A8",
+      "licensed": false,
+      "reference": "Mercedes-Benz"
+    },
+    {
+      "id": "vierling",
+      "name": "brand.vierling",
+      "country": "DE",
+      "color": "#BB0A30",
+      "licensed": false,
+      "reference": "Audi"
+    },
+    {
+      "id": "eisvogel",
+      "name": "brand.eisvogel",
+      "country": "DE",
+      "color": "#D5001C",
+      "licensed": false,
+      "reference": "Porsche"
+    },
+    {
+      "id": "fulmine",
+      "name": "brand.fulmine",
+      "country": "IT",
+      "color": "#C8102E",
+      "licensed": false,
+      "reference": "Ferrari"
+    },
+    {
+      "id": "toromonte",
+      "name": "brand.toromonte",
+      "country": "IT",
+      "color": "#DDB321",
+      "licensed": false,
+      "reference": "Lamborghini"
+    },
+    {
+      "id": "nettuno",
+      "name": "brand.nettuno",
+      "country": "IT",
+      "color": "#0C2340",
+      "licensed": false,
+      "reference": "Maserati"
+    },
+    {
+      "id": "vortice",
+      "name": "brand.vortice",
+      "country": "IT",
+      "color": "#4B4F54",
+      "licensed": false,
+      "reference": "Pagani"
+    },
+    {
+      "id": "lucciola",
+      "name": "brand.lucciola",
+      "country": "IT",
+      "color": "#A6192E",
+      "licensed": false,
+      "reference": "Fiat"
+    },
+    {
+      "id": "valmont",
+      "name": "brand.valmont",
+      "country": "FR",
+      "color": "#1F3B73",
+      "licensed": false,
+      "reference": "Bugatti"
+    },
+    {
+      "id": "thornbury",
+      "name": "brand.thornbury",
+      "country": "GB",
+      "color": "#00665E",
+      "licensed": false,
+      "reference": "Aston Martin"
+    },
+    {
+      "id": "kestrel",
+      "name": "brand.kestrel",
+      "country": "GB",
+      "color": "#FF8000",
+      "licensed": false,
+      "reference": "McLaren"
+    },
+    {
+      "id": "hartwell",
+      "name": "brand.hartwell",
+      "country": "GB",
+      "color": "#333F48",
+      "licensed": false,
+      "reference": "Bentley"
+    },
+    {
+      "id": "aldermere",
+      "name": "brand.aldermere",
+      "country": "GB",
+      "color": "#2C2C54",
+      "licensed": false,
+      "reference": "Rolls-Royce"
+    },
+    {
+      "id": "highmoor",
+      "name": "brand.highmoor",
+      "country": "GB",
+      "color": "#005A2B",
+      "licensed": false,
+      "reference": "Land Rover"
+    },
+    {
+      "id": "bramble",
+      "name": "brand.bramble",
+      "country": "GB",
+      "color": "#1A1A1A",
+      "licensed": false,
+      "reference": "MINI"
+    },
+    {
+      "id": "ironhorse",
+      "name": "brand.ironhorse",
+      "country": "US",
+      "color": "#003478",
+      "licensed": false,
+      "reference": "Ford"
+    },
+    {
+      "id": "lonestar",
+      "name": "brand.lonestar",
+      "country": "US",
+      "color": "#D1A33C",
+      "licensed": false,
+      "reference": "Chevrolet"
+    },
+    {
+      "id": "rattler",
+      "name": "brand.rattler",
+      "country": "US",
+      "color": "#BA0C2F",
+      "licensed": false,
+      "reference": "Dodge"
+    },
+    {
+      "id": "anvil",
+      "name": "brand.anvil",
+      "country": "US",
+      "color": "#2B2B2B",
+      "licensed": false,
+      "reference": "Ram"
+    },
+    {
+      "id": "mesa",
+      "name": "brand.mesa",
+      "country": "US",
+      "color": "#4B5320",
+      "licensed": false,
+      "reference": "Jeep"
+    },
+    {
+      "id": "coulomb",
+      "name": "brand.coulomb",
+      "country": "US",
+      "color": "#CC0000",
+      "licensed": false,
+      "reference": "Tesla"
+    },
+    {
+      "id": "crestmont",
+      "name": "brand.crestmont",
+      "country": "US",
+      "color": "#8C7A5B",
+      "licensed": false,
+      "reference": "Cadillac"
+    },
+    {
+      "id": "titanus",
+      "name": "brand.titanus",
+      "country": "US",
+      "color": "#B0102A",
+      "licensed": false,
+      "reference": "GMC"
+    },
+    {
+      "id": "ironwood",
+      "name": "brand.ironwood",
+      "country": "US",
+      "color": "#7A0019",
+      "licensed": false,
+      "reference": "Kenworth"
+    },
+    {
+      "id": "grandview",
+      "name": "brand.grandview",
+      "country": "US",
+      "color": "#3A3A3A",
+      "licensed": false,
+      "reference": "Lincoln"
+    },
+    {
+      "id": "munja",
+      "name": "brand.munja",
+      "country": "HR",
+      "color": "#00A3E0",
+      "licensed": false,
+      "reference": "Rimac"
+    },
+    {
+      "id": "nordvik",
+      "name": "brand.nordvik",
+      "country": "SE",
+      "color": "#003057",
+      "licensed": false,
+      "reference": "Volvo"
+    },
+    {
+      "id": "ragnvald",
+      "name": "brand.ragnvald",
+      "country": "SE",
+      "color": "#E8E8E8",
+      "licensed": false,
+      "reference": "Koenigsegg"
+    },
+    {
+      "id": "hanbit",
+      "name": "brand.hanbit",
+      "country": "KR",
+      "color": "#002C5F",
+      "licensed": false,
+      "reference": "Hyundai"
+    },
+    {
+      "id": "longteng",
+      "name": "brand.longteng",
+      "country": "CN",
+      "color": "#C00000",
+      "licensed": false,
+      "reference": "BYD"
+    },
+    {
+      "id": "cangqiong",
+      "name": "brand.cangqiong",
+      "country": "CN",
+      "color": "#1B1B1B",
+      "licensed": false,
+      "reference": "Yangwang"
+    },
+    {
+      "id": "xinghe",
+      "name": "brand.xinghe",
+      "country": "CN",
+      "color": "#FF6900",
+      "licensed": false,
+      "reference": "Xiaomi"
+    },
+    {
+      "id": "jiayuan",
+      "name": "brand.jiayuan",
+      "country": "CN",
+      "color": "#2F3B4C",
+      "licensed": false,
+      "reference": "Li Auto"
+    },
+    {
+      "id": "qingyun",
+      "name": "brand.qingyun",
+      "country": "CN",
+      "color": "#00263A",
+      "licensed": false,
+      "reference": "NIO"
+    },
+    {
+      "id": "huabiao",
+      "name": "brand.huabiao",
+      "country": "CN",
+      "color": "#B22222",
+      "licensed": false,
+      "reference": "Hongqi"
+    }
+  ]
+}

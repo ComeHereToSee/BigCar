@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "player": {
+    "maxLevel": 50,
+    "xpBase": 1000,
+    "xpGrowth": 1.06
+  },
+  "levelRewards": [
+    {
+      "level": 2,
+      "items": [
+        {
+          "type": "currency",
+          "id": "credits",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "items": [
+        {
+          "type": "paint",
+          "id": "paint_rust"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "items": [
+        {
+          "type": "currency",
+          "id": "gold",
+          "amount": 50
+        },
+        {
+          "type": "equipment",
+          "id": "wheel_spikes"
+        }
+      ]
+    }
+  ],
+  "match": {
+    "participationCredits": 800,
+    "participationXp": 150,
+    "creditsPerScore": 1.5,
+    "xpPerScore": 0.8,
+    "winMultiplier": 1.5,
+    "rankedMultiplier": 1.25,
+    "maxCredits": 40000,
+    "maxXp": 20000
+  },
+  "score": {
+    "head_on": 250,
+    "t_bone": 400,
+    "side_swipe": 120,
+    "rear_end": 120,
+    "launch": 500,
+    "crush": 600,
+    "pit": 300,
+    "glance": 0,
+    "takedown": 1000,
+    "assist": 350,
+    "ring_out": 800,
+    "revenge": 300,
+    "multi_takedown": 500,
+    "airtime_per_sec": 40,
+    "hill_per_sec": 20,
+    "survival_per_sec": 5,
+    "prop_destroyed": 50,
+    "combo_step": 0.2,
+    "combo_max": 2.0,
+    "combo_window": 4.0,
+    "min_damage_for_points": 25
+  },
+  "ranks": [
+    {
+      "id": "bronze",
+      "name": "rank.bronze",
+      "minRating": 0,
+      "divisions": 3,
+      "color": "#B08D57"
+    },
+    {
+      "id": "silver",
+      "name": "rank.silver",
+      "minRating": 1200,
+      "divisions": 3,
+      "color": "#C0C0C0"
+    },
+    {
+      "id": "gold",
+      "name": "rank.gold",
+      "minRating": 1400,
+      "divisions": 3,
+      "color": "#D4AF37"
+    },
+    {
+      "id": "platinum",
+      "name": "rank.platinum",
+      "minRating": 1600,
+      "divisions": 3,
+      "color": "#7FD1D9"
+    },
+    {
+      "id": "diamond",
+      "name": "rank.diamond",
+      "minRating": 1800,
+      "divisions": 3,
+      "color": "#5AA9FF"
+    },
+    {
+      "id": "master",
+      "name": "rank.master",
+      "minRating": 2000,
+      "divisions": 1,
+      "color": "#B266FF"
+    },
+    {
+      "id": "crash_king",
+      "name": "rank.crash_king",
+      "minRating": 2200,
+      "divisions": 1,
+      "color": "#FF3B30"
+    }
+  ]
+}

@@ -1,0 +1,864 @@
+{
+  "version": 1,
+  "offers": [
+    {
+      "id": "offer_starter_pack",
+      "section": "featured",
+      "featured": true,
+      "items": [
+        {
+          "type": "equipment",
+          "id": "front_wedge_steel"
+        },
+        {
+          "type": "paint",
+          "id": "paint_rosso"
+        },
+        {
+          "type": "currency",
+          "id": "credits",
+          "amount": 10000
+        }
+      ],
+      "price": {
+        "gold": 300
+      },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": "store.tag.best_value"
+    },
+    {
+      "id": "offer_fulmine_f8r",
+      "section": "vehicles",
+      "featured": true,
+      "items": [
+        {
+          "type": "vehicle",
+          "id": "fulmine_f8r"
+        }
+      ],
+      "price": {
+        "gold": 1800
+      },
+      "limit": 1,
+      "start": null,
+      "end": null,
+      "tag": "store.tag.new"
+    },
+    {
+      "id": "offer_credits_50k",
+      "section": "bundles",
+      "featured": false,
+      "items": [
+        {
+          "type": "currency",
+          "id": "credits",
+          "amount": 50000
+        }
+      ],
+      "price": {
+        "gold": 100
+      },
+      "limit": 0,
+      "start": null,
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_paint_midnight",
+      "section": "cosmetics",
+      "featured": false,
+      "items": [
+        {
+          "type": "paint",
+          "id": "paint_midnight"
+        }
+      ],
+      "price": {
+        "credits": 4500
+      },
+      "limit": 0,
+      "start": "2026-01-01T00:00:00Z",
+      "end": null,
+      "tag": null
+    },
+    {
+      "id": "offer_halloween",
+      "section": "cosmetics",
+      "featured": true,
+      "items": [
+        {
+          "type": "banner",
+          "id": "banner_flames"
+        }
+      ],
+      "price": {
+        "gold": 150
+      },
+      "limit": 1,
+      "start": "2026-10-25T00:00:00Z",
+      "end": "2026-11-02T00:00:00Z",
+      "tag": "store.tag.limited"
+    },
+    {
+      "id": "offer_expired",
+      "section": "equipment",
+      "featured": false,
+      "items": [
+        {
+          "type": "equipment",
+          "id": "core_ballast"
+        }
+      ],
+      "price": {
+        "credits": 2000
+      },
+      "limit": 1,
+      "start": "2026-01-01T00:00:00Z",
+      "end": "2026-02-01T00:00:00Z",
+      "tag": null
+    }
+  ],
+  "goldPacks": [
+    {
+      "id": "gold_s",
+      "gold": 100,
+      "bonus": 0,
+      "prices": {
+        "USD": 0.99,
+        "CNY": 6
+      }
+    },
+    {
+      "id": "gold_m",
+      "gold": 500,
+      "bonus": 50,
+      "prices": {
+        "USD": 4.99,
+        "CNY": 30
+      }
+    },
+    {
+      "id": "gold_l",
+      "gold": 1000,
+      "bonus": 200,
+      "prices": {
+        "USD": 9.99,
+        "CNY": 68
+      }
+    }
+  ],
+  "daily": {
+    "slots": 4,
+    "discounts": [
+      0.1,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "pool": [
+      {
+        "type": "equipment",
+        "id": "front_wedge_steel"
+      },
+      {
+        "type": "equipment",
+        "id": "rear_bumper_heavy"
+      },
+      {
+        "type": "equipment",
+        "id": "side_plates_light"
+      },
+      {
+        "type": "equipment",
+        "id": "roof_cage"
+      },
+      {
+        "type": "equipment",
+        "id": "ability_nitro_burst"
+      },
+      {
+        "type": "paint",
+        "id": "paint_midnight"
+      },
+      {
+        "type": "wheels",
+        "id": "wheels_mesh"
+      },
+      {
+        "type": "horn",
+        "id": "horn_trucker"
+      },
+      {
+        "type": "vehicle",
+        "id": "hoshino_supra"
+      }
+    ]
+  },
+  "seasonPass": {
+    "id": "season_1",
+    "name": "store.season_1",
+    "start": "2026-11-01T00:00:00Z",
+    "end": "2027-01-31T00:00:00Z",
+    "premiumPrice": {
+      "gold": 950
+    },
+    "xpPerTier": 1000,
+    "tiers": [
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 1100
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "paint",
+            "id": "paint_rosso"
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 1300
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 1500
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 1700
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 1900
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "paint",
+            "id": "paint_season1"
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 2100
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 2300
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 2500
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 2700
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 2900
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 3100
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 3300
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 3500
+          }
+        ],
+        "premium": [
+          {
+            "type": "vehicle",
+            "id": "ironhorse_f150r"
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 3700
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 3900
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 4100
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 4300
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 4500
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 4700
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 4900
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 5100
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 5300
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 5500
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 5700
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [
+          {
+            "type": "currency",
+            "id": "credits",
+            "amount": 5900
+          }
+        ],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      },
+      {
+        "free": [],
+        "premium": [
+          {
+            "type": "currency",
+            "id": "gold",
+            "amount": 20
+          }
+        ]
+      }
+    ]
+  }
+}

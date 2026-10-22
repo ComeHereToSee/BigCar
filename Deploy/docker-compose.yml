@@ -1,0 +1,74 @@
+# Full online stack: PostgreSQL + backend (accounts, store, parties, matchmaking, ladder) + dedicated game servers.
+#
+#   cp Deploy/.env.example Deploy/.env   # then edit the secrets and the public address
+#   docker compose -f Deploy/docker-compose.yml --env-file Deploy/.env up -d
+#
+# Images default to the ones GitHub Actions publishes to GHCR (backend from ci.yml, server from unreal.yml).
+# Each game server process hosts one match and exits; `restart: always` brings it back idle for the next one.
+
+x-gameserver: &gameserver
+  image: ${BIGCAR_SERVER_IMAGE:-ghcr.io/comeheretosee/bigcar-server:latest}
+  restart: always
+  depends_on:
+    backend:
+      condition: service_started
+  environment: &gameserver-env
+    BIGCAR_BACKEND_URL: http://backend:8080
+    BIGCAR_SERVER_KEY: ${BIGCAR_SERVER_KEY:?set BIGCAR_SERVER_KEY in Deploy/.env}
+    BIGCAR_PUBLIC_ADDRESS: ${BIGCAR_PUBLIC_ADDRESS:?set BIGCAR_PUBLIC_ADDRESS (address players connect to)}
+    BIGCAR_REGION: ${BIGCAR_REGION:-local}
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bigcar
+      POSTGRES_PASSWORD: ${BIGCAR_DB_PASSWORD:?set BIGCAR_DB_PASSWORD in Deploy/.env}
+      POSTGRES_DB: bigcar
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bigcar -d bigcar"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  backend:
+    image: ${BIGCAR_BACKEND_IMAGE:-ghcr.io/comeheretosee/bigcar-backend:latest}
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      BIGCAR_DATABASE_URL: postgres://bigcar:${BIGCAR_DB_PASSWORD}@postgres:5432/bigcar?sslmode=disable
+      BIGCAR_TOKEN_SECRET: ${BIGCAR_TOKEN_SECRET:?set BIGCAR_TOKEN_SECRET (>= 32 chars)}
+      BIGCAR_SERVER_KEY: ${BIGCAR_SERVER_KEY}
+      BIGCAR_WEBHOOK_SECRET: ${BIGCAR_WEBHOOK_SECRET:-}
+      BIGCAR_TRUST_PROXY: ${BIGCAR_TRUST_PROXY:-0}
+      BIGCAR_LOG_LEVEL: ${BIGCAR_LOG_LEVEL:-info}
+    ports:
+      - "${BIGCAR_HTTP_PORT:-8080}:8080"
+    healthcheck:
+      test: ["CMD", "/app/bigcar-backend", "--healthcheck"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  gameserver-1:
+    <<: *gameserver
+    command: ["/Engine/Maps/Entry?game=match", "-port=7777", "-ServerId=gs-1", "-log", "-unattended", "-nosound"]
+    ports: ["7777:7777/udp"]
+
+  gameserver-2:
+    <<: *gameserver
+    command: ["/Engine/Maps/Entry?game=match", "-port=7778", "-ServerId=gs-2", "-log", "-unattended", "-nosound"]
+    ports: ["7778:7778/udp"]
+
+  gameserver-3:
+    <<: *gameserver
+    command: ["/Engine/Maps/Entry?game=match", "-port=7779", "-ServerId=gs-3", "-log", "-unattended", "-nosound"]
+    ports: ["7779:7779/udp"]
+
+volumes:
+  pgdata:

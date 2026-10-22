@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "brands": [
+    {
+      "id": "hoshino",
+      "name": "brand.hoshino",
+      "country": "JP",
+      "color": "#D7263D",
+      "licensed": false,
+      "reference": "Toyota"
+    },
+    {
+      "id": "ironhorse",
+      "name": "brand.ironhorse",
+      "country": "US",
+      "color": "#1F4E79",
+      "licensed": false,
+      "reference": "Ford"
+    },
+    {
+      "id": "fulmine",
+      "name": "brand.fulmine",
+      "country": "IT",
+      "color": "#C8102E",
+      "licensed": false,
+      "reference": "Ferrari"
+    }
+  ]
+}

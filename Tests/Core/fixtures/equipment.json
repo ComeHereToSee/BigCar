@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "equipment": [
+    {
+      "id": "front_wedge",
+      "slot": "front",
+      "name": "equip.front_wedge",
+      "description": "equip.front_wedge.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "wedge",
+        "length": 0.7,
+        "angleDeg": 16
+      },
+      "mods": {
+        "launchPower": 1.0,
+        "massAddKg": 80,
+        "armorFront": 0.1
+      },
+      "ability": null,
+      "cr": 25,
+      "price": {
+        "credits": 30000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "front_ram",
+      "slot": "front",
+      "name": "equip.front_ram",
+      "description": "equip.front_ram.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "ram_bar",
+        "length": 0.5,
+        "angleDeg": 0
+      },
+      "mods": {
+        "ramPowerMul": 1.3,
+        "massAddKg": 60,
+        "armorFront": 0.15
+      },
+      "ability": null,
+      "cr": 20,
+      "price": {
+        "credits": 20000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "front_basic",
+      "slot": "front",
+      "name": "equip.front_basic",
+      "description": "equip.front_basic.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "ram_bar",
+        "length": 0.5,
+        "angleDeg": 0
+      },
+      "mods": {
+        "ramPowerMul": 1.1
+      },
+      "ability": null,
+      "cr": 5,
+      "price": {
+        "credits": 0
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "side_blades",
+      "slot": "side",
+      "name": "equip.side_blades",
+      "description": "equip.side_blades.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "side_blades",
+        "length": 0.5,
+        "angleDeg": 0
+      },
+      "mods": {
+        "tireDamage": 1.0,
+        "massAddKg": 40
+      },
+      "ability": null,
+      "cr": 15,
+      "price": {
+        "credits": 15000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "roof_cage",
+      "slot": "roof",
+      "name": "equip.roof_cage",
+      "description": "equip.roof_cage.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "cage",
+        "length": 0.5,
+        "angleDeg": 0
+      },
+      "mods": {
+        "armorTop": 0.2,
+        "massAddKg": 50
+      },
+      "ability": null,
+      "cr": 10,
+      "price": {
+        "credits": 12000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "core_repair",
+      "slot": "core",
+      "name": "equip.core_repair",
+      "description": "equip.core_repair.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "none",
+        "length": 0.5,
+        "angleDeg": 0
+      },
+      "mods": {
+        "repairPerSec": 0.01
+      },
+      "ability": null,
+      "cr": 15,
+      "price": {
+        "credits": 25000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "ability_jump",
+      "slot": "ability",
+      "name": "equip.ability_jump",
+      "description": "equip.ability_jump.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "none",
+        "length": 0.5,
+        "angleDeg": 0
+      },
+      "mods": {},
+      "ability": "hydraulic_jump",
+      "cr": 20,
+      "price": {
+        "credits": 30000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "ability_brace",
+      "slot": "ability",
+      "name": "equip.ability_brace",
+      "description": "equip.ability_brace.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "none",
+        "length": 0.5,
+        "angleDeg": 0
+      },
+      "mods": {},
+      "ability": "brace",
+      "cr": 20,
+      "price": {
+        "credits": 30000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    },
+    {
+      "id": "ability_charge",
+      "slot": "ability",
+      "name": "equip.ability_charge",
+      "description": "equip.ability_charge.desc",
+      "rarity": "rare",
+      "contactOnly": true,
+      "geometry": {
+        "shape": "none",
+        "length": 0.5,
+        "angleDeg": 0
+      },
+      "mods": {},
+      "ability": "ram_charge",
+      "cr": 20,
+      "price": {
+        "credits": 30000
+      },
+      "unlockLevel": 1,
+      "allowedClasses": []
+    }
+  ]
+}
