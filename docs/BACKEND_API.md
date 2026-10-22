@@ -68,12 +68,12 @@ Passwords: PBKDF2-HMAC-SHA256, 210 000 iterations, 16-byte salt.
 |---|---|---|---|
 | GET | `/v1/profile` | – | |
 | POST | `/v1/profile/name` | `{"displayName"}` | 2–16 chars, trimmed |
-| POST | `/v1/garage/buy-vehicle` | `{"vehicleId"}` | credits price, `unlockLevel` check |
+| POST | `/v1/garage/buy-vehicle` | `{"vehicleId"}` | credits price, `unlockLevel` check; gold-priced items → `forbidden` (store/rewards only) |
 | POST | `/v1/garage/select` | `{"vehicleId"}` | must own |
 | POST | `/v1/garage/upgrade` | `{"vehicleId", "category"}` | next level, cost per DATA_SCHEMA formula, max 5 |
-| POST | `/v1/garage/buy-equipment` | `{"itemId"}` | credits price, `unlockLevel` |
+| POST | `/v1/garage/buy-equipment` | `{"itemId"}` | credits price, `unlockLevel`; gold-priced items → `forbidden` |
 | POST | `/v1/garage/equip` | `{"vehicleId", "slot", "itemId"}` | `itemId: null` unequips; slot must match item; `allowedClasses` |
-| POST | `/v1/garage/buy-cosmetic` | `{"itemId"}` | credits price |
+| POST | `/v1/garage/buy-cosmetic` | `{"itemId"}` | credits price; gold-priced items → `forbidden` |
 | POST | `/v1/garage/customize` | `{"vehicleId", "paint", "wheels"}` | either may be null = unchanged; must own |
 
 ## Store (auth)

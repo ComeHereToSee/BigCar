@@ -2,6 +2,16 @@
   "version": 1,
   "paints": [
     {
+      "id": "paint_exclusive",
+      "name": "cos.paint_exclusive",
+      "color": "#101010",
+      "finish": "pearl",
+      "rarity": "legendary",
+      "price": {
+        "gold": 500
+      }
+    },
+    {
       "id": "paint_rosso",
       "name": "cos.paint_rosso",
       "color": "#C8102E",

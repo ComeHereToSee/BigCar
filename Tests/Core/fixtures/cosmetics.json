@@ -20,6 +20,16 @@
       "price": {
         "credits": 20000
       }
+    },
+    {
+      "id": "paint_exclusive",
+      "name": "cos.paint_exclusive",
+      "color": "#101010",
+      "finish": "pearl",
+      "rarity": "legendary",
+      "price": {
+        "gold": 500
+      }
     }
   ],
   "wheels": [

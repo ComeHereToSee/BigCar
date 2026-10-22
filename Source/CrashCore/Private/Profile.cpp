@@ -70,6 +70,12 @@ bool Spend(Profile& p, const Price& price)
 	balance -= price.amount;
 	return true;
 }
+
+// The garage sells items for credits only; gold-priced items are store offers or rewards.
+bool SoldInGarage(const Price& price)
+{
+	return price.currency == Currency::Credits || price.IsFree();
+}
 } // namespace
 
 int LevelProgress::CollectiblesFound() const
@@ -399,6 +405,10 @@ OpResult BuyVehicle(const GameDatabase& db, Profile& p, const std::string& vehic
 	{
 		return OpResult::Fail("level_locked");
 	}
+	if (!SoldInGarage(v->price))
+	{
+		return OpResult::Fail("forbidden");
+	}
 	if (!Spend(p, v->price))
 	{
 		return OpResult::Fail("insufficient_funds");
@@ -469,6 +479,10 @@ OpResult BuyEquipment(const GameDatabase& db, Profile& p, const std::string& ite
 	{
 		return OpResult::Fail("level_locked");
 	}
+	if (!SoldInGarage(e->price))
+	{
+		return OpResult::Fail("forbidden");
+	}
 	if (!Spend(p, e->price))
 	{
 		return OpResult::Fail("insufficient_funds");
@@ -528,6 +542,10 @@ OpResult BuyCosmetic(const GameDatabase& db, Profile& p, const std::string& item
 	if (p.OwnsCosmetic(db, itemId))
 	{
 		return OpResult::Fail("already_owned");
+	}
+	if (!SoldInGarage(c->price))
+	{
+		return OpResult::Fail("forbidden");
 	}
 	if (!Spend(p, c->price))
 	{

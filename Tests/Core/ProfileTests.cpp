@@ -59,6 +59,9 @@ TEST_CASE("profile: garage operations and error codes")
 	// Cosmetics.
 	CHECK_EQ(CustomizeVehicle(db, p, "test_sedan", "paint_gold", "").error, std::string("not_owned"));
 	CHECK(BuyCosmetic(db, p, "paint_gold").ok);
+	p.gold = 10000;
+	CHECK_EQ(BuyCosmetic(db, p, "paint_exclusive").error, std::string("forbidden")); // gold items: store or rewards only
+	CHECK_EQ(p.gold, int64_t(10000));
 	CHECK(CustomizeVehicle(db, p, "test_sedan", "paint_gold", "wheels_stock").ok);
 	CHECK_EQ(p.FindVehicle("test_sedan")->paint, std::string("paint_gold"));
 	CHECK_EQ(CustomizeVehicle(db, p, "test_sedan", "wheels_stock", "").error, std::string("not_found")); // wrong type

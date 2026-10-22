@@ -65,6 +65,9 @@ func BuyVehicle(p *Profile, gd *data.GameData, vehicleID string) error {
 	if err := p.checkLevel(def.UnlockLevel); err != nil {
 		return err
 	}
+	if err := garagePrice(def.Price); err != nil {
+		return err
+	}
 	if err := p.Pay(def.Price); err != nil {
 		return err
 	}
@@ -120,6 +123,9 @@ func BuyEquipment(p *Profile, gd *data.GameData, itemID string) error {
 	if err := p.checkLevel(def.UnlockLevel); err != nil {
 		return err
 	}
+	if err := garagePrice(def.Price); err != nil {
+		return err
+	}
 	if err := p.Pay(def.Price); err != nil {
 		return err
 	}
@@ -173,6 +179,9 @@ func BuyCosmetic(p *Profile, gd *data.GameData, itemID string) error {
 	if p.OwnsCosmetic(gd, itemID) {
 		return apperr.New(apperr.AlreadyOwned, "cosmetic %q is already owned", itemID)
 	}
+	if err := garagePrice(def.Price); err != nil {
+		return err
+	}
 	if err := p.Pay(def.Price); err != nil {
 		return err
 	}
@@ -211,6 +220,15 @@ func Customize(p *Profile, gd *data.GameData, vehicleID string, paint, wheels *s
 	}
 	if wheels != nil {
 		v.Wheels = *wheels
+	}
+	return nil
+}
+
+// garagePrice rejects items the garage does not sell: it takes credits only;
+// gold-priced items come from store offers or rewards.
+func garagePrice(price data.Price) error {
+	if price.Currency != data.Credits && price.Amount > 0 {
+		return apperr.New(apperr.Forbidden, "not sold in the garage (store or rewards only)")
 	}
 	return nil
 }

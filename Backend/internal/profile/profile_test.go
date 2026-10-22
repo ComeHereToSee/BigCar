@@ -245,6 +245,13 @@ func TestCosmeticsAndCustomize(t *testing.T) {
 	if err := profile.BuyCosmetic(p, gd, "paint_rosso"); err != nil {
 		t.Fatal(err)
 	}
+	p.Wallet.Gold = 10000
+	if err := profile.BuyCosmetic(p, gd, "paint_exclusive"); code(err) != apperr.Forbidden {
+		t.Fatalf("gold-priced cosmetic bought in the garage: %v", err)
+	}
+	if p.Wallet.Gold != 10000 {
+		t.Errorf("gold %d", p.Wallet.Gold)
+	}
 	if p.Wallet.Credits != 23000 {
 		t.Errorf("credits %d", p.Wallet.Credits)
 	}
