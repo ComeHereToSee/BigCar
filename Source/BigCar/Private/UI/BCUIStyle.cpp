@@ -359,7 +359,7 @@ FText ErrorText(const UObject* Ctx, const FString& Code)
 {
 	struct FErrorEntry
 	{
-		const TCHAR* Code;
+		const TCHAR* Id;
 		const char* Key;
 	};
 	static const FErrorEntry Table[] = {
@@ -390,7 +390,7 @@ FText ErrorText(const UObject* Ctx, const FString& Code)
 	}
 	for (const FErrorEntry& E : Table)
 	{
-		if (Code == E.Code)
+		if (Code == E.Id)
 		{
 			return Txt(Ctx, E.Key);
 		}

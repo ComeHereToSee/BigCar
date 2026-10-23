@@ -504,7 +504,7 @@ TSharedRef<SWidget> SBCResultsScreen::MakeRewards()
 				.Padding(0.0f, 0.0f, 16.0f, 0.0f)
 				[
 					SNew(STextBlock)
-					.Text(FText::FromString(FString::Printf(TEXT("%+d"), Delta)))
+					.Text(FText::FromString(FString::Printf(TEXT("%s%d"), Delta >= 0 ? TEXT("+") : TEXT(""), Delta)))
 					.Font(BCStyle::Font(24, true))
 					.ColorAndOpacity(Delta >= 0 ? BCStyle::Success() : BCStyle::Danger())
 				]
